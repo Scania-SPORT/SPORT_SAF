@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+	<!-- Configure the stand output as the console -->
+	<appender name="safCONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{dd MMM HH:mm:ss,SSS} %x %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="${saf_log_level_console}" />
+			<param name="LevelMax" value="error" />
+		</filter>
+		<filter class="org.apache.log4j.varia.StringMatchFilter">
+			<param name="StringToMatch"
+				value="I/O exception (java.net.SocketException) caught when processing request: Software caused connection abort: recv failed" />
+			<param name="AcceptOnMatch" value="false" />
+		</filter>
+
+	</appender>
+
+	<!-- Configure the standard output to a file, safstdout.log. Max size for 
+		the file is 1000KB with backup up to 10 files -->
+	<appender name="safCONSOLETOFILE" class="org.apache.log4j.RollingFileAppender">
+		<param name="file" value="log/safconsole.log" />
+		<param name="MaxFileSize" value="10MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{dd MMM HH:mm:ss,SSS} %x %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="${saf_log_level_console}" />
+			<param name="LevelMax" value="error" />
+		</filter>
+
+		<filter class="org.apache.log4j.varia.StringMatchFilter">
+			<param name="StringToMatch"
+				value="I/O exception (java.net.SocketException) caught when processing request: Software caused connection abort: recv failed" />
+			<param name="AcceptOnMatch" value="false" />
+		</filter>
+	</appender>
+
+	<!-- Configure the debug output to a file, safdebug.log. Max size for the 
+		file is 1000KB with backup up to 10 files -->
+	<appender name="DEBUGFILE" class="org.apache.log4j.RollingFileAppender">
+		<param name="file" value="log/debug.log" />
+		<!-- param name="Threshold" value="debug" / -->
+		<param name="MaxFileSize" value="10MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{dd MMM HH:mm:ss,SSS} [%t] %-5p %c - %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="debug" />
+			<param name="LevelMax" value="error" />
+		</filter>
+	</appender>
+
+	<!-- Configure the debug output to a file, safonlydebug.log. Max size for 
+		the file is 1000KB with backup up to 10 files -->
+	<appender name="safDEBUGFILE" class="org.apache.log4j.RollingFileAppender">
+		<param name="file" value="log/safdebug.log" />
+		<!-- param name="Threshold" value="debug" / -->
+		<param name="MaxFileSize" value="10MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{dd MMM HH:mm:ss,SSS} [%t] %-5p - %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="debug" />
+			<param name="LevelMax" value="error" />
+		</filter>
+		<filter class="org.apache.log4j.varia.DenyAllFilter" />
+	</appender>
+
+
+	<logger name="org">
+		<level value="warn" />
+		<appender-ref ref="safDEBUGFILE" />
+	</logger>
+
+	<logger name="org.apache">
+		<level value="debug" />
+		<appender-ref ref="DEBUGFILE" />
+	</logger>
+
+	<root>
+		<level value="debug" />
+		<appender-ref ref="safCONSOLE" />
+		<appender-ref ref="safCONSOLETOFILE" />
+		<appender-ref ref="DEBUGFILE" />
+		<appender-ref ref="safDEBUGFILE" />
+	</root>
+
+</log4j:configuration>

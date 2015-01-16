@@ -1,0 +1,1366 @@
+11 jan 09:26:24,500  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS ENDS###############
+##############################################################
+##############################################################
+
+11 jan 09:30:44,453  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS ENDS###############
+##############################################################
+##############################################################
+
+11 jan 09:35:48,589  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS ENDS###############
+##############################################################
+##############################################################
+
+11 jan 11:28:55,348  
+--------------ERROR MESSGE:--------------
+null
+--------------STACK TRACE:--------------
+
+11 jan 11:28:55,348  java.lang.ExceptionInInitializerError
+	at parametermanagement.UserdataParamters.<init>(UserdataParamters.java:30)
+	at parametermanagement.OtherParameters.<init>(OtherParameters.java:6)
+	at commonFuncMgn.ReadInputDataFromFile.<init>(ReadInputDataFromFile.java:32)
+	at commonFuncMgn.OtherFunctionality.<init>(OtherFunctionality.java:17)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.<init>(FindWebDriverElement.java:31)
+	at elementmanagement.TextElement.<init>(TextElement.java:14)
+	at elementmanagement.ClickElement.<init>(ClickElement.java:15)
+	at elementmanagement.SendKeysToElement.<init>(SendKeysToElement.java:10)
+	at windowAndPageMgn.pageMgn.ScnHasaOrsPage.<init>(ScnHasaOrsPage.java:50)
+	at windowAndPageMgn.pageMgn.CommonWindowsAndPages.initWindowsAndPages(CommonWindowsAndPages.java:60)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:31)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.lang.NullPointerException
+	at configMgn.ConfigureSaf.getConfigurationProperty(ConfigureSaf.java:35)
+	at configMgn.ConfigureSaf.<clinit>(ConfigureSaf.java:43)
+	... 29 more
+
+11 jan 11:29:02,275  SCREENSHOT getScreenShot  file:////C:\SAFSP\SafEbba\screenshot\HasaOrsOrderTests\11_jan_2015_11_28_55_startHasaOrsOrder.pngC:\SAFSP\SafEbba\screenshot\HasaOrsOrderTests\11_jan_2015_11_28_55_startHasaOrsOrder.png
+11 jan 11:30:31,127  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS ENDS###############
+##############################################################
+##############################################################
+
+12 jan 06:52:58,025  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 06:54:09,419  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 06:58:05,622  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 06:59:04,013  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 09:54:53,207  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 09:56:44,805  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 10:03:24,420  
+--------------ERROR MESSGE:--------------
+Failed to navigate to http:\www.dn.se. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed. (WARNING: The server did not provide any stacktrace information)
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: StartWebDriver
+--------------STACK TRACE:--------------
+
+12 jan 10:03:24,435  org.openqa.selenium.WebDriverException: Failed to navigate to http:\www.dn.se. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed. (WARNING: The server did not provide any stacktrace information)
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: StartWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:395)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:157)
+	at appMgn.StartWebDriver.GoToSite(StartWebDriver.java:95)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:50)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:31)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+12 jan 12:50:36,748  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 12:52:03,641  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 12:56:04,477  
+--------------ERROR MESSGE:--------------
+null
+--------------STACK TRACE:--------------
+
+12 jan 12:56:04,477  java.lang.NullPointerException
+	at commonFuncMgn.ReadInputDataFromFile.<init>(ReadInputDataFromFile.java:43)
+	at logMgn.SafLog.testStep(SafLog.java:30)
+	at commontestmanagement.CommonTestSteps.login(CommonTestSteps.java:21)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:51)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:40)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+12 jan 12:56:11,841  SCREENSHOT getScreenShot  file:////C:\SAFSP\SafEbba\screenshot\HasaOrsOrderTests\12_jan_2015_12_56_05_startHasaOrsOrder.pngC:\SAFSP\SafEbba\screenshot\HasaOrsOrderTests\12_jan_2015_12_56_05_startHasaOrsOrder.png
+12 jan 12:56:16,148  
+****************************************************************
+**************TEST CASE, STARTHASAORSORDER FAILED**************
+***********************************************************
+
+12 jan 12:56:22,342  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS ENDS###############
+##############################################################
+##############################################################
+
+12 jan 12:58:24,102  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 12:58:33,528  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 13:00:39,875  
+--------------ERROR MESSGE:--------------
+null
+--------------STACK TRACE:--------------
+
+12 jan 13:00:39,875  java.lang.NullPointerException
+	at commonFuncMgn.ReadInputDataFromFile.<init>(ReadInputDataFromFile.java:43)
+	at logMgn.SafLog.testStep(SafLog.java:30)
+	at commontestmanagement.CommonTestSteps.login(CommonTestSteps.java:21)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:51)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:40)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+12 jan 13:00:46,335  SCREENSHOT getScreenShot  file:////C:\SAFSP\SafEbba\screenshot\HasaOrsOrderTests\12_jan_2015_13_00_39_startHasaOrsOrder.pngC:\SAFSP\SafEbba\screenshot\HasaOrsOrderTests\12_jan_2015_13_00_39_startHasaOrsOrder.png
+12 jan 13:00:47,444  
+****************************************************************
+**************TEST CASE, STARTHASAORSORDER FAILED**************
+***********************************************************
+
+12 jan 13:19:41,692  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS ENDS###############
+##############################################################
+##############################################################
+
+12 jan 13:21:10,318  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 13:21:48,960  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 13:26:45,503  COMMONTESTSTEPS login 
+12 jan 13:27:03,994  LOGINPAGE fieldNameBadgeInsert 
+12 jan 13:27:30,390  
+--------------ERROR MESSGE:--------------
+null
+--------------STACK TRACE:--------------
+
+12 jan 13:27:30,390  java.lang.NullPointerException
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.InsertInToFieldById(OperateOnWebDriverElement.java:65)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.InsertInToFieldById(OperateOnWebDriverElement.java:56)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.InsertInToFieldById(OperateOnWebDriverElement.java:44)
+	at windowAndPageMgn.pageMgn.LogInPage.fieldNameBadgeInsert(LogInPage.java:20)
+	at commontestmanagement.CommonTestSteps.login(CommonTestSteps.java:22)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:51)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:40)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+12 jan 13:27:37,911  SCREENSHOT getScreenShot  file:////C:\SAFSP\SafEbba\screenshot\HasaOrsOrderTests\12_jan_2015_13_27_31_startHasaOrsOrder.pngC:\SAFSP\SafEbba\screenshot\HasaOrsOrderTests\12_jan_2015_13_27_31_startHasaOrsOrder.png
+12 jan 13:29:33,664  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 13:29:50,341  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 13:30:14,632  COMMONTESTSTEPS login 
+12 jan 13:30:32,901  LOGINPAGE fieldNameBadgeInsert 
+12 jan 13:33:15,392  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 13:33:21,618  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 13:33:31,511  COMMONTESTSTEPS login 
+12 jan 13:33:31,526  LOGINPAGE fieldNameBadgeInsert 
+12 jan 13:34:08,827  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 13:34:43,523  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 13:34:53,368  COMMONTESTSTEPS login 
+12 jan 13:34:53,384  LOGINPAGE fieldNameBadgeInsert 
+12 jan 14:40:03,983  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 14:40:05,044  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 14:40:13,923  COMMONTESTSTEPS login 
+12 jan 14:40:13,938  LOGINPAGE fieldNameBadgeInsert 
+12 jan 14:40:58,244  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:40:58,869  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:40:59,383  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:40:59,884  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:41:00,398  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:41:00,899  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:41:01,413  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:41:01,914  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:41:02,428  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:41:02,929  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:41:03,443  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:41:03,944  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:41:04,458  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:41:04,959  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:41:05,473  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:41:05,974  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:41:06,488  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:41:06,989  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 14:41:07,503  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 15:07:54,056  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 15:07:54,961  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 15:08:03,698  COMMONTESTSTEPS login 
+12 jan 15:08:03,698  LOGINPAGE fieldNameBadgeInsert 
+12 jan 15:57:36,743  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  java.lang.NullPointerException
+12 jan 15:58:24,090  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 15:58:26,478  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 15:58:55,559  COMMONTESTSTEPS login 
+12 jan 15:59:00,053  LOGINPAGE fieldNameBadgeInsert 
+12 jan 16:18:25,712  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 16:18:29,472  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 16:18:55,355  COMMONTESTSTEPS login 
+12 jan 16:18:55,996  LOGINPAGE fieldNameBadgeInsert 
+12 jan 16:19:19,037  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  org.openqa.selenium.WebDriverException: Missing parameter: id (WARNING: The server did not provide any stacktrace information)
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: RemoteWebDriver
+12 jan 16:26:53,311  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 16:26:57,695  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 16:27:08,009  COMMONTESTSTEPS login 
+12 jan 16:27:08,024  LOGINPAGE fieldNameBadgeInsert 
+12 jan 16:27:12,440  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  org.openqa.selenium.WebDriverException: Missing parameter: id (WARNING: The server did not provide any stacktrace information)
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: RemoteWebDriver
+12 jan 16:27:43,657  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.id: ctl00_LoginTextBox
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@19ed13da' was found
+
+--------------STACK TRACE:--------------
+
+12 jan 16:27:43,657  java.lang.RuntimeException: No Element Was Found by: By.id: ctl00_LoginTextBox
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@19ed13da' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:404)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementById(FindWebDriverElement.java:237)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.InsertInToFieldById(OperateOnWebDriverElement.java:65)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.InsertInToFieldById(OperateOnWebDriverElement.java:56)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.InsertInToFieldById(OperateOnWebDriverElement.java:44)
+	at windowAndPageMgn.pageMgn.LogInPage.fieldNameBadgeInsert(LogInPage.java:20)
+	at commontestmanagement.CommonTestSteps.login(CommonTestSteps.java:22)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:53)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:40)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+12 jan 16:27:50,101  SCREENSHOT getScreenShot  file:////C:\SAFSP\SafEbba\screenshot\HasaOrsOrderTests\12_jan_2015_16_27_43_startHasaOrsOrder.pngC:\SAFSP\SafEbba\screenshot\HasaOrsOrderTests\12_jan_2015_16_27_43_startHasaOrsOrder.png
+12 jan 16:27:51,209  
+****************************************************************
+**************TEST CASE, STARTHASAORSORDER FAILED**************
+***********************************************************
+
+12 jan 16:27:59,634  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS ENDS###############
+##############################################################
+##############################################################
+
+12 jan 16:28:34,831  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 16:28:40,370  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 16:28:59,498  COMMONTESTSTEPS login 
+12 jan 16:28:59,513  LOGINPAGE fieldNameBadgeInsert 
+12 jan 16:29:22,165  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  org.openqa.selenium.WebDriverException: Missing parameter: id (WARNING: The server did not provide any stacktrace information)
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: RemoteWebDriver
+12 jan 16:32:52,444  
+##############################################################
+##############################################################
+################TEST CLASS HASAORSORDERTESTS STARTS#################
+##############################################################
+##############################################################
+
+12 jan 16:32:54,411  
+****************************************************************
+**************TEST CASE, startHasaOrsOrder, STARTS**************
+12 jan 16:33:03,710  COMMONTESTSTEPS login 
+12 jan 16:33:03,726  LOGINPAGE fieldNameBadgeInsert 
+12 jan 16:33:14,865  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  org.openqa.selenium.WebDriverException: Missing parameter: id (WARNING: The server did not provide any stacktrace information)
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: RemoteWebDriver
+14 jan 08:02:37,192  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+14 jan 08:02:41,481  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+14 jan 08:02:45,256  
+****************************************************************
+**************TEST CASE, startSportOrder, ENDS**************
+***********************************************************
+
+14 jan 08:02:52,650  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+14 jan 08:08:53,445  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+14 jan 08:08:53,460  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+14 jan 08:08:53,460  
+--------------ERROR MESSGE:--------------
+null
+--------------STACK TRACE:--------------
+
+14 jan 08:08:53,476  java.lang.NullPointerException
+	at sun.misc.MetaIndex.mayContain(MetaIndex.java:225)
+	at sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:747)
+	at sun.misc.URLClassPath.getResource(URLClassPath.java:169)
+	at sun.misc.URLClassPath.getResource(URLClassPath.java:221)
+	at java.lang.ClassLoader.getBootstrapResource(ClassLoader.java:1150)
+	at java.lang.ClassLoader.getResource(ClassLoader.java:999)
+	at java.lang.ClassLoader.getResource(ClassLoader.java:997)
+	at commonFuncMgn.ReadInputDataFromFile.<init>(ReadInputDataFromFile.java:40)
+	at logMgn.SafLog.testStep(SafLog.java:30)
+	at commontestmanagement.CommonTestSteps.StartTheWebApplication(CommonTestSteps.java:41)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:39)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+14 jan 08:08:54,349  SCREENSHOT getScreenShot  file:////C:\SAFSP\SafEbba\screenshot\POCSportTests\14_jan_2015_08_08_53_startSportOrder.pngC:\SAFSP\SafEbba\screenshot\POCSportTests\14_jan_2015_08_08_53_startSportOrder.png
+14 jan 08:08:54,349  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+14 jan 08:08:54,349  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+14 jan 08:09:57,565  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+14 jan 08:09:57,580  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+14 jan 08:09:57,580  
+--------------ERROR MESSGE:--------------
+null
+--------------STACK TRACE:--------------
+
+14 jan 08:09:57,580  java.lang.NullPointerException
+	at sun.misc.MetaIndex.mayContain(MetaIndex.java:225)
+	at sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:747)
+	at sun.misc.URLClassPath.getResource(URLClassPath.java:169)
+	at sun.misc.URLClassPath.getResource(URLClassPath.java:221)
+	at java.lang.ClassLoader.getBootstrapResource(ClassLoader.java:1150)
+	at java.lang.ClassLoader.getResource(ClassLoader.java:999)
+	at java.lang.ClassLoader.getResource(ClassLoader.java:997)
+	at commonFuncMgn.ReadInputDataFromFile.<init>(ReadInputDataFromFile.java:40)
+	at logMgn.SafLog.testStep(SafLog.java:30)
+	at commontestmanagement.CommonTestSteps.StartTheWebApplication(CommonTestSteps.java:41)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:39)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+14 jan 08:09:58,079  SCREENSHOT getScreenShot  file:////C:\SAFSP\SafEbba\screenshot\POCSportTests\14_jan_2015_08_09_57_startSportOrder.pngC:\SAFSP\SafEbba\screenshot\POCSportTests\14_jan_2015_08_09_57_startSportOrder.png
+14 jan 08:09:58,079  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+14 jan 08:09:58,079  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+14 jan 08:11:48,001  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+14 jan 08:11:48,016  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+14 jan 08:11:48,016  
+****************************************************************
+**************TEST CASE, startSportOrder, ENDS**************
+***********************************************************
+
+14 jan 08:11:48,016  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+14 jan 08:12:24,032  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+14 jan 08:12:25,312  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+14 jan 08:12:26,249  
+****************************************************************
+**************TEST CASE, startSportOrder, ENDS**************
+***********************************************************
+
+14 jan 08:12:26,935  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+14 jan 08:13:46,124  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+14 jan 08:14:02,474  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+14 jan 08:15:15,219  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+14 jan 08:15:17,700  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+14 jan 08:18:45,296  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+14 jan 08:18:56,794  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+14 jan 08:54:12,163  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+14 jan 08:54:18,482  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+14 jan 10:34:33,193  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+14 jan 10:34:54,255  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+14 jan 10:35:51,243  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+14 jan 10:48:23,263  COMMONTESTSTEPS login 
+14 jan 10:49:33,930  LOGINPAGE fieldUserIDInsert 
+14 jan 10:52:24,892  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  org.openqa.selenium.WebDriverException: Missing parameter: id (WARNING: The server did not provide any stacktrace information)
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: RemoteWebDriver
+14 jan 10:55:32,939  LOGINPAGE fieldPasswordInsert 
+14 jan 10:56:00,474  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  org.openqa.selenium.WebDriverException: Missing parameter: id (WARNING: The server did not provide any stacktrace information)
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: RemoteWebDriver
+14 jan 10:58:57,021  LOGINPAGE buttonLogOnClick 
+14 jan 10:59:08,800  FINDWEBDRIVERELEMENT SwitchToFrameOrWindowByName  org.openqa.selenium.WebDriverException: Missing parameter: id (WARNING: The server did not provide any stacktrace information)
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: RemoteWebDriver
+14 jan 11:00:58,019  
+****************************************************************
+**************TEST CASE, startSportOrder, ENDS**************
+***********************************************************
+
+14 jan 11:00:58,019  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+14 jan 13:05:30,008  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+14 jan 13:05:43,721  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+14 jan 13:05:54,127  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+14 jan 13:06:13,645  COMMONTESTSTEPS login 
+14 jan 13:06:13,645  LOGINPAGE fieldUserIDInsert  xdstest1
+14 jan 13:06:55,268  LOGINPAGE fieldPasswordInsert  ******
+14 jan 13:07:36,906  LOGINPAGE buttonLogOnClick 
+15 jan 15:47:02,854  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+15 jan 15:47:08,193  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+15 jan 15:47:14,200  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+15 jan 15:48:12,528  COMMONTESTSTEPS login 
+15 jan 15:48:12,560  LOGINPAGE fieldUserIDInsert  xdstest1
+15 jan 15:49:26,037  LOGINPAGE fieldPasswordInsert  ******
+15 jan 15:50:26,203  LOGINPAGE buttonLogOnClick 
+15 jan 15:56:39,880  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.xpath: id('layoutContainers')/x:div[2]/x:div/x:div[1]/x:section/x:div[2]/x:form/x:input[2]
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@30db95a1' was found
+
+--------------STACK TRACE:--------------
+
+15 jan 15:56:39,896  java.lang.RuntimeException: No Element Was Found by: By.xpath: id('layoutContainers')/x:div[2]/x:div/x:div[1]/x:section/x:div[2]/x:form/x:input[2]
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@30db95a1' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:265)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementByXPath(FindWebDriverElement.java:113)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:219)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:206)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:195)
+	at windowAndPageMgn.pageMgn.Pages.LogInPage.buttonLogOnClick(LogInPage.java:18)
+	at commontestmanagement.CommonTestSteps.login(CommonTestSteps.java:33)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+15 jan 15:56:44,405  SCREENSHOT getScreenShot  file:////C:\SAFSP\SafEbba\screenshot\POCSportTests\15_jan_2015_15_56_39_startSportOrder.pngC:\SAFSP\SafEbba\screenshot\POCSportTests\15_jan_2015_15_56_39_startSportOrder.png
+15 jan 15:56:45,595  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+15 jan 15:56:45,689  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+15 jan 22:29:44,769  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+15 jan 22:30:19,115  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+15 jan 22:30:25,998  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+15 jan 22:32:16,573  COMMONTESTSTEPS login 
+15 jan 22:32:16,573  LOGINPAGE fieldUserIDInsert  xdstest1
+15 jan 22:32:58,555  LOGINPAGE fieldPasswordInsert  ******
+15 jan 22:33:40,526  LOGINPAGE buttonLogOnClick 
+15 jan 23:29:15,639  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+15 jan 23:29:20,211  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+15 jan 23:29:27,949  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+15 jan 23:32:41,158  COMMONTESTSTEPS login 
+15 jan 23:32:41,190  LOGINPAGE fieldUserIDInsert  xdstest1
+15 jan 23:33:25,790  LOGINPAGE fieldPasswordInsert  ******
+15 jan 23:35:16,395  LOGINPAGE buttonLogOnClick 
+15 jan 23:50:09,222  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+15 jan 23:50:16,586  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+15 jan 23:51:51,680  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+15 jan 23:52:00,552  COMMONTESTSTEPS login 
+15 jan 23:52:00,552  LOGINPAGE fieldUserIDInsert  xdstest1
+15 jan 23:52:59,206  LOGINPAGE fieldPasswordInsert  ******
+15 jan 23:53:43,651  LOGINPAGE buttonLogOnClick 
+16 jan 00:04:42,919  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.xpath: //input[@type,'submit')]
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@3b34c0a6' was found
+
+--------------STACK TRACE:--------------
+
+16 jan 00:04:42,919  java.lang.RuntimeException: No Element Was Found by: By.xpath: //input[@type,'submit')]
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@3b34c0a6' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:265)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementByXPath(FindWebDriverElement.java:113)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:219)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:206)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:195)
+	at windowAndPageMgn.pageMgn.Pages.LogInPage.buttonLogOnClick(LogInPage.java:20)
+	at commontestmanagement.CommonTestSteps.login(CommonTestSteps.java:33)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+16 jan 00:41:34,832  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 00:41:37,470  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 00:41:40,431  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 00:41:52,881  COMMONTESTSTEPS login 
+16 jan 00:41:52,881  LOGINPAGE fieldUserIDInsert  xdstest1
+16 jan 00:45:23,119  LOGINPAGE fieldPasswordInsert  ******
+16 jan 00:46:37,828  LOGINPAGE buttonLogOnClick 
+16 jan 00:49:33,795  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 00:49:41,946  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 00:49:44,349  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 00:49:55,669  COMMONTESTSTEPS login 
+16 jan 00:49:55,670  LOGINPAGE fieldUserIDInsert  xdstest1
+16 jan 00:51:08,896  LOGINPAGE fieldPasswordInsert  ******
+16 jan 00:53:42,396  LOGINPAGE buttonLogOnClick 
+16 jan 00:55:24,770  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.name: ivUser
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@11a4ea4f' was found
+
+--------------STACK TRACE:--------------
+
+16 jan 00:55:24,786  java.lang.RuntimeException: No Element Was Found by: By.name: ivUser
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@11a4ea4f' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:265)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementByName(FindWebDriverElement.java:72)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.InsertInToFieldByName(OperateOnWebDriverElement.java:98)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.InsertInToFieldByName(OperateOnWebDriverElement.java:89)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.InsertInToFieldByName(OperateOnWebDriverElement.java:77)
+	at windowAndPageMgn.pageMgn.Pages.LogInPage.buttonLogOnClick(LogInPage.java:19)
+	at commontestmanagement.CommonTestSteps.login(CommonTestSteps.java:33)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+16 jan 00:55:30,278  SCREENSHOT getScreenShot  file:////C:\SAFSP\SafEbba\screenshot\POCSportTests\16_jan_2015_00_55_24_startSportOrder.pngC:\SAFSP\SafEbba\screenshot\POCSportTests\16_jan_2015_00_55_24_startSportOrder.png
+16 jan 00:55:32,026  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+16 jan 00:55:32,105  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+16 jan 00:59:28,220  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 00:59:30,499  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 00:59:32,861  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 00:59:43,126  COMMONTESTSTEPS login 
+16 jan 00:59:43,126  LOGINPAGE fieldUserIDInsert  xdstest1
+16 jan 01:01:11,806  LOGINPAGE fieldPasswordInsert  ******
+16 jan 01:03:41,382  LOGINPAGE buttonLogOnClick 
+16 jan 01:55:48,389  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 01:55:48,389  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 01:55:48,404  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 01:55:55,940  COMMONTESTSTEPS login 
+16 jan 01:55:55,940  LOGINPAGE fieldUserIDInsert  xdstest1
+16 jan 01:56:37,274  LOGINPAGE fieldPasswordInsert  ******
+16 jan 01:57:18,152  LOGINPAGE buttonLogOnClick 
+16 jan 01:58:14,632  SALESPORTMAINPAGE tabStockRefillClick 
+16 jan 01:58:45,949  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.xpath: //span[@Text='Stock Refill']
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@d6089a5' was found
+
+--------------STACK TRACE:--------------
+
+16 jan 01:58:45,949  java.lang.RuntimeException: No Element Was Found by: By.xpath: //span[@Text='Stock Refill']
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@d6089a5' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:265)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementByXPath(FindWebDriverElement.java:113)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:219)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:206)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:195)
+	at windowAndPageMgn.pageMgn.Pages.SalesPortMainPage.tabStockRefillClick(SalesPortMainPage.java:14)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+16 jan 01:58:46,854  SCREENSHOT getScreenShot  file:////C:\SAFSP\SafEbba\screenshot\POCSportTests\16_jan_2015_01_58_45_startSportOrder.pngC:\SAFSP\SafEbba\screenshot\POCSportTests\16_jan_2015_01_58_45_startSportOrder.png
+16 jan 01:58:48,414  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+16 jan 01:58:48,430  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+16 jan 09:46:28,848  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 09:46:28,848  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 09:46:28,848  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 09:46:36,740  COMMONTESTSTEPS login 
+16 jan 09:46:36,740  LOGINPAGE fieldUserIDInsert  xdstest1
+16 jan 09:47:18,264  LOGINPAGE fieldPasswordInsert  ******
+16 jan 09:47:59,123  LOGINPAGE buttonLogOnClick 
+16 jan 09:48:48,232  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:48,357  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 09:48:49,121  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 09:48:49,121  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:49,246  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 09:48:49,715  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 09:48:49,715  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:50,105  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 09:48:50,510  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 09:48:50,510  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:50,807  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 09:48:51,213  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 09:48:51,213  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:51,322  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 09:48:51,852  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 09:48:51,852  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:52,274  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 09:48:53,132  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 09:48:53,132  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:53,257  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 09:48:54,006  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 09:48:54,006  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:54,115  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 09:48:54,505  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 09:48:54,505  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:54,802  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 09:48:54,942  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 09:48:54,942  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:55,176  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 09:48:55,332  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 09:48:55,332  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:55,535  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 09:48:55,645  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 09:48:55,645  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:55,708  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 09:48:55,957  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 09:48:55,957  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:56,066  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 09:48:56,269  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 09:48:57,594  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:57,689  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 09:48:58,079  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 09:48:58,079  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:58,172  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 09:48:58,546  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 09:48:58,546  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:58,811  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 09:48:59,233  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 09:48:59,233  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:59,311  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 09:48:59,655  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 09:48:59,655  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:48:59,732  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 09:49:00,076  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 09:49:00,076  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:00,170  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 09:49:00,560  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 09:49:00,560  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:00,809  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 09:49:00,950  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 09:49:00,950  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:01,028  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 09:49:01,355  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 09:49:01,355  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:01,715  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 09:49:02,307  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 09:49:02,307  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:02,572  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 09:49:02,932  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 09:49:02,932  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:03,026  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 09:49:03,415  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 09:49:03,415  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:03,696  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 09:49:04,149  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 09:49:04,149  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:04,227  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 09:49:04,555  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 09:49:05,864  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:06,208  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 09:49:06,614  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 09:49:06,614  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:06,707  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 09:49:07,097  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 09:49:07,097  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:07,441  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 09:49:07,909  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 09:49:07,909  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:08,018  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 09:49:08,470  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 09:49:08,470  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:08,830  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 09:49:09,298  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 09:49:09,298  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:09,703  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 09:49:10,219  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 09:49:10,219  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:10,577  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 09:49:11,030  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 09:49:11,030  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:11,140  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 09:49:11,639  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 09:49:11,639  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:11,997  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 09:49:12,450  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 09:49:12,450  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:12,779  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 09:49:13,247  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 09:49:13,247  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:13,340  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 09:49:14,182  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 09:49:14,182  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:14,277  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 09:49:14,698  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 09:49:14,698  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:14,979  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 09:49:15,181  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 09:49:16,304  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:16,414  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 09:49:16,742  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 09:49:16,742  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:16,976  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 09:49:17,147  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 09:49:17,147  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:17,412  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 09:49:17,881  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 09:49:17,881  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:18,255  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 09:49:18,738  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 09:49:18,738  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:18,849  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 09:49:19,566  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 09:49:19,566  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:19,644  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 09:49:20,018  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 09:49:20,018  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:20,347  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 09:49:20,534  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 09:49:20,534  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:20,799  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 09:49:21,298  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 09:49:21,298  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:21,673  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 09:49:22,172  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 09:49:22,172  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:22,562  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 09:49:22,734  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 09:49:22,734  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:22,984  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 09:49:23,264  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 09:49:23,264  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:23,327  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 09:49:23,483  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 09:49:23,483  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
+16 jan 09:49:23,732  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 09:49:24,207  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 09:49:24,721  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.xpath: //input[@type='submit']
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@3175ade6' was found
+
+--------------STACK TRACE:--------------
+
+16 jan 09:49:24,721  java.lang.RuntimeException: No Element Was Found by: By.xpath: //input[@type='submit']
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@3175ade6' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:265)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementByXPath(FindWebDriverElement.java:113)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:219)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:206)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:195)
+	at windowAndPageMgn.pageMgn.Pages.LogInPage.buttonLogOnClick(LogInPage.java:20)
+	at commontestmanagement.CommonTestSteps.login(CommonTestSteps.java:33)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+16 jan 09:49:26,156  SCREENSHOT getScreenShot  file:////C:\SAFSP\SafEbba\screenshot\POCSportTests\16_jan_2015_09_49_24_startSportOrder.pngC:\SAFSP\SafEbba\screenshot\POCSportTests\16_jan_2015_09_49_24_startSportOrder.png
+16 jan 09:49:27,716  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+16 jan 09:49:27,716  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
