@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: demoTestPackage.POCSportTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 179.119 sec <<< FAILURE! - in demoTestPackage.POCSportTests
-startSportOrder(demoTestPackage.POCSportTests)  Time elapsed: 178.868 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.192 sec <<< FAILURE! - in demoTestPackage.POCSportTests
+startSportOrder(demoTestPackage.POCSportTests)  Time elapsed: 0.779 sec  <<< ERROR!
 java.lang.Exception: TEST CASE FAILED
 	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:66)
 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)

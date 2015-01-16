@@ -1,6 +1,7 @@
 package appMgn;
 
 import java.awt.Toolkit;
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -14,6 +15,9 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+
+import commonFuncMgn.OtherFunctionality;
+import commonFuncMgn.ScreenShot;
 
 import configMgn.ConfigureSaf;
 
@@ -62,7 +66,11 @@ private WebDriver driver;
 					e.printStackTrace();
 				}
 			} else{
-				System.setProperty("webdriver.ie.driver","C:\\Dev\\Course\\PageFactoryInstantiateThePageObjectsAsPreCondition\\IEDriverServer.exe");
+				String path=OtherFunctionality.getFullPath("src\\main\\resources\\externaltools\\selenium");
+				
+				String iEDriverExeFilePath=path +"IEDriverServer.exe";
+				
+				System.setProperty("webdriver.ie.driver",iEDriverExeFilePath);
 				DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();   
 				capabilities.setJavascriptEnabled(true);
 				capabilities.setCapability("ACCEPT_SSL_CERTS", true);

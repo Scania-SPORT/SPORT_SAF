@@ -15,6 +15,7 @@ public class StockRefill extends CommonWindowsAndPages{
 	
 	
 	
+	
 	public void buttonNewStockRefillClick() {
 		SafLog.testStep();
 		operateOnWebDriverElement.clickAnElementById(BUTTON_NEW_STOCK_REFILL_ID);		

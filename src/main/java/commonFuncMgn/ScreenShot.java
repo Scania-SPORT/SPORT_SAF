@@ -35,7 +35,7 @@ public class ScreenShot extends OtherFunctionality{
 	/**
 	 * Create and return full path to folder, with ending backslash.
 	 */
-	static private String getFullPath(String folder) {
+	static public String getFullPath(String folder) {
 		SafLog.debug(folder);
 		String filePath;
 		try {

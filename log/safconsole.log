@@ -1364,3 +1364,1418 @@ No Element Was Found by: By.xpath: //input[@type='submit']
 ##############################################################
 ##############################################################
 
+16 jan 13:24:11,093  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 13:24:11,098  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 13:24:11,102  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 13:24:11,347  
+--------------ERROR MESSGE:--------------
+The driver executable does not exist: C:\Dev\Course\PageFactoryInstantiateThePageObjectsAsPreCondition\IEDriverServer.exe
+--------------STACK TRACE:--------------
+
+16 jan 13:24:11,349  java.lang.IllegalStateException: The driver executable does not exist: C:\Dev\Course\PageFactoryInstantiateThePageObjectsAsPreCondition\IEDriverServer.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:177)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
+	at org.openqa.selenium.ie.InternetExplorerDriverService.access$100(InternetExplorerDriverService.java:38)
+	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.build(InternetExplorerDriverService.java:230)
+	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:172)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:150)
+	at appMgn.StartWebDriver.createWebDriver(StartWebDriver.java:69)
+	at commontestmanagement.CommonTestSteps.StartTheWebApplication(CommonTestSteps.java:44)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+16 jan 13:24:11,867  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_13_24_11_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_13_24_11_startSportOrder.png
+16 jan 13:24:11,868  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+16 jan 13:24:11,882  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+16 jan 13:49:13,096  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 13:49:13,102  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 13:49:13,106  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 13:49:35,843  
+--------------ERROR MESSGE:--------------
+null
+--------------STACK TRACE:--------------
+
+16 jan 13:49:35,845  java.lang.NullPointerException
+	at appMgn.StartWebDriver.createWebDriver(StartWebDriver.java:67)
+	at commontestmanagement.CommonTestSteps.StartTheWebApplication(CommonTestSteps.java:44)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+16 jan 13:49:36,417  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_13_49_35_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_13_49_35_startSportOrder.png
+16 jan 13:49:36,419  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+16 jan 13:49:36,426  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+16 jan 13:50:50,735  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 13:50:50,746  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 13:50:50,749  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 13:57:51,269  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 13:57:51,273  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 13:57:51,276  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:00:11,735  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:00:11,745  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:00:11,748  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:02:29,264  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:02:29,269  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:02:29,271  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:04:17,925  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:04:17,929  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:04:17,933  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:06:14,413  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:06:14,418  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:06:14,422  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:06:36,769  COMMONTESTSTEPS login 
+16 jan 14:06:36,775  LOGINPAGE fieldUserIDInsert  xdstest1
+16 jan 14:07:23,556  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.id: userID
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@2ad1918a' was found
+
+--------------STACK TRACE:--------------
+
+16 jan 14:07:23,558  java.lang.RuntimeException: No Element Was Found by: By.id: userID
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@2ad1918a' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:265)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementById(FindWebDriverElement.java:99)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.InsertInToFieldById(OperateOnWebDriverElement.java:64)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.InsertInToFieldById(OperateOnWebDriverElement.java:55)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.InsertInToFieldById(OperateOnWebDriverElement.java:43)
+	at windowAndPageMgn.pageMgn.Pages.LogInPage.fieldUserIDInsert(LogInPage.java:26)
+	at commontestmanagement.CommonTestSteps.login(CommonTestSteps.java:31)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+16 jan 14:07:24,522  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_07_23_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_07_23_startSportOrder.png
+16 jan 14:07:25,595  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+16 jan 14:07:25,606  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+16 jan 14:07:58,345  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:07:58,349  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:07:58,352  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:08:08,858  COMMONTESTSTEPS login 
+16 jan 14:08:08,859  LOGINPAGE fieldUserIDInsert  xdstest1
+16 jan 14:08:49,831  LOGINPAGE fieldPasswordInsert  ******
+16 jan 14:09:31,097  LOGINPAGE buttonLogOnClick 
+16 jan 14:10:34,484  SALESPORTMAINPAGE tabStockRefillClick 
+16 jan 14:11:06,050  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.xpath: //span[@Text='Stock Refill']
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@1aa632be' was found
+
+--------------STACK TRACE:--------------
+
+16 jan 14:11:06,051  java.lang.RuntimeException: No Element Was Found by: By.xpath: //span[@Text='Stock Refill']
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@1aa632be' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:265)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementByXPath(FindWebDriverElement.java:113)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:219)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:206)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:195)
+	at windowAndPageMgn.pageMgn.Pages.SalesPortMainPage.tabStockRefillClick(SalesPortMainPage.java:14)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+16 jan 14:11:06,647  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_11_06_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_11_06_startSportOrder.png
+16 jan 14:11:07,668  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+16 jan 14:11:07,676  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+16 jan 14:16:52,083  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:16:52,090  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:16:52,094  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:17:31,492  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:17:31,497  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:17:31,500  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:17:35,055  COMMONTESTSTEPS login 
+16 jan 14:17:35,056  LOGINPAGE fieldUserIDInsert  xdstest1
+16 jan 14:18:16,160  LOGINPAGE fieldPasswordInsert  ******
+16 jan 14:18:57,313  LOGINPAGE buttonLogOnClick 
+16 jan 14:19:43,459  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:43,921  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 14:19:44,075  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 14:19:44,075  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:44,122  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 14:19:44,284  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 14:19:44,284  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:44,329  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 14:19:44,431  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 14:19:44,431  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:44,483  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 14:19:44,657  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 14:19:44,657  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:44,723  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 14:19:44,803  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 14:19:44,803  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:44,848  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 14:19:45,019  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 14:19:45,019  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:45,067  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 14:19:45,172  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 14:19:45,173  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:45,221  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 14:19:45,403  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 14:19:45,404  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:45,459  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 14:19:45,554  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 14:19:45,555  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:45,683  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 14:19:45,766  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 14:19:45,767  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:45,816  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 14:19:45,900  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 14:19:45,900  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:46,025  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 14:19:46,119  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 14:19:46,119  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:46,190  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 14:19:46,361  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 14:19:46,980  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:47,094  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 14:19:47,178  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 14:19:47,179  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:47,216  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 14:19:47,300  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 14:19:47,300  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:47,433  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 14:19:47,536  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 14:19:47,536  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:47,604  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 14:19:47,787  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 14:19:47,787  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:47,822  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 14:19:47,902  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 14:19:47,903  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:47,938  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 14:19:48,018  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 14:19:48,019  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:48,134  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 14:19:48,213  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 14:19:48,214  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:48,246  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 14:19:48,320  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 14:19:48,321  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:48,355  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 14:19:48,975  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 14:19:48,975  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:49,047  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 14:19:49,131  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 14:19:49,132  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:49,166  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 14:19:49,330  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 14:19:49,331  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:49,365  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 14:19:49,458  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 14:19:49,459  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:49,494  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 14:19:49,666  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 14:19:50,395  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:50,430  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 14:19:50,507  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 14:19:50,507  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:50,544  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 14:19:50,623  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 14:19:50,624  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:50,751  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 14:19:50,831  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 14:19:50,832  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:50,870  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 14:19:50,959  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 14:19:50,959  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:50,999  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 14:19:51,189  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 14:19:51,190  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:51,224  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 14:19:51,311  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 14:19:51,312  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:51,348  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 14:19:51,506  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 14:19:51,506  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:51,539  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 14:19:51,618  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 14:19:51,618  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:51,689  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 14:19:51,857  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 14:19:51,858  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:51,892  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 14:19:51,980  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 14:19:51,981  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:52,019  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 14:19:52,214  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 14:19:52,215  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:52,250  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 14:19:52,349  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 14:19:52,349  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:52,400  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 14:19:52,607  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 14:19:53,379  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:53,422  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 14:19:54,009  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 14:19:54,009  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:54,045  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 14:19:54,128  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 14:19:54,128  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:54,180  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 14:19:54,400  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 14:19:54,400  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:54,439  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 14:19:54,551  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 14:19:54,551  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:54,607  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 14:19:54,789  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 14:19:54,789  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:54,830  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 14:19:54,909  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 14:19:54,909  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:54,952  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 14:19:55,151  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 14:19:55,151  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:55,184  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 14:19:55,277  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 14:19:55,277  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:55,320  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 14:19:55,510  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 14:19:55,511  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:55,549  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 14:19:55,645  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 14:19:55,645  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:55,691  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 14:19:55,888  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 14:19:55,888  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:55,949  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 14:19:56,024  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 14:19:56,024  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:56,151  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 14:19:56,238  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 14:19:56,956  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:56,998  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 14:19:57,074  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 14:19:57,074  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:57,113  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 14:19:57,316  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 14:19:57,317  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:57,351  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 14:19:57,452  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 14:19:57,453  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:57,601  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 14:19:57,696  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 14:19:57,696  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:57,729  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 14:19:57,809  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 14:19:57,809  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:57,932  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 14:19:58,012  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 14:19:58,012  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:58,049  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 14:19:58,127  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 14:19:58,127  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:58,163  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 14:19:58,311  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 14:19:58,311  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:58,346  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 14:19:58,427  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 14:19:58,427  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:58,463  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 14:19:59,012  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 14:19:59,012  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:59,068  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 14:19:59,207  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 14:19:59,207  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:59,246  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 14:19:59,413  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 14:19:59,413  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:19:59,454  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 14:19:59,542  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 14:20:00,307  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:00,444  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 14:20:00,532  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 14:20:00,532  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:00,566  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 14:20:00,648  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 14:20:00,648  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:00,684  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 14:20:00,842  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 14:20:00,842  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:00,882  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 14:20:00,977  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 14:20:00,977  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:01,016  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 14:20:01,170  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 14:20:01,170  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:01,203  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 14:20:01,279  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 14:20:01,280  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:01,313  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 14:20:01,480  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 14:20:01,480  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:01,519  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 14:20:01,607  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 14:20:01,607  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:01,676  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 14:20:01,837  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 14:20:01,837  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:01,874  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 14:20:01,954  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 14:20:01,954  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:01,997  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 14:20:02,182  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 14:20:02,183  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:02,219  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 14:20:02,294  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 14:20:02,294  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:02,329  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 14:20:02,410  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 14:20:03,096  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:03,212  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 14:20:03,294  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 14:20:03,294  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:03,332  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 14:20:03,408  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 14:20:03,409  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:03,445  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 14:20:04,029  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 14:20:04,029  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:04,063  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 14:20:04,140  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 14:20:04,140  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:04,186  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 14:20:04,383  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 14:20:04,383  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:04,436  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 14:20:04,514  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 14:20:04,514  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:04,566  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 14:20:04,727  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 14:20:04,727  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:04,762  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 14:20:04,839  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 14:20:04,839  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:04,873  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 14:20:05,037  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 14:20:05,037  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:05,076  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 14:20:05,154  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 14:20:05,154  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:05,191  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 14:20:05,276  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 14:20:05,276  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:05,414  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 14:20:05,506  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 14:20:05,506  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:05,543  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 14:20:05,766  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 14:20:06,512  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:06,549  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 14:20:06,626  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 14:20:06,626  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:06,660  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 14:20:06,738  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 14:20:06,738  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:06,863  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 14:20:06,956  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 14:20:06,956  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:06,998  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 14:20:07,094  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 14:20:07,094  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:07,209  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 14:20:07,288  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 14:20:07,289  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:07,330  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 14:20:07,408  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 14:20:07,408  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:07,443  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 14:20:07,627  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 14:20:07,627  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:07,659  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 14:20:07,736  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 14:20:07,736  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:07,770  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 14:20:07,936  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 14:20:07,936  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:07,970  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 14:20:08,052  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 14:20:08,052  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:08,087  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 14:20:08,169  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 14:20:08,169  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:08,276  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 14:20:08,368  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 14:20:08,369  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:08,435  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 14:20:09,043  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 14:20:09,785  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:09,838  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 14:20:09,928  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 14:20:09,929  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:09,964  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 14:20:10,123  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 14:20:10,124  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:10,160  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 14:20:10,236  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 14:20:10,236  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:10,272  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 14:20:10,428  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 14:20:10,429  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:10,473  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 14:20:10,553  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 14:20:10,553  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:10,590  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 14:20:10,680  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 14:20:10,681  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:10,796  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 14:20:10,892  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 14:20:10,893  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:10,932  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 14:20:11,026  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 14:20:11,026  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:11,172  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 14:20:11,260  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 14:20:11,260  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:11,294  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 14:20:11,380  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 14:20:11,380  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:11,414  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 14:20:11,590  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 14:20:11,590  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:11,623  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 14:20:11,861  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 14:20:11,861  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:11,894  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 14:20:11,989  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 14:20:12,668  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:12,703  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 14:20:12,879  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 14:20:12,879  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:12,917  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 14:20:12,995  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 14:20:12,995  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:13,033  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 14:20:13,136  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 14:20:13,136  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:13,257  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 14:20:13,336  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 14:20:13,337  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:13,381  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 14:20:13,463  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 14:20:13,464  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:14,022  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 14:20:14,108  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 14:20:14,108  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:14,185  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 14:20:14,410  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 14:20:14,411  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:14,445  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 14:20:14,528  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 14:20:14,529  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:14,570  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 14:20:14,648  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 14:20:14,648  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:14,762  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 14:20:14,847  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 14:20:14,847  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:14,881  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 14:20:14,957  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 14:20:14,957  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:14,990  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 14:20:15,166  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 14:20:15,166  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@66b51404
+16 jan 14:20:15,203  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 14:20:15,294  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 14:20:15,795  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.xpath: //input[@type='submit']
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@66b51404' was found
+
+--------------STACK TRACE:--------------
+
+16 jan 14:20:15,796  java.lang.RuntimeException: No Element Was Found by: By.xpath: //input[@type='submit']
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@66b51404' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:265)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementByXPath(FindWebDriverElement.java:113)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:219)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:206)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:195)
+	at windowAndPageMgn.pageMgn.Pages.LogInPage.buttonLogOnClick(LogInPage.java:20)
+	at commontestmanagement.CommonTestSteps.login(CommonTestSteps.java:33)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+16 jan 14:20:16,287  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_20_15_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_20_15_startSportOrder.png
+16 jan 14:20:17,823  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+16 jan 14:20:17,835  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+16 jan 14:21:01,687  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:21:01,694  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:21:01,698  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:21:19,452  COMMONTESTSTEPS login 
+16 jan 14:21:19,459  LOGINPAGE fieldUserIDInsert  xdstest1
+16 jan 14:22:00,538  LOGINPAGE fieldPasswordInsert  ******
+16 jan 14:22:41,602  LOGINPAGE buttonLogOnClick 
+16 jan 14:27:54,072  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@70bdd2e7
+16 jan 14:27:54,128  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 14:27:54,349  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 14:27:54,349  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@70bdd2e7
+16 jan 14:27:58,554  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 14:27:58,736  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 14:27:58,737  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@70bdd2e7
+16 jan 14:27:58,797  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 14:27:58,891  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 14:27:58,892  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@70bdd2e7
+16 jan 14:27:58,953  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 14:27:59,119  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 14:27:59,120  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@70bdd2e7
+16 jan 14:27:59,180  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 14:27:59,275  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 14:27:59,276  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@70bdd2e7
+16 jan 14:27:59,456  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 14:27:59,550  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 14:27:59,551  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@70bdd2e7
+16 jan 14:27:59,619  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 14:27:59,801  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 14:27:59,802  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@70bdd2e7
+16 jan 14:27:59,858  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 14:27:59,971  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 14:27:59,972  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@70bdd2e7
+16 jan 14:28:00,126  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 14:28:00,221  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 14:28:00,222  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@70bdd2e7
+16 jan 14:28:00,285  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 14:28:00,382  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 14:28:00,384  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@70bdd2e7
+16 jan 14:28:00,523  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 14:28:00,616  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 14:28:00,617  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@70bdd2e7
+16 jan 14:28:00,675  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 14:28:01,278  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 14:28:01,279  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@70bdd2e7
+16 jan 14:28:01,338  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 14:28:01,429  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 14:31:14,309  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:31:14,313  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:31:14,317  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:31:20,493  COMMONTESTSTEPS login 
+16 jan 14:31:20,494  LOGINPAGE fieldUserIDInsert  xdstest1
+16 jan 14:32:01,453  LOGINPAGE fieldPasswordInsert  ******
+16 jan 14:32:42,495  LOGINPAGE buttonLogOnClick 
+16 jan 14:38:30,279  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@4838462a
+16 jan 14:38:30,346  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+16 jan 14:38:30,593  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+16 jan 14:38:30,594  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@4838462a
+16 jan 14:38:30,660  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+16 jan 14:38:30,748  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+16 jan 14:38:30,749  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@4838462a
+16 jan 14:38:30,809  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
+16 jan 14:38:31,030  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
+16 jan 14:38:31,031  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@4838462a
+16 jan 14:38:31,090  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
+16 jan 14:38:31,325  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
+16 jan 14:38:31,326  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@4838462a
+16 jan 14:38:31,381  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
+16 jan 14:38:31,470  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
+16 jan 14:38:31,471  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@4838462a
+16 jan 14:38:31,529  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
+16 jan 14:38:31,701  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
+16 jan 14:38:31,702  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@4838462a
+16 jan 14:38:31,761  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
+16 jan 14:38:31,851  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
+16 jan 14:38:31,852  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@4838462a
+16 jan 14:38:31,912  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
+16 jan 14:38:32,106  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
+16 jan 14:38:32,107  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@4838462a
+16 jan 14:38:32,168  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
+16 jan 14:38:32,265  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
+16 jan 14:38:32,266  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@4838462a
+16 jan 14:38:32,393  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
+16 jan 14:38:32,495  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
+16 jan 14:38:32,496  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@4838462a
+16 jan 14:38:32,578  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
+16 jan 14:38:32,744  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
+16 jan 14:38:32,745  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@4838462a
+16 jan 14:38:32,797  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
+16 jan 14:38:32,890  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
+16 jan 14:38:32,891  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@4838462a
+16 jan 14:38:32,953  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
+16 jan 14:38:33,153  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
+16 jan 14:39:31,889  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:39:31,893  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:39:31,896  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:40:16,643  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:40:16,651  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:40:16,656  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:42:14,862  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:42:14,869  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:42:14,871  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:42:15,421  
+--------------ERROR MESSGE:--------------
+org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
+--------------STACK TRACE:--------------
+
+16 jan 14:42:15,422  java.lang.NoSuchMethodError: org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
+	at org.openqa.selenium.firefox.FirefoxDriver.dropCapabilities(FirefoxDriver.java:313)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at appMgn.StartWebDriver.createWebDriver(StartWebDriver.java:55)
+	at commontestmanagement.CommonTestSteps.StartTheWebApplication(CommonTestSteps.java:44)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+16 jan 14:42:15,838  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_42_15_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_42_15_startSportOrder.png
+16 jan 14:42:15,838  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+16 jan 14:42:15,847  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+16 jan 14:43:45,383  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:43:45,388  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:43:45,390  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:43:45,766  
+--------------ERROR MESSGE:--------------
+org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
+--------------STACK TRACE:--------------
+
+16 jan 14:43:45,767  java.lang.NoSuchMethodError: org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
+	at org.openqa.selenium.firefox.FirefoxDriver.dropCapabilities(FirefoxDriver.java:313)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at appMgn.StartWebDriver.createWebDriver(StartWebDriver.java:55)
+	at commontestmanagement.CommonTestSteps.StartTheWebApplication(CommonTestSteps.java:44)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+16 jan 14:43:46,202  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_43_45_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_43_45_startSportOrder.png
+16 jan 14:43:46,203  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+16 jan 14:43:46,214  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+16 jan 14:43:55,372  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:43:55,378  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:43:55,381  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:43:55,490  
+--------------ERROR MESSGE:--------------
+org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
+--------------STACK TRACE:--------------
+
+16 jan 14:43:55,491  java.lang.NoSuchMethodError: org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
+	at org.openqa.selenium.firefox.FirefoxDriver.dropCapabilities(FirefoxDriver.java:313)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at appMgn.StartWebDriver.createWebDriver(StartWebDriver.java:55)
+	at commontestmanagement.CommonTestSteps.StartTheWebApplication(CommonTestSteps.java:44)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+16 jan 14:43:56,162  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_43_55_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_43_55_startSportOrder.png
+16 jan 14:43:56,163  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+16 jan 14:43:56,167  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+16 jan 14:45:15,867  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:45:15,876  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:45:15,881  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:45:16,116  
+--------------ERROR MESSGE:--------------
+org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
+--------------STACK TRACE:--------------
+
+16 jan 14:45:16,121  java.lang.NoSuchMethodError: org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
+	at org.openqa.selenium.firefox.FirefoxDriver.dropCapabilities(FirefoxDriver.java:313)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at appMgn.StartWebDriver.createWebDriver(StartWebDriver.java:55)
+	at commontestmanagement.CommonTestSteps.StartTheWebApplication(CommonTestSteps.java:44)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+16 jan 14:45:18,994  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_45_16_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_45_16_startSportOrder.png
+16 jan 14:45:18,995  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+16 jan 14:45:19,003  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+16 jan 14:45:58,267  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 14:45:58,275  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 14:45:58,279  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 14:49:43,453  
+--------------ERROR MESSGE:--------------
+org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
+--------------STACK TRACE:--------------
+
+16 jan 14:49:43,457  java.lang.NoSuchMethodError: org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
+	at org.openqa.selenium.firefox.FirefoxDriver.dropCapabilities(FirefoxDriver.java:313)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at appMgn.StartWebDriver.createWebDriver(StartWebDriver.java:55)
+	at commontestmanagement.CommonTestSteps.StartTheWebApplication(CommonTestSteps.java:44)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+16 jan 14:49:46,223  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_49_43_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_14_49_43_startSportOrder.png
+16 jan 14:49:46,224  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+16 jan 14:49:46,231  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+16 jan 15:12:25,133  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 15:12:25,175  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 15:12:25,183  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 15:12:41,338  
+--------------ERROR MESSGE:--------------
+org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
+--------------STACK TRACE:--------------
+
+16 jan 15:12:41,345  java.lang.NoSuchMethodError: org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
+	at org.openqa.selenium.firefox.FirefoxDriver.dropCapabilities(FirefoxDriver.java:313)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at appMgn.StartWebDriver.createWebDriver(StartWebDriver.java:55)
+	at commontestmanagement.CommonTestSteps.StartTheWebApplication(CommonTestSteps.java:44)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+16 jan 15:12:44,162  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_15_12_41_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_15_12_41_startSportOrder.png
+16 jan 15:12:44,163  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+16 jan 15:12:44,174  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+16 jan 15:26:50,565  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+16 jan 15:26:50,570  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+16 jan 15:26:50,574  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 15:26:50,697  
+--------------ERROR MESSGE:--------------
+org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
+--------------STACK TRACE:--------------
+
+16 jan 15:26:50,700  java.lang.NoSuchMethodError: org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
+	at org.openqa.selenium.firefox.FirefoxDriver.dropCapabilities(FirefoxDriver.java:313)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at appMgn.StartWebDriver.createWebDriver(StartWebDriver.java:55)
+	at commontestmanagement.CommonTestSteps.StartTheWebApplication(CommonTestSteps.java:44)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+16 jan 15:26:51,341  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_15_26_50_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_15_26_50_startSportOrder.png
+16 jan 15:26:51,341  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+16 jan 15:26:51,350  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+

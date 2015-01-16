@@ -1,5 +1,8 @@
 package commonFuncMgn;
 
+import java.io.File;
+import java.io.IOException;
+
 import logMgn.SafLog;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -28,6 +31,21 @@ public abstract class OtherFunctionality extends ReadInputDataFromFile{
 		} catch (Exception e) {
 			SafLog.debug("Thread sleep error " + e);
 		}
+	}
+	
+	
+	
+	static public String getFullPath(String folder) {
+		SafLog.debug(folder);
+		String filePath;
+		try {
+			// Get the dir path
+			File directory = new File(".");
+			filePath = directory.getCanonicalPath() +"\\" + folder + "\\";			
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+		return filePath;
 	}
 
 	/**Execute the java script, scriptToExecute, on the site driver, e.g. to simulate an action that cannot be achieved by a webdriver action.

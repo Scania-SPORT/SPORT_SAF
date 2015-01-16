@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="demoTestPackage.POCSportTests" time="178.868" tests="1" errors="1" skipped="0" failures="0">
+<testsuite name="demoTestPackage.POCSportTests" time="0.779" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_45\jre\bin"/>
@@ -14,35 +14,34 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\SAFSP\SafEbba"/>
+    <property name="user.dir" value="C:\GitFiles\client\sport\sport-test\src\main\SafSport"/>
     <property name="java.runtime.version" value="1.6.0_45-b06"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_45\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\gkhekp\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\aswtwz\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Dev\SAFSales\.metadata\.plugins\org.eclipse.m2e.core\launches\m2conf8997644817528277482.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\aswtwz\Sport\.metadata\.plugins\org.eclipse.m2e.core\launches\m2conf1880635351314677178.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.6.0_45\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Perforce;C:\Program Files (x86)\Perforce;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Java\jdk1.6.0_45\bin;C:\tool\apache-maven-3.1.1\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Program Files (x86)\Silk\SilkTest;C:\Program Files (x86)\Silk\SilkTest\ng\gui;C:\tool\NuGet.exe;C:\Program Files (x86)\VMware\CobraWinLDTP\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Users\gkhekp\Downloads\ikvmbin-7.2.4630.5\ikvm-7.2.4630.5\bin;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\;C:\Program Files (x86)\Subversion\bin;C:\Program Files\doxygen\bin;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Microsoft Team Foundation Server 2012 Power Tools\;C:\Program Files (x86)\Microsoft Team Foundation Server 2012 Power Tools\Best Practices Analyzer\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Dev\sik\package1\libs;C:\Users\gkhekp\Downloads\libs;C:\Program Files (x86)\Sikuli X\libs;C:\Program Files\Java\jdk1.6.0_45/bin;C:\Program Files (x86)\Sikuli X\libs;C:\Program Files (x86)\Java\jre6\\bin;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE TF.exe;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files (x86)/Java/jre1.8.0_25/bin/client;C:/Program Files (x86)/Java/jre1.8.0_25/bin;C:/Program Files (x86)/Java/jre1.8.0_25/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Oracle\InstantClient11g\;C:\Oracle\InstantClient11g.32\;C:\Oracle\InstantClient11g\bin\;C:\Program Files\Perforce;C:\Program Files (x86)\Perforce;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;;C:\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="50.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="6.1"/>
-    <property name="user.home" value="\\global.scd.scania.com\home\se\121\gkhekp"/>
+    <property name="user.home" value="\\global.scd.scania.com\home\se\121\aswtwz"/>
     <property name="user.timezone" value="Europe/Berlin"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.specification.version" value="1.6"/>
-    <property name="user.name" value="GKHEKP"/>
-    <property name="java.class.path" value="C:\tool\apache-maven-3.1.1\boot\plexus-classworlds-2.5.1.jar"/>
-    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="debug"/>
+    <property name="user.name" value="aswtwz"/>
+    <property name="java.class.path" value="C:\tools\apache-maven-3.2.5-bin\apache-maven-3.2.5\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.6.0_45\jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -B -X clean install -U"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -B clean install"/>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.language" value="sv"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -51,7 +50,7 @@
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.6.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.6.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_45\jre\lib\modules\jdk.boot.jar;C:\Program Files\Java\jdk1.6.0_45\jre\classes"/>
     <property name="java.vendor" value="Sun Microsystems Inc."/>
-    <property name="maven.home" value="C:\tool\apache-maven-3.1.1"/>
+    <property name="maven.home" value="C:\tools\apache-maven-3.2.5-bin\apache-maven-3.2.5"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -59,7 +58,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="startSportOrder" classname="demoTestPackage.POCSportTests" time="178.868">
+  <testcase name="startSportOrder" classname="demoTestPackage.POCSportTests" time="0.779">
     <error message="TEST CASE FAILED" type="java.lang.Exception">java.lang.Exception: TEST CASE FAILED
 	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:66)
 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
@@ -82,195 +81,31 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </error>
-    <system-out><![CDATA[16 jan 09:46:28,848  
+    <system-out><![CDATA[16 jan 15:26:50,565  
 ##############################################################
 ##############################################################
 ################TEST CLASS POCSPORTTESTS STARTS#################
 ##############################################################
 ##############################################################
 
-16 jan 09:46:28,848  
+16 jan 15:26:50,570  
 ****************************************************************
 **************TEST CASE, startSportOrder, STARTS**************
-16 jan 09:46:28,848  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
-16 jan 09:46:36,740  COMMONTESTSTEPS login 
-16 jan 09:46:36,740  LOGINPAGE fieldUserIDInsert  xdstest1
-16 jan 09:47:18,264  LOGINPAGE fieldPasswordInsert  ******
-16 jan 09:47:59,123  LOGINPAGE buttonLogOnClick 
-16 jan 09:48:48,232  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:48,357  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
-16 jan 09:48:49,121  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
-16 jan 09:48:49,121  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:49,246  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
-16 jan 09:48:49,715  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
-16 jan 09:48:49,715  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:50,105  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
-16 jan 09:48:50,510  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
-16 jan 09:48:50,510  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:50,807  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
-16 jan 09:48:51,213  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
-16 jan 09:48:51,213  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:51,322  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
-16 jan 09:48:51,852  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
-16 jan 09:48:51,852  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:52,274  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
-16 jan 09:48:53,132  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
-16 jan 09:48:53,132  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:53,257  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
-16 jan 09:48:54,006  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
-16 jan 09:48:54,006  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:54,115  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
-16 jan 09:48:54,505  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
-16 jan 09:48:54,505  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:54,802  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
-16 jan 09:48:54,942  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
-16 jan 09:48:54,942  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:55,176  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
-16 jan 09:48:55,332  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
-16 jan 09:48:55,332  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:55,535  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
-16 jan 09:48:55,645  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
-16 jan 09:48:55,645  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:55,708  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
-16 jan 09:48:55,957  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
-16 jan 09:48:55,957  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:56,066  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
-16 jan 09:48:56,269  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
-16 jan 09:48:57,594  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:57,689  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
-16 jan 09:48:58,079  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
-16 jan 09:48:58,079  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:58,172  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
-16 jan 09:48:58,546  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
-16 jan 09:48:58,546  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:58,811  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
-16 jan 09:48:59,233  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
-16 jan 09:48:59,233  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:59,311  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
-16 jan 09:48:59,655  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
-16 jan 09:48:59,655  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:48:59,732  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
-16 jan 09:49:00,076  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
-16 jan 09:49:00,076  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:00,170  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
-16 jan 09:49:00,560  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
-16 jan 09:49:00,560  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:00,809  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
-16 jan 09:49:00,950  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
-16 jan 09:49:00,950  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:01,028  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
-16 jan 09:49:01,355  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
-16 jan 09:49:01,355  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:01,715  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
-16 jan 09:49:02,307  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
-16 jan 09:49:02,307  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:02,572  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
-16 jan 09:49:02,932  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
-16 jan 09:49:02,932  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:03,026  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
-16 jan 09:49:03,415  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
-16 jan 09:49:03,415  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:03,696  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
-16 jan 09:49:04,149  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
-16 jan 09:49:04,149  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:04,227  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
-16 jan 09:49:04,555  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
-16 jan 09:49:05,864  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:06,208  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
-16 jan 09:49:06,614  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
-16 jan 09:49:06,614  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:06,707  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
-16 jan 09:49:07,097  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
-16 jan 09:49:07,097  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:07,441  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
-16 jan 09:49:07,909  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
-16 jan 09:49:07,909  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:08,018  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
-16 jan 09:49:08,470  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
-16 jan 09:49:08,470  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:08,830  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
-16 jan 09:49:09,298  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
-16 jan 09:49:09,298  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:09,703  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
-16 jan 09:49:10,219  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
-16 jan 09:49:10,219  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:10,577  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
-16 jan 09:49:11,030  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
-16 jan 09:49:11,030  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:11,140  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
-16 jan 09:49:11,639  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
-16 jan 09:49:11,639  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:11,997  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
-16 jan 09:49:12,450  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
-16 jan 09:49:12,450  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:12,779  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
-16 jan 09:49:13,247  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
-16 jan 09:49:13,247  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:13,340  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
-16 jan 09:49:14,182  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
-16 jan 09:49:14,182  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:14,277  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
-16 jan 09:49:14,698  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
-16 jan 09:49:14,698  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:14,979  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
-16 jan 09:49:15,181  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
-16 jan 09:49:16,304  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:16,414  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
-16 jan 09:49:16,742  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
-16 jan 09:49:16,742  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:16,976  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
-16 jan 09:49:17,147  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
-16 jan 09:49:17,147  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:17,412  FINDWEBDRIVERELEMENT$1 apply  Tag name element_2: input
-16 jan 09:49:17,881  FINDWEBDRIVERELEMENT$1 apply  Text element_2: 
-16 jan 09:49:17,881  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:18,255  FINDWEBDRIVERELEMENT$1 apply  Tag name element_3: input
-16 jan 09:49:18,738  FINDWEBDRIVERELEMENT$1 apply  Text element_3: 
-16 jan 09:49:18,738  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:18,849  FINDWEBDRIVERELEMENT$1 apply  Tag name element_4: input
-16 jan 09:49:19,566  FINDWEBDRIVERELEMENT$1 apply  Text element_4: 
-16 jan 09:49:19,566  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:19,644  FINDWEBDRIVERELEMENT$1 apply  Tag name element_5: input
-16 jan 09:49:20,018  FINDWEBDRIVERELEMENT$1 apply  Text element_5: 
-16 jan 09:49:20,018  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:20,347  FINDWEBDRIVERELEMENT$1 apply  Tag name element_6: input
-16 jan 09:49:20,534  FINDWEBDRIVERELEMENT$1 apply  Text element_6: 
-16 jan 09:49:20,534  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:20,799  FINDWEBDRIVERELEMENT$1 apply  Tag name element_7: input
-16 jan 09:49:21,298  FINDWEBDRIVERELEMENT$1 apply  Text element_7: 
-16 jan 09:49:21,298  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:21,673  FINDWEBDRIVERELEMENT$1 apply  Tag name element_8: input
-16 jan 09:49:22,172  FINDWEBDRIVERELEMENT$1 apply  Text element_8: 
-16 jan 09:49:22,172  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:22,562  FINDWEBDRIVERELEMENT$1 apply  Tag name element_9: input
-16 jan 09:49:22,734  FINDWEBDRIVERELEMENT$1 apply  Text element_9: 
-16 jan 09:49:22,734  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:22,984  FINDWEBDRIVERELEMENT$1 apply  Tag name element_10: input
-16 jan 09:49:23,264  FINDWEBDRIVERELEMENT$1 apply  Text element_10: 
-16 jan 09:49:23,264  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:23,327  FINDWEBDRIVERELEMENT$1 apply  Tag name element_11: input
-16 jan 09:49:23,483  FINDWEBDRIVERELEMENT$1 apply  Text element_11: 
-16 jan 09:49:23,483  FINDWEBDRIVERELEMENT$1 apply  13 elements were found [Lorg.openqa.selenium.By;@3175ade6
-16 jan 09:49:23,732  FINDWEBDRIVERELEMENT$1 apply  Tag name element_12: input
-16 jan 09:49:24,207  FINDWEBDRIVERELEMENT$1 apply  Text element_12: 
-16 jan 09:49:24,721  
+16 jan 15:26:50,574  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+16 jan 15:26:50,697  
 --------------ERROR MESSGE:--------------
-No Element Was Found by: By.xpath: //input[@type='submit']
- EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@3175ade6' was found
-
+org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
 --------------STACK TRACE:--------------
 
-16 jan 09:49:24,721  java.lang.RuntimeException: No Element Was Found by: By.xpath: //input[@type='submit']
- EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@3175ade6' was found
-
-	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:265)
-	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementByXPath(FindWebDriverElement.java:113)
-	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:219)
-	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:206)
-	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:195)
-	at windowAndPageMgn.pageMgn.Pages.LogInPage.buttonLogOnClick(LogInPage.java:20)
-	at commontestmanagement.CommonTestSteps.login(CommonTestSteps.java:33)
-	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:27)
+16 jan 15:26:50,700  java.lang.NoSuchMethodError: org.openqa.selenium.Proxy.extractFrom(Lorg/openqa/selenium/Capabilities;)Lorg/openqa/selenium/Proxy;
+	at org.openqa.selenium.firefox.FirefoxDriver.dropCapabilities(FirefoxDriver.java:313)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at appMgn.StartWebDriver.createWebDriver(StartWebDriver.java:55)
+	at commontestmanagement.CommonTestSteps.StartTheWebApplication(CommonTestSteps.java:44)
+	at demoTestPackage.POCSportTests.preCondtion(POCSportTests.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -301,16 +136,12 @@ No Element Was Found by: By.xpath: //input[@type='submit']
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-16 jan 09:49:26,156  SCREENSHOT getScreenShot  file:////C:\SAFSP\SafEbba\screenshot\POCSportTests\16_jan_2015_09_49_24_startSportOrder.pngC:\SAFSP\SafEbba\screenshot\POCSportTests\16_jan_2015_09_49_24_startSportOrder.png
-16 jan 09:49:27,716  
+16 jan 15:26:51,341  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_15_26_50_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\16_jan_2015_15_26_50_startSportOrder.png
+16 jan 15:26:51,341  
 ****************************************************************
 **************TEST CASE, STARTSPORTORDER FAILED**************
 ***********************************************************
 
 ]]></system-out>
-    <system-err><![CDATA[Started InternetExplorerDriver server (64-bit)
-2.39.0.0
-Listening on port 15917
-]]></system-err>
   </testcase>
 </testsuite>
