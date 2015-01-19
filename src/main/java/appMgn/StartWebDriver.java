@@ -1,20 +1,31 @@
 package appMgn;
 
+
 import java.awt.Toolkit;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.internal.ProfilesIni;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
 import logMgn.SafLog;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+
 
 import commonFuncMgn.OtherFunctionality;
 import commonFuncMgn.ScreenShot;
@@ -54,6 +65,31 @@ private WebDriver driver;
 			} else
 				driver = new FirefoxDriver(/*profile*/);
 		}
+		
+		// ////////////////////////////////////////////////////
+		// ////////////////CHROME DRIVER//////////////////////
+		if (ConfigureSaf.SAF_DRIVER.contentEquals(OtherParameters.CHROMEDRIVER)) {
+			// driver= new FirefoxDriver(profile);
+			if (ConfigureSaf.SAF_GRID) {
+
+				try {
+					driver = new RemoteWebDriver(new URL("http://ip-0a31350c:4444/wd/hub"),DesiredCapabilities.chrome());
+				} catch (MalformedURLException e) {
+					e.printStackTrace();
+				}
+			} else{
+				String path=OtherFunctionality.getFullPath("src\\main\\resources\\externaltools\\selenium");
+			
+			String chromeDriverExeFilePath=path +"chromedriver.exe";
+			
+			System.setProperty("webdriver.chrome.driver",chromeDriverExeFilePath);
+			ChromeOptions options = new ChromeOptions();
+	        options.addArguments("--test-type");  
+	        options.addArguments("start-maximized");
+				driver = new ChromeDriver(options);
+			}
+		}
+		
 		//////////////////////////////////////////////////////
 		//////////////////INTERNET EXPLORER DRIVER//////////////////////
 		if (ConfigureSaf.SAF_DRIVER.contentEquals(OtherParameters.INTERNETEXPLORERDRIVER)) {
@@ -116,3 +152,4 @@ private WebDriver driver;
         driver.get(uRLForSiteToOpen);
     }
 }
+

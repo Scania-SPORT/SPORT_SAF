@@ -6,6 +6,7 @@ import logMgn.SafLog;
 public class OtherParameters{
 	/**Drivers parameter*/
 	public static final String FIREFOXDRIVER="FirefoxDriver";
+	public static final String  CHROMEDRIVER="ChromeDriver";
 	public static final String INTERNETEXPLORERDRIVER="InternetExplorerDriver";
 	public static final String HTMLUNITDRIVER="HtmlUnitDriver";
 
