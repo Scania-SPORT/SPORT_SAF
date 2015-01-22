@@ -2,6 +2,8 @@ package commonFuncMgn;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 import logMgn.SafLog;
 
@@ -46,6 +48,16 @@ public abstract class OtherFunctionality extends ReadInputDataFromFile{
 			throw new RuntimeException(e);
 		}
 		return filePath;
+	}
+
+
+
+	public static String getDate_yyyy_mm_dd() {
+		Calendar currentDate = null;
+		currentDate=Calendar.getInstance(); //Get the current date
+		SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd"); //format it as per your requirement
+		String dateToday = formatter.format(currentDate.getTime());
+		return dateToday;
 	}
 
 	/**Execute the java script, scriptToExecute, on the site driver, e.g. to simulate an action that cannot be achieved by a webdriver action.

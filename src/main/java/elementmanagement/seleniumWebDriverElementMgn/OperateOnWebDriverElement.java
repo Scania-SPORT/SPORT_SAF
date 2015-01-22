@@ -2,10 +2,14 @@ package elementmanagement.seleniumWebDriverElementMgn;
 
 import java.util.List;
 
+import junit.framework.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+
+import commonFuncMgn.XPathFunctionality;
 
 import logMgn.SafLog;
 
@@ -705,4 +709,27 @@ public class OperateOnWebDriverElement {
          return textOnelement;
      }
 
+
+	public void assertFieldByIDNotEmpty(String elementId) {
+		 SafLog.debug();
+         WebElement webelement = findWebDriverElement.waitForElementById(null, null, elementId);
+         String textOnelement=webelement.getText();
+		Assert.assertTrue("Field is empty", !textOnelement.isEmpty());
+	}
+
+	public void assertFieldByTagAndNameContainsText(String elementId, String textToVerify) {
+		 SafLog.debug();
+         WebElement webelement = findWebDriverElement.waitForElementByName(null, null, "sellerOrganization.organizationId");
+         //WebElement webelement2=webelement.findElement(By.name("creationDate"));
+         String textOnelement=webelement.getAttribute("value"); ///.getTagName(); //.getCssValue("value");
+        		 String textOnelementTest=webelement.getText();
+        
+		Assert.assertTrue("Field is empty", textOnelement.contains(textToVerify));
+	}
+
+	public void assertFieldByClass(String fIELD_CREATED_DATE_ID, String date) {
+		SafLog.debug();
+        WebElement webelement = findWebDriverElement.waitForElementByClassAndIndex(null, null, "dijitReset dijitInputField dijitInputContainer", "1");
+        String textOnelement=webelement.getText();
+	}
 }

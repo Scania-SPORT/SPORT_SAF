@@ -4490,3 +4490,1187 @@ No Element Was Found by: By.xpath: //span[@Text='Stock Refill']
 ##############################################################
 ##############################################################
 
+20 jan 10:36:53,414  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 10:36:53,447  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 10:36:53,451  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 10:36:59,263  COMMONTESTSTEPS login 
+20 jan 10:36:59,264  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 10:36:59,437  LOGINPAGE fieldPasswordInsert  ******
+20 jan 10:36:59,595  LOGINPAGE buttonLogOnClick 
+20 jan 10:37:04,923  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 10:37:35,623  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.xpath: //span[@Text='Stock Refill']
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@338e18a3' was found
+
+--------------STACK TRACE:--------------
+
+20 jan 10:37:35,624  java.lang.RuntimeException: No Element Was Found by: By.xpath: //span[@Text='Stock Refill']
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@338e18a3' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:265)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementByXPath(FindWebDriverElement.java:113)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:219)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:206)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:195)
+	at windowAndPageMgn.pageMgn.Pages.SalesPortMainPage.tabStockRefillClick(SalesPortMainPage.java:14)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+20 jan 10:37:36,373  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\20_jan_2015_10_37_35_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\20_jan_2015_10_37_35_startSportOrder.png
+20 jan 10:37:37,584  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+20 jan 10:37:37,598  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+20 jan 10:38:08,258  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 10:38:08,262  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 10:38:08,264  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 10:38:16,202  COMMONTESTSTEPS login 
+20 jan 10:38:16,203  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 10:38:16,351  LOGINPAGE fieldPasswordInsert  ******
+20 jan 10:38:16,459  LOGINPAGE buttonLogOnClick 
+20 jan 10:38:19,644  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 10:38:50,475  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.xpath: //span[@Text='Stock Refill']
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@4c309f9f' was found
+
+--------------STACK TRACE:--------------
+
+20 jan 10:38:50,486  java.lang.RuntimeException: No Element Was Found by: By.xpath: //span[@Text='Stock Refill']
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@4c309f9f' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:265)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementByXPath(FindWebDriverElement.java:113)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:219)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:206)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:195)
+	at windowAndPageMgn.pageMgn.Pages.SalesPortMainPage.tabStockRefillClick(SalesPortMainPage.java:14)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+20 jan 10:38:50,905  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\20_jan_2015_10_38_50_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\20_jan_2015_10_38_50_startSportOrder.png
+20 jan 10:38:51,195  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+20 jan 10:38:51,204  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+20 jan 10:39:23,096  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 10:39:23,105  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 10:39:23,118  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 10:39:29,777  COMMONTESTSTEPS login 
+20 jan 10:39:29,782  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 10:39:30,035  LOGINPAGE fieldPasswordInsert  ******
+20 jan 10:39:30,230  LOGINPAGE buttonLogOnClick 
+20 jan 10:40:15,732  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 11:10:15,530  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 11:10:15,555  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 11:10:15,587  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 11:10:27,233  COMMONTESTSTEPS login 
+20 jan 11:10:27,238  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 11:10:27,548  LOGINPAGE fieldPasswordInsert  ******
+20 jan 11:10:27,808  LOGINPAGE buttonLogOnClick 
+20 jan 11:10:46,940  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 11:22:55,363  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 11:22:55,382  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 11:22:55,395  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 11:23:02,988  COMMONTESTSTEPS login 
+20 jan 11:23:02,993  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 11:23:03,228  LOGINPAGE fieldPasswordInsert  ******
+20 jan 11:23:03,467  LOGINPAGE buttonLogOnClick 
+20 jan 11:23:16,096  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 11:26:28,661  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.xpath: /x:html/x:body/x:div[1]/x:div/x:header/x:div[3]/x:div/x:div/x:div[1]/x:nav/x:ul/x:li[4]/x:a/x:span
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@705ba50e' was found
+
+--------------STACK TRACE:--------------
+
+20 jan 11:26:28,668  java.lang.RuntimeException: No Element Was Found by: By.xpath: /x:html/x:body/x:div[1]/x:div/x:header/x:div[3]/x:div/x:div/x:div[1]/x:nav/x:ul/x:li[4]/x:a/x:span
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@705ba50e' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:265)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementByXPath(FindWebDriverElement.java:113)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:219)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:206)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementByXPath(OperateOnWebDriverElement.java:195)
+	at windowAndPageMgn.pageMgn.Pages.SalesPortMainPage.tabStockRefillClick(SalesPortMainPage.java:14)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+20 jan 11:26:31,402  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\20_jan_2015_11_26_28_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\20_jan_2015_11_26_28_startSportOrder.png
+20 jan 11:26:31,656  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+20 jan 11:26:31,704  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+20 jan 12:39:51,366  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 12:39:51,371  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 12:39:51,374  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 12:39:58,881  COMMONTESTSTEPS login 
+20 jan 12:39:58,882  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 12:39:59,070  LOGINPAGE fieldPasswordInsert  ******
+20 jan 12:39:59,168  LOGINPAGE buttonLogOnClick 
+20 jan 12:40:02,592  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 12:40:03,424  STOCKREFILL buttonNewStockRefillClick 
+20 jan 12:40:09,000  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+20 jan 12:40:09,185  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+20 jan 12:40:09,298  STOCKREFILL fieldLanguageInsert  Lithuanian
+20 jan 12:40:09,398  STOCKREFILL fieldCurrencyInsert  EUR
+20 jan 12:40:09,491  STOCKREFILL buttonCreateClick 
+20 jan 12:40:09,875  
+****************************************************************
+**************TEST CASE, startSportOrder, ENDS**************
+***********************************************************
+
+20 jan 12:40:09,876  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+20 jan 12:40:45,833  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 12:40:45,864  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 12:40:45,876  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 12:40:53,990  COMMONTESTSTEPS login 
+20 jan 12:40:53,995  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 12:40:54,268  LOGINPAGE fieldPasswordInsert  ******
+20 jan 12:40:54,741  LOGINPAGE buttonLogOnClick 
+20 jan 12:41:06,770  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 12:41:14,733  STOCKREFILL buttonNewStockRefillClick 
+20 jan 12:41:17,534  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+20 jan 12:41:21,319  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+20 jan 12:41:23,420  STOCKREFILL fieldLanguageInsert  Lithuanian
+20 jan 12:41:25,800  STOCKREFILL fieldCurrencyInsert  EUR
+20 jan 12:41:39,701  STOCKREFILL buttonCreateClick 
+20 jan 12:44:32,153  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 12:44:32,173  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 12:44:32,188  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 12:44:39,764  COMMONTESTSTEPS login 
+20 jan 12:44:39,769  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 12:44:39,994  LOGINPAGE fieldPasswordInsert  ******
+20 jan 12:44:40,255  LOGINPAGE buttonLogOnClick 
+20 jan 12:44:55,723  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 12:44:58,382  STOCKREFILL buttonNewStockRefillClick 
+20 jan 12:45:02,735  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 12:45:56,300  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 12:46:03,079  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 12:46:11,967  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 12:46:21,653  STOCKREFILL buttonCreateClick 
+20 jan 13:49:57,533  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 13:49:57,555  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 13:49:57,569  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 13:50:06,771  COMMONTESTSTEPS login 
+20 jan 13:50:06,773  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 13:50:07,023  LOGINPAGE fieldPasswordInsert  ******
+20 jan 13:50:07,264  LOGINPAGE buttonLogOnClick 
+20 jan 13:50:16,136  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 13:50:17,010  STOCKREFILL buttonNewStockRefillClick 
+20 jan 13:50:21,217  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 13:51:14,442  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 13:51:15,210  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 13:51:16,882  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 13:51:18,554  STOCKREFILL buttonCreateClick 
+20 jan 13:51:27,918  EDITREFILLORDER fieldNumberAssertNotEmpty 
+20 jan 14:12:18,632  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 14:12:18,636  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 14:12:18,640  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 14:12:25,555  COMMONTESTSTEPS login 
+20 jan 14:12:25,557  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 14:12:25,709  LOGINPAGE fieldPasswordInsert  ******
+20 jan 14:12:25,820  LOGINPAGE buttonLogOnClick 
+20 jan 14:12:29,078  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 14:12:29,890  STOCKREFILL buttonNewStockRefillClick 
+20 jan 14:12:37,815  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 14:12:37,996  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 14:12:38,101  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 14:12:38,203  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 14:12:38,317  STOCKREFILL buttonCreateClick 
+20 jan 14:12:38,418  EDITREFILLORDER textCreatedDateTodayAssert 
+20 jan 14:12:40,326  
+****************************************************************
+**************TEST CASE, startSportOrder, ENDS**************
+***********************************************************
+
+20 jan 14:12:40,327  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+20 jan 14:13:08,818  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 14:13:08,853  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 14:13:08,863  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 14:13:15,945  COMMONTESTSTEPS login 
+20 jan 14:13:15,948  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 14:13:16,202  LOGINPAGE fieldPasswordInsert  ******
+20 jan 14:13:16,418  LOGINPAGE buttonLogOnClick 
+20 jan 14:13:24,452  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 14:13:24,712  STOCKREFILL buttonNewStockRefillClick 
+20 jan 14:13:28,291  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 14:13:33,767  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 14:13:58,002  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 14:13:59,187  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 14:14:07,407  STOCKREFILL buttonCreateClick 
+20 jan 14:14:14,839  EDITREFILLORDER textCreatedDateTodayAssert 
+20 jan 14:17:14,703  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 14:17:14,711  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 14:17:14,717  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 14:17:22,973  COMMONTESTSTEPS login 
+20 jan 14:17:22,978  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 14:17:23,273  LOGINPAGE fieldPasswordInsert  ******
+20 jan 14:17:23,513  LOGINPAGE buttonLogOnClick 
+20 jan 14:17:35,017  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 14:17:36,045  STOCKREFILL buttonNewStockRefillClick 
+20 jan 14:17:39,086  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 14:17:39,346  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 14:17:39,534  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 14:17:39,723  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 14:17:39,905  STOCKREFILL buttonCreateClick 
+20 jan 14:17:47,784  EDITREFILLORDER fieldCreatedDateTodayAssert 
+20 jan 14:18:56,039  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 14:18:56,065  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 14:18:56,110  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 14:19:05,871  COMMONTESTSTEPS login 
+20 jan 14:19:05,877  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 14:19:06,140  LOGINPAGE fieldPasswordInsert  ******
+20 jan 14:19:06,385  LOGINPAGE buttonLogOnClick 
+20 jan 14:19:13,871  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 14:19:13,927  STOCKREFILL buttonNewStockRefillClick 
+20 jan 14:19:17,475  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 14:19:17,850  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 14:19:18,447  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 14:19:18,687  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 14:19:18,933  STOCKREFILL buttonCreateClick 
+20 jan 14:19:25,428  EDITREFILLORDER fieldCreatedDateTodayAssert 
+20 jan 14:21:52,701  
+--------------ERROR MESSGE:--------------
+Field is empty
+--------------STACK TRACE:--------------
+
+20 jan 14:21:52,709  junit.framework.AssertionFailedError: Field is empty
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.assertFieldByIDContainsText(OperateOnWebDriverElement.java:722)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrder.fieldCreatedDateTodayAssert(EditRefillOrder.java:21)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+20 jan 14:21:55,392  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\20_jan_2015_14_21_52_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\20_jan_2015_14_21_52_startSportOrder.png
+20 jan 14:21:55,615  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+20 jan 14:21:55,622  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+20 jan 14:22:04,764  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 14:22:04,772  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 14:22:04,776  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 14:22:12,547  COMMONTESTSTEPS login 
+20 jan 14:22:12,552  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 14:22:12,797  LOGINPAGE fieldPasswordInsert  ******
+20 jan 14:22:13,011  LOGINPAGE buttonLogOnClick 
+20 jan 14:22:18,600  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 14:22:18,643  STOCKREFILL buttonNewStockRefillClick 
+20 jan 14:22:24,224  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 14:22:24,445  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 14:22:24,630  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 14:22:24,826  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 14:22:24,995  STOCKREFILL buttonCreateClick 
+20 jan 14:22:29,169  EDITREFILLORDER fieldCreatedDateTodayAssert 
+20 jan 14:23:26,508  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 14:23:26,533  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 14:23:26,541  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 14:23:34,150  COMMONTESTSTEPS login 
+20 jan 14:23:34,154  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 14:23:34,390  LOGINPAGE fieldPasswordInsert  ******
+20 jan 14:23:34,612  LOGINPAGE buttonLogOnClick 
+20 jan 14:23:41,054  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 14:23:41,162  STOCKREFILL buttonNewStockRefillClick 
+20 jan 14:23:44,333  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 14:23:44,592  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 14:23:44,770  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 14:23:44,928  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 14:23:45,086  STOCKREFILL buttonCreateClick 
+20 jan 14:23:48,540  EDITREFILLORDER fieldCreatedDateTodayAssert 
+20 jan 14:24:15,598  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 14:24:15,622  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 14:24:15,640  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 14:24:23,040  COMMONTESTSTEPS login 
+20 jan 14:24:23,043  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 14:24:23,269  LOGINPAGE fieldPasswordInsert  ******
+20 jan 14:24:23,507  LOGINPAGE buttonLogOnClick 
+20 jan 14:24:29,368  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 14:24:29,438  STOCKREFILL buttonNewStockRefillClick 
+20 jan 14:24:32,999  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 14:24:33,224  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 14:24:33,401  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 14:24:33,570  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 14:24:33,761  STOCKREFILL buttonCreateClick 
+20 jan 14:24:38,226  EDITREFILLORDER fieldCreatedDateTodayAssert 
+20 jan 14:25:44,209  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 14:25:44,243  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 14:25:44,250  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 14:25:52,373  COMMONTESTSTEPS login 
+20 jan 14:25:52,378  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 14:25:52,612  LOGINPAGE fieldPasswordInsert  ******
+20 jan 14:25:52,833  LOGINPAGE buttonLogOnClick 
+20 jan 14:25:57,459  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 14:25:57,772  STOCKREFILL buttonNewStockRefillClick 
+20 jan 14:26:01,824  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 14:26:02,049  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 14:26:02,266  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 14:26:02,482  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 14:26:02,645  STOCKREFILL buttonCreateClick 
+20 jan 14:26:08,489  EDITREFILLORDER fieldCreatedDateTodayAssert 
+20 jan 14:32:06,183  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 14:32:06,213  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 14:32:06,219  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 14:32:13,869  COMMONTESTSTEPS login 
+20 jan 14:32:13,873  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 14:32:14,104  LOGINPAGE fieldPasswordInsert  ******
+20 jan 14:32:14,310  LOGINPAGE buttonLogOnClick 
+20 jan 14:32:22,797  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 14:32:22,879  STOCKREFILL buttonNewStockRefillClick 
+20 jan 14:32:28,431  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 14:32:28,661  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 14:32:28,846  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 14:32:29,026  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 14:32:29,178  STOCKREFILL buttonCreateClick 
+20 jan 14:32:33,254  EDITREFILLORDER fieldCreatedDateTodayAssert 
+20 jan 14:50:16,190  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 14:50:16,197  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 14:50:16,202  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 14:50:22,775  COMMONTESTSTEPS login 
+20 jan 14:50:22,778  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 14:50:22,997  LOGINPAGE fieldPasswordInsert  ******
+20 jan 14:50:23,196  LOGINPAGE buttonLogOnClick 
+20 jan 14:50:33,266  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 14:50:34,228  STOCKREFILL buttonNewStockRefillClick 
+20 jan 14:50:36,568  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 14:50:36,799  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 14:50:36,961  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 14:50:37,118  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 14:50:37,309  STOCKREFILL buttonCreateClick 
+20 jan 14:50:40,689  EDITREFILLORDER fieldCreatedDateTodayAssert 
+20 jan 14:52:17,188  
+--------------ERROR MESSGE:--------------
+Field is empty
+--------------STACK TRACE:--------------
+
+20 jan 14:52:17,192  junit.framework.AssertionFailedError: Field is empty
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.assertFieldByTagAndNameContainsText(OperateOnWebDriverElement.java:724)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrder.fieldCreatedDateTodayAssert(EditRefillOrder.java:21)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+20 jan 14:52:19,745  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\20_jan_2015_14_52_17_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\20_jan_2015_14_52_17_startSportOrder.png
+20 jan 14:52:19,974  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+20 jan 14:52:19,981  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+20 jan 14:52:34,886  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 14:52:34,904  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 14:52:34,913  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 14:52:43,513  COMMONTESTSTEPS login 
+20 jan 14:52:43,519  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 14:52:43,837  LOGINPAGE fieldPasswordInsert  ******
+20 jan 14:52:44,086  LOGINPAGE buttonLogOnClick 
+20 jan 14:52:55,293  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 14:52:56,263  STOCKREFILL buttonNewStockRefillClick 
+20 jan 14:52:58,764  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 14:52:59,113  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 14:52:59,275  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 14:52:59,447  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 14:52:59,642  STOCKREFILL buttonCreateClick 
+20 jan 14:53:14,384  EDITREFILLORDER fieldCreatedDateTodayAssert 
+20 jan 15:03:55,960  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 15:03:55,975  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 15:03:55,984  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 15:04:03,343  COMMONTESTSTEPS login 
+20 jan 15:04:03,347  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 15:04:03,583  LOGINPAGE fieldPasswordInsert  ******
+20 jan 15:04:03,782  LOGINPAGE buttonLogOnClick 
+20 jan 15:04:14,300  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 15:04:14,359  STOCKREFILL buttonNewStockRefillClick 
+20 jan 15:04:18,892  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 15:04:19,138  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 15:04:19,311  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 15:04:19,487  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 15:04:19,658  STOCKREFILL buttonCreateClick 
+20 jan 15:04:26,007  EDITREFILLORDER fieldCreatedDateTodayAssert 
+20 jan 15:05:12,233  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 15:05:12,260  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 15:05:12,265  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 15:05:18,801  COMMONTESTSTEPS login 
+20 jan 15:05:18,804  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 15:05:19,022  LOGINPAGE fieldPasswordInsert  ******
+20 jan 15:05:19,224  LOGINPAGE buttonLogOnClick 
+20 jan 15:05:27,636  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 15:05:27,682  STOCKREFILL buttonNewStockRefillClick 
+20 jan 15:05:33,377  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 15:05:33,594  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 15:05:33,752  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 15:05:33,920  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 15:05:34,071  STOCKREFILL buttonCreateClick 
+20 jan 15:05:40,417  EDITREFILLORDER fieldCreatedDateTodayAssert 
+20 jan 15:07:02,082  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 15:07:02,098  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 15:07:02,104  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 15:07:09,302  COMMONTESTSTEPS login 
+20 jan 15:07:09,310  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 15:07:09,530  LOGINPAGE fieldPasswordInsert  ******
+20 jan 15:07:09,727  LOGINPAGE buttonLogOnClick 
+20 jan 15:07:40,188  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 15:07:41,093  STOCKREFILL buttonNewStockRefillClick 
+20 jan 15:07:43,118  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 15:07:43,331  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 15:07:43,529  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 15:07:43,692  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 15:07:43,852  STOCKREFILL buttonCreateClick 
+20 jan 15:07:48,612  EDITREFILLORDER fieldCreatedDateTodayAssert 
+20 jan 15:41:15,095  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 15:41:15,111  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 15:41:15,123  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 15:41:23,536  COMMONTESTSTEPS login 
+20 jan 15:41:23,541  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 15:41:23,809  LOGINPAGE fieldPasswordInsert  ******
+20 jan 15:41:24,002  LOGINPAGE buttonLogOnClick 
+20 jan 15:41:41,486  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 15:41:41,560  STOCKREFILL buttonNewStockRefillClick 
+20 jan 15:42:12,099  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 15:42:12,451  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 15:42:12,722  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 15:42:12,988  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 15:42:13,221  STOCKREFILL buttonCreateClick 
+20 jan 15:42:34,356  EDITREFILLORDER fieldPurchasingOrganizationTextAssert 
+20 jan 15:44:10,309  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 15:44:10,316  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 15:44:10,321  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 15:44:20,193  COMMONTESTSTEPS login 
+20 jan 15:44:20,198  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 15:44:22,085  LOGINPAGE fieldPasswordInsert  ******
+20 jan 15:44:23,041  LOGINPAGE buttonLogOnClick 
+20 jan 15:44:36,722  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 15:44:36,785  STOCKREFILL buttonNewStockRefillClick 
+20 jan 15:44:40,384  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 15:44:41,869  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 15:44:43,007  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 15:44:46,726  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 15:45:01,279  STOCKREFILL buttonCreateClick 
+20 jan 15:45:09,586  EDITREFILLORDER fieldPurchasingOrganizationTextAssert 
+20 jan 15:47:00,217  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.className: dijitReset dijitInputField dijitInputContainer
+ EXCEPTION THROWN: org.openqa.selenium.InvalidSelectorException: The given selector dijitReset dijitInputField dijitInputContainer is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Compound class names not permitted
+Command duration or timeout: 53 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'RD0029760', ip: '138.106.196.132', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Session ID: b3790f58-b18f-433c-ad74-6c6bebe636c5
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=26.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+--------------STACK TRACE:--------------
+
+20 jan 15:47:00,235  java.lang.RuntimeException: No Element Was Found by: By.className: dijitReset dijitInputField dijitInputContainer
+ EXCEPTION THROWN: org.openqa.selenium.InvalidSelectorException: The given selector dijitReset dijitInputField dijitInputContainer is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Compound class names not permitted
+Command duration or timeout: 53 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'RD0029760', ip: '138.106.196.132', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Session ID: b3790f58-b18f-433c-ad74-6c6bebe636c5
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=26.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:270)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementByClassAndIndex(FindWebDriverElement.java:158)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.assertFieldByClass(OperateOnWebDriverElement.java:729)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrder.fieldPurchasingOrganizationTextAssert(EditRefillOrder.java:27)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+20 jan 15:47:02,752  SCREENSHOT getScreenShot  file:////C:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\20_jan_2015_15_47_00_startSportOrder.pngC:\GitFiles\client\sport\sport-test\src\main\SafSport\screenshot\POCSportTests\20_jan_2015_15_47_00_startSportOrder.png
+20 jan 15:47:03,026  
+****************************************************************
+**************TEST CASE, STARTSPORTORDER FAILED**************
+***********************************************************
+
+20 jan 15:47:03,040  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+20 jan 15:49:41,964  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+20 jan 15:49:41,977  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+20 jan 15:49:41,984  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+20 jan 15:49:51,415  COMMONTESTSTEPS login 
+20 jan 15:49:51,418  LOGINPAGE fieldUserIDInsert  xdstest1
+20 jan 15:49:56,006  LOGINPAGE fieldPasswordInsert  ******
+20 jan 15:49:56,662  LOGINPAGE buttonLogOnClick 
+20 jan 15:50:03,037  SALESPORTMAINPAGE tabStockRefillClick 
+20 jan 15:50:03,209  STOCKREFILL buttonNewStockRefillClick 
+20 jan 15:50:07,864  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+20 jan 15:50:09,294  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+20 jan 15:50:10,459  STOCKREFILL fieldLanguageInsert  Lithuanian	
+20 jan 15:50:11,804  STOCKREFILL fieldCurrencyInsert  EUR	
+20 jan 15:50:12,935  STOCKREFILL buttonCreateClick 
+20 jan 15:50:23,798  EDITREFILLORDER fieldPurchasingOrganizationTextAssert 
+22 jan 13:38:38,323  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+22 jan 13:38:38,378  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+22 jan 13:38:38,421  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+22 jan 13:38:47,238  COMMONTESTSTEPS login 
+22 jan 13:38:47,241  LOGINPAGE fieldUserIDInsert  xdstest1
+22 jan 13:38:54,116  LOGINPAGE fieldPasswordInsert  ******
+22 jan 13:39:02,596  LOGINPAGE buttonLogOnClick 
+22 jan 13:39:30,098  SALESPORTMAINPAGE tabStockRefillClick 
+22 jan 13:39:41,632  STOCKREFILL buttonNewStockRefillClick 
+22 jan 13:39:43,175  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+22 jan 13:40:22,581  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+22 jan 13:40:24,362  STOCKREFILL fieldLanguageInsert  Lithuanian	
+22 jan 13:40:39,644  STOCKREFILL fieldCurrencyInsert  EUR	
+22 jan 13:40:42,553  STOCKREFILL buttonCreateClick 
+22 jan 13:41:41,528  EDITREFILLORDER fieldCreatedDateTodayAssert 
+22 jan 14:54:08,088  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+22 jan 14:54:08,110  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+22 jan 14:54:08,149  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+22 jan 14:54:17,203  COMMONTESTSTEPS login 
+22 jan 14:54:17,208  LOGINPAGE fieldUserIDInsert  xdstest1
+22 jan 14:54:17,610  LOGINPAGE fieldPasswordInsert  ******
+22 jan 14:54:17,984  LOGINPAGE buttonLogOnClick 
+22 jan 14:54:26,591  SALESPORTMAINPAGE tabStockRefillClick 
+22 jan 14:54:26,656  STOCKREFILL buttonNewStockRefillClick 
+22 jan 14:54:30,622  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)	
+22 jan 14:54:30,875  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc	
+22 jan 14:54:31,046  STOCKREFILL fieldLanguageInsert  Lithuanian	
+22 jan 14:54:31,372  STOCKREFILL fieldCurrencyInsert  EUR	
+22 jan 14:54:31,559  STOCKREFILL buttonCreateClick 
+22 jan 14:54:34,233  EDITREFILLORDER fieldCreatedDateTodayAssert 
+22 jan 15:01:37,023  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:37,076  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:37,137  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:37,139  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:37,207  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:37,270  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:37,886  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:37,929  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:37,968  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:37,969  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:38,019  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:38,071  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:38,671  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:38,711  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:38,746  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:38,747  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:38,788  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:38,832  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:39,427  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:39,462  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:39,498  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:39,499  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:39,538  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:39,572  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:40,173  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:40,205  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:40,238  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:40,239  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:40,279  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:40,312  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:40,898  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:40,931  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:40,964  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:40,965  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:41,006  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:41,040  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:41,628  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:41,661  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:41,707  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:41,708  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:41,758  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:41,796  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:42,387  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:42,419  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:42,453  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:42,454  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:42,495  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:42,535  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:43,131  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:43,192  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:43,227  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:43,228  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:43,271  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:43,318  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:50,167  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:50,220  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:50,373  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:50,375  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:50,426  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:50,466  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:51,054  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:51,094  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:51,133  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:51,135  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:51,179  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:51,221  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:51,820  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:51,872  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:51,915  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:51,917  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:51,972  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:52,020  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:52,616  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:52,649  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:52,686  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:52,687  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:52,727  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:52,772  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:53,374  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:53,414  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:53,447  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:53,447  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:53,495  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:53,550  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:54,137  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:54,173  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:54,216  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:54,217  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:54,254  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:54,293  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:54,907  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:54,947  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:54,988  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:54,989  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:55,036  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:55,081  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:55,666  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:55,697  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:55,732  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:55,733  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:55,768  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:55,808  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:56,445  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:56,476  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:56,513  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:56,514  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:56,552  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:56,590  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:57,189  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:57,228  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:57,273  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:57,273  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:57,311  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:57,357  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:57,945  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:57,992  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:58,023  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:58,024  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:58,061  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:58,101  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:58,698  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:58,727  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:58,757  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:58,758  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:58,792  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:58,824  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:01:59,435  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:59,463  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:01:59,494  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:01:59,495  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:01:59,529  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:01:59,567  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:02:00,190  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:00,220  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:02:00,248  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:02:00,249  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:00,284  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:02:00,324  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:02:00,936  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:00,965  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:02:00,996  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:02:00,997  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:01,027  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:02:01,062  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:02:01,662  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:01,691  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:02:01,732  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:02:01,733  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:01,768  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:02:01,805  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:02:02,435  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:02,464  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:02:02,496  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:02:02,497  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:02,529  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:02:02,570  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:02:03,172  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:03,200  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:02:03,231  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:02:03,232  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:03,265  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:02:03,309  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:02:03,918  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:03,951  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:02:03,983  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:02:03,984  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:04,023  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:02:04,056  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:02:04,659  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:04,691  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:02:04,721  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:02:04,722  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:04,756  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:02:04,795  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:02:05,403  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:05,433  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:02:05,467  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:02:05,468  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:05,511  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:02:05,545  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:02:06,151  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:06,179  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:02:06,211  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:02:06,212  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:06,242  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:02:06,273  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 
+22 jan 15:02:06,884  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:06,923  FINDWEBDRIVERELEMENT$1 apply  Tag name element_0: input
+22 jan 15:02:06,971  FINDWEBDRIVERELEMENT$1 apply  Text element_0: 
+22 jan 15:02:06,972  FINDWEBDRIVERELEMENT$1 apply  2 elements were found [Lorg.openqa.selenium.By;@6602e879
+22 jan 15:02:07,014  FINDWEBDRIVERELEMENT$1 apply  Tag name element_1: input
+22 jan 15:02:07,057  FINDWEBDRIVERELEMENT$1 apply  Text element_1: 

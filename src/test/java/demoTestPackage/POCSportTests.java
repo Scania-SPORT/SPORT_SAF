@@ -39,11 +39,15 @@ public class POCSportTests extends CommonTestSteps{
 	public void startSportOrder(){	
 		salesPortMainPage.tabStockRefillClick();
 		stockRefill.buttonNewStockRefillClick();
-		stockRefill.fieldPurchasingOrganisationInsert("Vilnius, UAB Scania Lietuva (LT10)");
-		stockRefill.fieldDescriptionInsert("Lithuanian Desc");
-		stockRefill.fieldLanguageInsert("Lithuanian");
-		stockRefill.fieldCurrencyInsert("EUR");
+		stockRefill.fieldPurchasingOrganisationInsert("Vilnius, UAB Scania Lietuva (LT10)\t");
+		stockRefill.fieldDescriptionInsert("Lithuanian Desc\t");
+		stockRefill.fieldLanguageInsert("Lithuanian\t");
+		stockRefill.fieldCurrencyInsert("EUR\t");
 		stockRefill.buttonCreateClick();
+		//editRefillOrder.fieldNumberAssertNotEmpty();
+		editRefillOrder.fieldCreatedDateTodayAssert();
+		editRefillOrder.fieldPurchasingOrganizationTextAssert("Vilnius, UAB Scania Lietuva");
+		
 	}
 	
 

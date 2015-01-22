@@ -152,6 +152,11 @@ public class FindWebDriverElement{
      {
          return wiatAndGetElement(pageNameToSwitchTo, frameNameToSwitchTo, By.name(nameForElementToFind), By.xpath("#"+indexForElementToFind+"##"));
      }
+     
+     public WebElement waitForElementByClassAndIndex(String pageNameToSwitchTo, String frameNameToSwitchTo, String nameForElementToFind, String indexForElementToFind)
+     {
+         return wiatAndGetElement(pageNameToSwitchTo, frameNameToSwitchTo, By.className(nameForElementToFind), By.xpath("#"+indexForElementToFind+"##"));
+     }
 
      /**
       * Get the web element according to a given page name, frame name and location(identification method for the element)
@@ -337,4 +342,6 @@ public class FindWebDriverElement{
          }
          return driver;
      }
+
+	
 }

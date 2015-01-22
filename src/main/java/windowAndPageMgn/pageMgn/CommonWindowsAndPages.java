@@ -3,6 +3,7 @@ package windowAndPageMgn.pageMgn;
 import java.io.File;
 import org.apache.log4j.xml.DOMConfigurator;
 
+import windowAndPageMgn.pageMgn.Pages.EditRefillOrder;
 import windowAndPageMgn.pageMgn.Pages.LogInPage;
 import windowAndPageMgn.pageMgn.Pages.QuotationsPage;
 import windowAndPageMgn.pageMgn.Pages.SalesPortMainPage;
@@ -29,6 +30,7 @@ public class CommonWindowsAndPages {
 	public static SalesPortMainPage salesPortMainPage;
 	public static QuotationsPage quotationsPage;
 	public static StockRefill stockRefill;
+	public static EditRefillOrder editRefillOrder;
 	// public static OperateOnWhiteElements operateOnWhiteElements;
 	// private static SikuliKeyboardMgn sikuliKeyboardMgn;
 	// private static FindWhiteElements findWhiteElements;
@@ -59,6 +61,8 @@ public class CommonWindowsAndPages {
 		javaScriptCalls = new JavaScriptCalls();
 		operateOnWebDriverElement.setJavaScriptCalls(javaScriptCalls);
 		logInPage = new LogInPage();
+
+		
 		// findWhiteElements = new FindWhiteElements();
 		// whiteKeybaordManagement = new WhiteKeybaordMgn();
 		// sikuliKeyboardMgn = new SikuliKeyboardMgn();
@@ -69,6 +73,7 @@ public class CommonWindowsAndPages {
 		salesPortMainPage = new SalesPortMainPage();
 		quotationsPage = new QuotationsPage();
 		stockRefill = new StockRefill();
+		editRefillOrder= new EditRefillOrder();
 
 	}
 }
