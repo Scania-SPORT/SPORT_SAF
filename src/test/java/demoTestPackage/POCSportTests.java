@@ -5,10 +5,13 @@ import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
-import commontestmanagement.CommonTestSteps;
-import configMgn.ConfigureSaf;
+
 import testrulesmanagement.TestRuleTestCaseLevel;
 import testrulesmanagement.TestRuleTestClassLevel;
+
+import commontestmanagement.CommonTestSteps;
+import configMgn.ConfigureSaf;
+import elementmanagement.sikuliMgn.SikuliKeyboardMgn;
 
 
 public class POCSportTests extends CommonTestSteps{
@@ -39,15 +42,25 @@ public class POCSportTests extends CommonTestSteps{
 	public void startSportOrder(){	
 		salesPortMainPage.tabStockRefillClick();
 		stockRefill.buttonNewStockRefillClick();
-		stockRefill.fieldPurchasingOrganisationInsert("Vilnius, UAB Scania Lietuva (LT10)\t");
-		stockRefill.fieldDescriptionInsert("Lithuanian Desc\t");
-		stockRefill.fieldLanguageInsert("Lithuanian\t");
-		stockRefill.fieldCurrencyInsert("EUR\t");
+		stockRefill.fieldPurchasingOrganisationInsert("Vilnius, UAB Scania Lietuva (LT10)");
+		stockRefill.fieldDescriptionInsert("Lithuanian Desc");
+		stockRefill.fieldLanguageInsert("Lithuanian");
+		stockRefill.fieldCurrencyInsert("EUR");
 		stockRefill.buttonCreateClick();
 		//editRefillOrder.fieldNumberAssertNotEmpty();
-		editRefillOrder.fieldCreatedDateTodayAssert();
-		editRefillOrder.fieldPurchasingOrganizationTextAssert("Vilnius, UAB Scania Lietuva");
 		
+		editRefillOrder.assertImageNotOnScreenUsingSikuli("INPUTFIELD_NUMBER_EMPTY.png");
+		editRefillOrder.assertImageOnScreenUsingSikuli("DROPDOWN_PURCHASING_ORGANIZATION_LT10.png");
+		editRefillOrder.fieldCreatedDateTodayAssert();
+		editRefillOrder.fieldLanguageAssert("lt");
+		editRefillOrder.fieldCurrencyAssert("EUR");
+		editRefillOrder.fieldPurchasingOrganisationInsert("SRO BUCHAREST BRANCH");
+		
+		editRefillOrder.buttonSaveClick();
+		
+		////ADD A PRODUCT////////
+		editRefillOrder.dropdownTypeSelect("Truck");
+		editRefillOrder.buttonInsertClick();
 	}
 	
 

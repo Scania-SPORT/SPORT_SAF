@@ -9,6 +9,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+import commonFuncMgn.OtherFunctionality;
 import commonFuncMgn.XPathFunctionality;
 
 import logMgn.SafLog;
@@ -68,8 +69,36 @@ public class OperateOnWebDriverElement {
          WebElement webelement = findWebDriverElement.waitForElementById(pageNameToSwitchTo, frameNameToSwitchTo, elementId);
          webelement.clear();
          webelement.sendKeys(textToInsert);
+      }
+     
+     
+     /// Insert into a text field. including frame switch, and window switch
+     /// The text field is identified by the element name
+     public void InsertInToFieldByIdUsingJavaScript(String pageNameToSwitchTo, String frameNameToSwitchTo, String elementId, String textToInsert)
+     {
+         SafLog.debug();
+         javaScriptCalls.ExecuteJavaScript(pageNameToSwitchTo, frameNameToSwitchTo, "document.getElementById('"+elementId+"').value='"+textToInsert+"'");
      }
 
+     
+     public void selectFromDropdownListByIdAndValue(String pageNameToSwitchTo, String frameNameToSwitchTo, String elementId, String className, String valueToSelect){
+    	 WebElement webelement =findWebDriverElement.waitForElementById(pageNameToSwitchTo, frameNameToSwitchTo, elementId);
+    	 webelement.sendKeys(Keys.DOWN);
+    	 OtherFunctionality.threadSleepInMSec(500);
+    	 webelement.sendKeys(Keys.DOWN);
+    	 List<WebElement> webElements=findWebDriverElement.getDriver().findElements(By.xpath("//*[@class='dijitReset dijitMenuItem']"));
+    	 String idForOptionElement=null;
+    	 for (WebElement elementInList : webElements) {
+        	 OtherFunctionality.threadSleepInMSec(500);
+    		 String t=elementInList.getText();
+			if(elementInList.getText().replace(" ","").trim().toLowerCase().equals(valueToSelect.replace(" ","").trim().toLowerCase())){
+				idForOptionElement=elementInList.getAttribute("id");
+				javaScriptCalls.ExecuteJavaScript(pageNameToSwitchTo, frameNameToSwitchTo, "document.getElementById('"+idForOptionElement+"').click()");
+				break ;
+			}
+		} 
+     }
+     
      /// <summary>
      /// Insert into a text field. Without frame or window switch
      /// The text field is identified by the element name.
@@ -717,19 +746,30 @@ public class OperateOnWebDriverElement {
 		Assert.assertTrue("Field is empty", !textOnelement.isEmpty());
 	}
 
-	public void assertFieldByTagAndNameContainsText(String elementId, String textToVerify) {
+	public void assertFieldByTagAndNameContainsText(String elementName, String textToVerify) {
 		 SafLog.debug();
-         WebElement webelement = findWebDriverElement.waitForElementByName(null, null, "sellerOrganization.organizationId");
-         //WebElement webelement2=webelement.findElement(By.name("creationDate"));
-         String textOnelement=webelement.getAttribute("value"); ///.getTagName(); //.getCssValue("value");
-        		 String textOnelementTest=webelement.getText();
-        
-		Assert.assertTrue("Field is empty", textOnelement.contains(textToVerify));
+         WebElement webelement = findWebDriverElement.waitForElementByName(null, null, elementName);
+         String textOnelement=webelement.getAttribute("value");
+		Assert.assertTrue("Field is empty", textOnelement.trim().contains(textToVerify.trim()));
 	}
 
 	public void assertFieldByClass(String fIELD_CREATED_DATE_ID, String date) {
 		SafLog.debug();
         WebElement webelement = findWebDriverElement.waitForElementByClassAndIndex(null, null, "dijitReset dijitInputField dijitInputContainer", "1");
         String textOnelement=webelement.getText();
+	}
+	
+	public void assertFieldByIdContainsText(String iDForElementToFind, String textToAssert) {
+		SafLog.debug();
+        WebElement webelement = findWebDriverElement.waitForElementById(null, null, iDForElementToFind);
+        String textOnelement=webelement.getAttribute("value").trim().toLowerCase().replace(" ", "");
+		Assert.assertTrue("The text on the screen, " + textOnelement + " did not match the text to assert, " + textToAssert, textOnelement.trim().toLowerCase().replace(" ", "").contains(textOnelement));
+	}
+	
+	public void assertFieldByNameContainsText(String nameForElementToFind, String textToAssert) {
+		SafLog.debug();
+        WebElement webelement = findWebDriverElement.waitForElementByName(null, null, nameForElementToFind);
+        String textOnelement=webelement.getAttribute("value").trim().toLowerCase().replace(" ", "");
+		Assert.assertTrue("The text on the screen, " + textOnelement + " did not match the text to assert, " + textToAssert, textOnelement.trim().toLowerCase().replace(" ", "").contains(textOnelement));
 	}
 }
