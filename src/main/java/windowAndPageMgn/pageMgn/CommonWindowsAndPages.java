@@ -9,7 +9,7 @@ import windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage;
 import windowAndPageMgn.pageMgn.Pages.LogInPage;
 import windowAndPageMgn.pageMgn.Pages.QuotationsPage;
 import windowAndPageMgn.pageMgn.Pages.SalesPortMainPage;
-import windowAndPageMgn.pageMgn.Pages.StockRefill;
+import windowAndPageMgn.pageMgn.Pages.StockRefillPage;
 import configMgn.ConfigureSaf;
 import elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement;
 import elementmanagement.seleniumWebDriverElementMgn.JavaScriptCalls;
@@ -33,7 +33,7 @@ public class CommonWindowsAndPages {
 	public static LogInPage logInPage;
 	public static SalesPortMainPage salesPortMainPage;
 	public static QuotationsPage quotationsPage;
-	public static StockRefill stockRefill;
+	public static StockRefillPage stockRefill;
 	public static EditRefillOrderPage editRefillOrder;
 	// public static OperateOnWhiteElements operateOnWhiteElements;
 	// private static SikuliKeyboardMgn sikuliKeyboardMgn;
@@ -81,7 +81,7 @@ public class CommonWindowsAndPages {
 		logInPage = new LogInPage();
 		salesPortMainPage = new SalesPortMainPage();
 		quotationsPage = new QuotationsPage();
-		stockRefill = new StockRefill();
+		stockRefill = new StockRefillPage();
 		editRefillOrder= new EditRefillOrderPage();
 
 	}

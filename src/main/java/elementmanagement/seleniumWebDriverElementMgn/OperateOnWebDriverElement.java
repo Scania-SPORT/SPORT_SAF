@@ -829,10 +829,7 @@ public class OperateOnWebDriverElement {
          if (elementTrList.size()==0){
         	 elementTrList = mainTableWebElement.get(Integer.parseInt(rowIndex)).findElements(By.xpath(XPathFunctionality.xPathByTagClassName("div", tableDataClassName)));
          }
-        //Object elementTrList = javaScriptCalls.ExecuteJavaScript(pageNameToSwitchTo, frameNameToSwitchTo, "return document.getElementsByClassName('"+tableDataClassName+"')["+rowIndex+"].textContent"); // findWebDriverElement.getDriver().findElements(By.className("label_label-info"));
-//         WebElement elementTd = elementTrList.get(Integer.parseInt(rowIndex));
-//         elementText = elementTd.getText();
-        elementText= elementTrList.get(Integer.parseInt(rowIndex)).getText();
+         elementText= elementTrList.get(0).getText();
          return elementText;
      }
      
