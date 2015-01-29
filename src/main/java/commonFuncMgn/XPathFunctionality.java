@@ -144,8 +144,12 @@ public class XPathFunctionality {
 	}
 	
 	public static String xPathByTagAndIdAndClassName(String tag, String id, String className){
-        String xPath="//"+tag+"[@id='"+id+"' and @class='"+id+"' ]";
+        String xPath="//"+tag+"[@id='"+id+"' and @class='"+className+"' ]";
         return xPath;
 	}
 
+	public static String xPathByTagClassName(String tag, String className){
+        String xPath="//"+tag+"[@class='"+className+"' ]";
+        return xPath;
+	}
 }

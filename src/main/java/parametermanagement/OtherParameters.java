@@ -11,13 +11,12 @@ public class OtherParameters{
 	public static final String HTMLUNITDRIVER="HtmlUnitDriver";
 
 	/**USER DATA PARAMTERS*/
-	public static final String UD_1="UD_1";
-	public static final String UD_2="UD_2";
-	public static final String UD_3="UD_3";
-	public static final String UD_4="UD_4";
-	public static final String UD_5="UD_5";
-	public static final String UD_6="UD_6";
-	public static final String UD_7="UD_7";
+	public static final String ORDERED="ORDERED";
+	public static final String NO="NO";
+	public static final String TRUCK="Truck";
 	public static final String UD_PASSWORD="UD_PASSWORD";
 	public static final String UD_USERNAME="UD_USERNAME";
+	public static String TYPE="TYPE";
+	public static String QUANTITY="QUANTITY";
+	public static boolean IS_PRODUCT_ADDED_PRODUCT_LIST=false;
 }

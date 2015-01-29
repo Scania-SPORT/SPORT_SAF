@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: demoTestPackage.POCSportTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 94.223 sec <<< FAILURE! - in demoTestPackage.POCSportTests
-startSportOrder(demoTestPackage.POCSportTests)  Time elapsed: 93.578 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 42.081 sec <<< FAILURE! - in demoTestPackage.POCSportTests
+startSportOrder(demoTestPackage.POCSportTests)  Time elapsed: 41.643 sec  <<< ERROR!
 java.lang.NullPointerException: null
 	at javax.imageio.ImageIO.write(ImageIO.java:1523)
 	at commonFuncMgn.ScreenShot.getScreenShot(ScreenShot.java:66)

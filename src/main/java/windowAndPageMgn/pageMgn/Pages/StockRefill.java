@@ -17,7 +17,7 @@ public class StockRefill extends CommonWindowsAndPages{
 	String FIELD_CURRENCY_ID="dijit_form_FilteringSelect_2";
 	String BUTTON_CREATE_ID="createButton_stockRefillCreateWidget_defaultStockRefillWorkspaceWidget_StockRefillWidget_label";
 	
-	
+	String DROPDOWN_ITEM_CLASS="dijitReset dijitMenuItem";
 	
 	
 	public void buttonNewStockRefillClick() {
@@ -39,7 +39,7 @@ public class StockRefill extends CommonWindowsAndPages{
 
 	public void fieldPurchasingOrganisationInsert(String textToInsert) {
 		SafLog.testStep(textToInsert);
-		operateOnWebDriverElement.selectFromDropdownListByIdAndValue(null, null, FIELD_PURCHASING_ORGANISATION_ID, "", textToInsert);		
+		operateOnWebDriverElement.selectFromDropdownListByIdAndValue(null, null, FIELD_PURCHASING_ORGANISATION_ID, DROPDOWN_ITEM_CLASS, textToInsert);		
 	}
 	
 	public void fieldDescriptionInsert(String textToInsert) {
@@ -49,12 +49,12 @@ public class StockRefill extends CommonWindowsAndPages{
 	
 	public void fieldLanguageInsert(String textToInsert) {
 		SafLog.testStep(textToInsert);
-		operateOnWebDriverElement.selectFromDropdownListByIdAndValue(null, null, FIELD_LANGUAGE_ID, "",textToInsert);
+		operateOnWebDriverElement.selectFromDropdownListByIdAndValue(null, null, FIELD_LANGUAGE_ID, DROPDOWN_ITEM_CLASS,textToInsert);
 	}
 	
 	public void fieldCurrencyInsert(String textToInsert) {
 		SafLog.testStep(textToInsert);
-		operateOnWebDriverElement.selectFromDropdownListByIdAndValue(null, null, FIELD_CURRENCY_ID, "", "EUR");
+		operateOnWebDriverElement.selectFromDropdownListByIdAndValue(null, null, FIELD_CURRENCY_ID, DROPDOWN_ITEM_CLASS, "EUR");
 		}
 	
 

@@ -99,7 +99,10 @@ public class FindWebDriverElement{
          return wiatAndGetElement(pageNameToSwitchTo, frameNameToSwitchTo, By.id(iDForElementToFind));
      }
 
-
+     public WebElement waitForElementByClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String classNameForElementToFind)
+     {
+         return wiatAndGetElement(pageNameToSwitchTo, frameNameToSwitchTo, By.className(classNameForElementToFind));
+     }
      /**
       * WebElement, wait and return an element.
       * The web element is identified by xPath

@@ -86,7 +86,7 @@ public class OperateOnWebDriverElement {
     	 webelement.sendKeys(Keys.DOWN);
     	 OtherFunctionality.threadSleepInMSec(500);
     	 webelement.sendKeys(Keys.DOWN);
-    	 List<WebElement> webElements=findWebDriverElement.getDriver().findElements(By.xpath("//*[@class='dijitReset dijitMenuItem']"));
+    	 List<WebElement> webElements=findWebDriverElement.getDriver().findElements(By.xpath("//*[@class='"+className+"']"));
     	 String idForOptionElement=null;
     	 for (WebElement elementInList : webElements) {
         	 OtherFunctionality.threadSleepInMSec(500);
@@ -738,7 +738,123 @@ public class OperateOnWebDriverElement {
          return textOnelement;
      }
 
-
+     public String getTextOnTableByTableIDAndRowClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String tableId, String tableDataClassName, String... rowIndex)
+     {
+         SafLog.debug();
+        
+         WebElement webelement = findWebDriverElement.waitForElementById(pageNameToSwitchTo, frameNameToSwitchTo,tableId);
+         
+         List<WebElement> elementTrList = webelement.findElements(By.tagName(tableDataClassName));
+         boolean isElementFound = false;
+         int trMaxIndex=rowIndex.length;
+         if (rowIndex.length!=0){
+        	 trMaxIndex=elementTrList.size();
+         }
+         String elementText =null;
+         int index=0;
+         for(int trIndex=0; trIndex<trMaxIndex; trIndex++)
+         //for (WebElement elementTr : elementTrList)
+         {
+        	 WebElement elementTr = elementTrList.get(trIndex);
+             WebElement elementTd = elementTr.findElement(By.className(tableDataClassName));
+             elementText = elementTd.getText();
+//             for (WebElement elementTd : elementTdList)
+//             {
+//                 String elementText = elementTd.getText().replace(" ", "").toLowerCase();
+//                 if(elementText.isEmpty()){
+//                	 WebElement  elementTd
+//                 }
+//                 if (elementText.contains(textToIdentifyAndSelect[0].replace(" ", "").toLowerCase()))
+//                 {
+//                     ++numberOfhits;
+//                     if (numberOfhits == numberOfTextCriteria)
+//                     {
+//                         elementTd.click();
+//                         Actions actions = new Actions(findWebDriverElement.getDriver());
+//                         actions.moveToElement(elementTd);
+//                         //RightClick on element on table
+//                         actions.contextClick(elementTd).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
+//                         isElementFound = true;
+//                         break;
+//                                               
+//                     }
+//                 }  
+//             }
+//             if (isElementFound)
+//             { 
+//                 break; 
+//             }
+//             numberOfhits = 0; //Restart with a new row
+         }
+//         String textOnelement=webelement.getText();
+         return elementText;
+     }
+     
+     
+     public String getTextOnTableByTableClassNameAndRowClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String tableClassName, String tableDataClassName, String... rowIndex)
+     {
+         SafLog.debug();
+        
+         WebElement webelement = findWebDriverElement.waitForElementByClassName(pageNameToSwitchTo, frameNameToSwitchTo,tableClassName);
+         
+         List<WebElement> elementTrList = webelement.findElements(By.tagName(tableDataClassName));
+         boolean isElementFound = false;
+         int trMaxIndex=rowIndex.length;
+         if (rowIndex.length!=0){
+        	 trMaxIndex=elementTrList.size();
+         }
+         String elementText =null;
+         int index=0;
+         for(int trIndex=0; trIndex<trMaxIndex; trIndex++)
+         //for (WebElement elementTr : elementTrList)
+         {
+        	 WebElement elementTr = elementTrList.get(trIndex);
+             WebElement elementTd = elementTr.findElement(By.className(tableDataClassName));
+             elementText = elementTd.getText();
+         }
+         return elementText;
+     }
+     
+     public String getTextOnTableByClassNameAndRowIndex(String pageNameToSwitchTo, String frameNameToSwitchTo, String mainTableCalssName, String tableDataClassName, String rowIndex)
+     {
+         SafLog.debug();
+        
+         //WebElement webelement = findWebDriverElement.waitForElementByClassName(pageNameToSwitchTo, frameNameToSwitchTo,tableDataClassName);
+         String elementText=null;
+         List<WebElement> mainTableWebElement=findWebDriverElement.getDriver().findElements(By.xpath(XPathFunctionality.xPathByTagClassName("*", "dgrid-content ui-widget-content")));
+         List<WebElement> elementTrList = mainTableWebElement.get(Integer.parseInt(rowIndex)).findElements(By.xpath(XPathFunctionality.xPathByTagClassName("td", tableDataClassName)));
+         if (elementTrList.size()==0){
+        	 elementTrList = mainTableWebElement.get(Integer.parseInt(rowIndex)).findElements(By.xpath(XPathFunctionality.xPathByTagClassName("span", tableDataClassName)));
+         }
+         if (elementTrList.size()==0){
+        	 elementTrList = mainTableWebElement.get(Integer.parseInt(rowIndex)).findElements(By.xpath(XPathFunctionality.xPathByTagClassName("div", tableDataClassName)));
+         }
+        //Object elementTrList = javaScriptCalls.ExecuteJavaScript(pageNameToSwitchTo, frameNameToSwitchTo, "return document.getElementsByClassName('"+tableDataClassName+"')["+rowIndex+"].textContent"); // findWebDriverElement.getDriver().findElements(By.className("label_label-info"));
+//         WebElement elementTd = elementTrList.get(Integer.parseInt(rowIndex));
+//         elementText = elementTd.getText();
+        elementText= elementTrList.get(Integer.parseInt(rowIndex)).getText();
+         return elementText;
+     }
+     
+     
+     public void assertTextOnTableByClassNameAndIndex(String pageNameToSwitchTo, String frameNameToSwitchTo, String mainTableCalssName, String tableDataClassName, String rowIndex, String textToAssert) {
+ 		SafLog.debug();
+          String textOnelement=getTextOnTableByClassNameAndRowIndex(pageNameToSwitchTo, frameNameToSwitchTo, mainTableCalssName, tableDataClassName, rowIndex).toLowerCase().replace(" ", "").trim();
+          Assert.assertTrue("The text didnt match, " + textOnelement + " : " + textToAssert, textOnelement.contains(textToAssert.toLowerCase().replace(" ", "").trim()));
+ 	}
+     
+  public void assertTextOnTableByTableIDAndRowClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String tableId, String tableDataClassName, String textToAssert, String... rowIndex) {
+		SafLog.debug();
+         String textOnelement=getTextOnTableByTableIDAndRowClassName(pageNameToSwitchTo, frameNameToSwitchTo, tableId, tableDataClassName, rowIndex);
+         Assert.assertTrue("Field is empty", textOnelement.trim().contains(textToAssert.trim()));
+	}
+	
+  public void assertTextOnTableByTableClassNameAndRowClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String tableClassName, String tableDataClassName, String textToAssert, String... rowIndex) {
+		SafLog.debug();
+       String textOnelement=getTextOnTableByTableClassNameAndRowClassName(pageNameToSwitchTo, frameNameToSwitchTo, tableClassName, tableDataClassName, rowIndex);
+       Assert.assertTrue("Field is empty", textOnelement.trim().contains(textToAssert.trim()));
+	}
+     
 	public void assertFieldByIDNotEmpty(String elementId) {
 		 SafLog.debug();
          WebElement webelement = findWebDriverElement.waitForElementById(null, null, elementId);

@@ -3659,3 +3659,1726 @@ The text on the screen, lt did not match the text to assert, lt
 27 jan 00:28:37,912  EDITREFILLORDERPAGE fieldCurrencyAssert 
 27 jan 00:28:38,022  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
 27 jan 00:28:49,414  EDITREFILLORDERPAGE buttonSaveClick 
+27 jan 11:31:13,512  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+27 jan 11:31:13,512  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+27 jan 11:31:13,528  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+27 jan 11:31:51,507  COMMONTESTSTEPS login 
+27 jan 11:31:51,507  LOGINPAGE fieldUserIDInsert  xdstest1
+27 jan 11:31:51,836  LOGINPAGE fieldPasswordInsert  ******
+27 jan 11:31:52,101  LOGINPAGE buttonLogOnClick 
+27 jan 11:31:58,525  SALESPORTMAINPAGE tabStockRefillClick 
+27 jan 11:32:00,616  STOCKREFILL buttonNewStockRefillClick 
+27 jan 11:32:06,704  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+27 jan 11:32:08,065  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+27 jan 11:32:08,488  STOCKREFILL fieldLanguageInsert  Lithuanian
+27 jan 11:32:10,953  STOCKREFILL fieldCurrencyInsert  EUR
+27 jan 11:32:14,496  STOCKREFILL buttonCreateClick 
+27 jan 11:32:14,763  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+27 jan 11:32:18,492  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+27 jan 11:32:20,100  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+27 jan 11:32:20,257  EDITREFILLORDERPAGE fieldLanguageAssert 
+27 jan 11:32:20,367  EDITREFILLORDERPAGE fieldCurrencyAssert 
+27 jan 11:32:20,476  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+27 jan 14:30:19,461  EDITREFILLORDERPAGE buttonSaveClick 
+27 jan 14:40:39,750  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+27 jan 14:42:44,649  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+27 jan 14:42:44,649  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+27 jan 14:42:44,736  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+27 jan 14:44:03,793  COMMONTESTSTEPS login 
+27 jan 14:44:03,793  LOGINPAGE fieldUserIDInsert  xdstest1
+27 jan 14:44:04,451  LOGINPAGE fieldPasswordInsert  ******
+27 jan 14:44:04,809  LOGINPAGE buttonLogOnClick 
+27 jan 14:44:13,325  SALESPORTMAINPAGE tabStockRefillClick 
+27 jan 14:44:15,515  STOCKREFILL buttonNewStockRefillClick 
+27 jan 14:44:21,916  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+27 jan 14:44:23,493  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+27 jan 14:44:23,837  STOCKREFILL fieldLanguageInsert  Lithuanian
+27 jan 14:44:27,945  STOCKREFILL fieldCurrencyInsert  EUR
+27 jan 14:44:31,518  STOCKREFILL buttonCreateClick 
+27 jan 14:44:31,800  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+27 jan 14:44:39,337  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+27 jan 14:44:41,131  
+--------------ERROR MESSGE:--------------
+The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+--------------STACK TRACE:--------------
+
+27 jan 14:44:41,131  java.lang.AssertionError: The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at elementmanagement.sikuliMgn.SikuliKeyboardMgn.assertImageOnScreen(SikuliKeyboardMgn.java:50)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertImageOnScreenUsingSikuli(EditRefillOrderPage.java:51)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+27 jan 14:44:41,321  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+27 jan 14:44:58,133  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+27 jan 14:44:58,133  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+27 jan 14:44:58,134  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+27 jan 14:45:22,270  COMMONTESTSTEPS login 
+27 jan 14:45:22,271  LOGINPAGE fieldUserIDInsert  xdstest1
+27 jan 14:45:22,536  LOGINPAGE fieldPasswordInsert  ******
+27 jan 14:45:22,786  LOGINPAGE buttonLogOnClick 
+27 jan 14:45:28,568  SALESPORTMAINPAGE tabStockRefillClick 
+27 jan 14:45:33,616  STOCKREFILL buttonNewStockRefillClick 
+27 jan 14:45:39,317  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+27 jan 14:45:40,675  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+27 jan 14:45:41,133  STOCKREFILL fieldLanguageInsert  Lithuanian
+27 jan 14:45:43,613  STOCKREFILL fieldCurrencyInsert  EUR
+27 jan 14:45:47,171  STOCKREFILL buttonCreateClick 
+27 jan 14:45:47,422  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+27 jan 14:45:50,344  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+27 jan 14:45:52,061  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+27 jan 14:45:52,202  EDITREFILLORDERPAGE fieldLanguageAssert 
+27 jan 14:45:52,342  EDITREFILLORDERPAGE fieldCurrencyAssert 
+27 jan 14:45:52,467  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+27 jan 14:46:01,780  EDITREFILLORDERPAGE buttonSaveClick 
+27 jan 14:46:13,179  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+27 jan 14:46:28,103  EDITREFILLORDERPAGE buttonInsertClick 
+28 jan 09:51:17,011  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 09:51:17,019  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 09:51:17,023  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 09:52:02,807  COMMONTESTSTEPS login 
+28 jan 09:52:02,807  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 09:52:03,089  LOGINPAGE fieldPasswordInsert  ******
+28 jan 09:52:03,198  LOGINPAGE buttonLogOnClick 
+28 jan 09:52:06,793  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 09:52:07,463  STOCKREFILL buttonNewStockRefillClick 
+28 jan 09:52:38,074  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.id: newButton_defaultStockRefillWorkspaceWidget_StockRefillWidget_label
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@7d98d9cf' was found
+
+--------------STACK TRACE:--------------
+
+28 jan 09:52:38,074  java.lang.RuntimeException: No Element Was Found by: By.id: newButton_defaultStockRefillWorkspaceWidget_StockRefillWidget_label
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@7d98d9cf' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:273)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementById(FindWebDriverElement.java:99)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementById(OperateOnWebDriverElement.java:208)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementById(OperateOnWebDriverElement.java:195)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.clickAnElementById(OperateOnWebDriverElement.java:184)
+	at windowAndPageMgn.pageMgn.Pages.StockRefill.buttonNewStockRefillClick(StockRefill.java:25)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+28 jan 09:52:38,437  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+28 jan 09:56:39,937  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 09:56:39,953  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 09:56:39,953  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 09:57:03,423  COMMONTESTSTEPS login 
+28 jan 09:57:03,439  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 09:57:03,673  LOGINPAGE fieldPasswordInsert  ******
+28 jan 09:57:03,907  LOGINPAGE buttonLogOnClick 
+28 jan 09:57:13,803  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 09:57:16,239  STOCKREFILL buttonNewStockRefillClick 
+28 jan 09:57:22,179  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 09:57:23,630  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 09:57:24,021  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 09:57:26,547  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 09:57:30,163  STOCKREFILL buttonCreateClick 
+28 jan 09:57:30,429  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 09:57:34,154  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 09:57:36,572  
+--------------ERROR MESSGE:--------------
+The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+--------------STACK TRACE:--------------
+
+28 jan 09:57:36,572  java.lang.AssertionError: The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at elementmanagement.sikuliMgn.SikuliKeyboardMgn.assertImageOnScreen(SikuliKeyboardMgn.java:50)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertImageOnScreenUsingSikuli(EditRefillOrderPage.java:61)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+28 jan 09:57:36,697  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+28 jan 09:58:14,227  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 09:58:14,227  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 09:58:14,228  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 09:58:32,197  COMMONTESTSTEPS login 
+28 jan 09:58:32,197  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 09:58:32,541  LOGINPAGE fieldPasswordInsert  ******
+28 jan 09:58:32,775  LOGINPAGE buttonLogOnClick 
+28 jan 09:58:38,306  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 09:58:39,601  STOCKREFILL buttonNewStockRefillClick 
+28 jan 09:58:46,675  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 09:58:48,312  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 09:58:48,780  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 09:58:51,352  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 09:58:54,968  STOCKREFILL buttonCreateClick 
+28 jan 09:58:55,203  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 09:58:58,350  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 09:59:00,580  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+28 jan 09:59:00,892  EDITREFILLORDERPAGE fieldLanguageAssert 
+28 jan 09:59:00,986  EDITREFILLORDERPAGE fieldCurrencyAssert 
+28 jan 09:59:01,079  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+28 jan 09:59:14,497  EDITREFILLORDERPAGE buttonSaveClick 
+28 jan 09:59:26,206  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+28 jan 09:59:37,949  EDITREFILLORDERPAGE buttonInsertClick 
+28 jan 10:00:33,927  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+28 jan 10:05:00,998  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 10:05:00,998  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 10:05:00,999  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 10:05:17,159  COMMONTESTSTEPS login 
+28 jan 10:05:17,160  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 10:05:17,472  LOGINPAGE fieldPasswordInsert  ******
+28 jan 10:05:17,722  LOGINPAGE buttonLogOnClick 
+28 jan 10:05:22,996  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 10:05:25,318  STOCKREFILL buttonNewStockRefillClick 
+28 jan 10:05:31,676  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 10:05:33,534  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 10:05:33,956  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 10:05:36,467  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 10:05:40,055  STOCKREFILL buttonCreateClick 
+28 jan 10:05:40,306  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 10:05:43,331  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 10:05:45,076  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+28 jan 10:05:45,233  EDITREFILLORDERPAGE fieldLanguageAssert 
+28 jan 10:05:45,342  EDITREFILLORDERPAGE fieldCurrencyAssert 
+28 jan 10:05:45,451  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+28 jan 10:05:56,897  EDITREFILLORDERPAGE buttonSaveClick 
+28 jan 10:05:57,819  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+28 jan 10:06:08,441  EDITREFILLORDERPAGE buttonInsertClick 
+28 jan 10:06:21,308  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+28 jan 10:08:17,045  
+--------------ERROR MESSGE:--------------
+The given selector label label-info is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Compound class names not permitted
+Command duration or timeout: 94 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'RD0029250', ip: '10.99.103.141', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Session ID: a92c73b3-f6dd-43d7-a1a5-c74f707b883e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=26.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+--------------STACK TRACE:--------------
+
+28 jan 10:08:17,062  org.openqa.selenium.InvalidSelectorException: The given selector label label-info is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Compound class names not permitted
+Command duration or timeout: 94 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'RD0029250', ip: '10.99.103.141', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Session ID: a92c73b3-f6dd-43d7-a1a5-c74f707b883e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=26.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:377)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByClassName(RemoteWebDriver.java:437)
+	at org.openqa.selenium.By$ByClassName.findElements(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:340)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.getTextOnTableByClassNameAndRowIndex(OperateOnWebDriverElement.java:824)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.assertTextOnTableByClassNameAndIndex(OperateOnWebDriverElement.java:835)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertTextOnTableProductList(EditRefillOrderPage.java:99)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector label label-info is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Compound class names not permitted
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'RD0029250', ip: '10.99.103.141', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/gkhekp/AppData/Local/Temp/anonymous3579615313952162336webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9615)
+	at <anonymous class>.FirefoxDriver.prototype.findElementsInternal_(file:///C:/Users/gkhekp/AppData/Local/Temp/anonymous3579615313952162336webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9673)
+	at <anonymous class>.FirefoxDriver.prototype.findElements(file:///C:/Users/gkhekp/AppData/Local/Temp/anonymous3579615313952162336webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9677)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/gkhekp/AppData/Local/Temp/anonymous3579615313952162336webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/gkhekp/AppData/Local/Temp/anonymous3579615313952162336webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/gkhekp/AppData/Local/Temp/anonymous3579615313952162336webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582)
+
+28 jan 10:37:30,752  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 10:37:30,784  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 10:37:30,831  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 10:38:02,499  COMMONTESTSTEPS login 
+28 jan 10:38:02,499  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 10:38:02,785  LOGINPAGE fieldPasswordInsert  ******
+28 jan 10:38:03,035  LOGINPAGE buttonLogOnClick 
+28 jan 10:38:09,571  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 10:38:14,556  STOCKREFILL buttonNewStockRefillClick 
+28 jan 10:38:18,011  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 10:38:20,758  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 10:38:21,133  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 10:38:23,676  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 10:38:27,390  STOCKREFILL buttonCreateClick 
+28 jan 10:38:27,640  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 10:38:30,963  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 10:38:33,117  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+28 jan 10:38:33,586  EDITREFILLORDERPAGE fieldLanguageAssert 
+28 jan 10:38:33,695  EDITREFILLORDERPAGE fieldCurrencyAssert 
+28 jan 10:38:33,804  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+28 jan 10:38:48,846  EDITREFILLORDERPAGE buttonSaveClick 
+28 jan 10:39:10,862  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+28 jan 10:39:24,093  EDITREFILLORDERPAGE buttonInsertClick 
+28 jan 10:39:28,651  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+28 jan 10:39:56,584  
+--------------ERROR MESSGE:--------------
+The given selector label label-info is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Compound class names not permitted
+Command duration or timeout: 78 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'RD0029250', ip: '10.99.103.141', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Session ID: 8ed8f82e-fd92-4c2e-89cb-447b19b6af59
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=26.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+--------------STACK TRACE:--------------
+
+28 jan 10:39:56,619  org.openqa.selenium.InvalidSelectorException: The given selector label label-info is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Compound class names not permitted
+Command duration or timeout: 78 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'RD0029250', ip: '10.99.103.141', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Session ID: 8ed8f82e-fd92-4c2e-89cb-447b19b6af59
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=26.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:377)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByClassName(RemoteWebDriver.java:437)
+	at org.openqa.selenium.By$ByClassName.findElements(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:340)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.getTextOnTableByClassNameAndRowIndex(OperateOnWebDriverElement.java:824)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.assertTextOnTableByClassNameAndIndex(OperateOnWebDriverElement.java:835)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertTextOnTableProductList(EditRefillOrderPage.java:99)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector label label-info is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Compound class names not permitted
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'RD0029250', ip: '10.99.103.141', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/gkhekp/AppData/Local/Temp/anonymous8267074957040834627webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9615)
+	at <anonymous class>.FirefoxDriver.prototype.findElementsInternal_(file:///C:/Users/gkhekp/AppData/Local/Temp/anonymous8267074957040834627webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9673)
+	at <anonymous class>.FirefoxDriver.prototype.findElements(file:///C:/Users/gkhekp/AppData/Local/Temp/anonymous8267074957040834627webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9677)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/gkhekp/AppData/Local/Temp/anonymous8267074957040834627webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/gkhekp/AppData/Local/Temp/anonymous8267074957040834627webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/gkhekp/AppData/Local/Temp/anonymous8267074957040834627webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582)
+
+28 jan 10:44:47,851  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 10:44:47,851  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 10:44:47,852  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 10:45:06,652  COMMONTESTSTEPS login 
+28 jan 10:45:06,652  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 10:45:06,809  LOGINPAGE fieldPasswordInsert  ******
+28 jan 10:45:06,949  LOGINPAGE buttonLogOnClick 
+28 jan 10:45:10,116  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 10:45:11,075  STOCKREFILL buttonNewStockRefillClick 
+28 jan 10:45:18,996  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 10:45:20,511  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 10:45:21,012  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 10:45:23,570  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 10:45:27,221  STOCKREFILL buttonCreateClick 
+28 jan 10:45:27,534  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 10:45:30,686  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 10:45:33,027  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+28 jan 10:45:33,168  EDITREFILLORDERPAGE fieldLanguageAssert 
+28 jan 10:45:33,278  EDITREFILLORDERPAGE fieldCurrencyAssert 
+28 jan 10:45:33,402  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+28 jan 10:45:42,129  EDITREFILLORDERPAGE buttonSaveClick 
+28 jan 10:45:43,612  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+28 jan 10:45:53,635  EDITREFILLORDERPAGE buttonInsertClick 
+28 jan 10:45:58,082  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+28 jan 10:54:31,214  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 10:54:31,215  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 10:54:31,215  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 10:54:51,971  COMMONTESTSTEPS login 
+28 jan 10:54:51,971  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 10:54:52,191  LOGINPAGE fieldPasswordInsert  ******
+28 jan 10:54:52,364  LOGINPAGE buttonLogOnClick 
+28 jan 10:54:56,133  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 10:54:57,050  STOCKREFILL buttonNewStockRefillClick 
+28 jan 10:55:05,006  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 10:55:06,475  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 10:55:06,866  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 10:55:09,394  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 10:55:12,951  STOCKREFILL buttonCreateClick 
+28 jan 10:55:13,202  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 10:55:16,757  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 10:55:19,550  
+--------------ERROR MESSGE:--------------
+The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+--------------STACK TRACE:--------------
+
+28 jan 10:55:19,550  java.lang.AssertionError: The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at elementmanagement.sikuliMgn.SikuliKeyboardMgn.assertImageOnScreen(SikuliKeyboardMgn.java:50)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertImageOnScreenUsingSikuli(EditRefillOrderPage.java:63)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+28 jan 10:55:19,755  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+28 jan 10:56:13,790  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 10:56:13,790  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 10:56:13,791  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 10:56:31,707  COMMONTESTSTEPS login 
+28 jan 10:56:31,707  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 10:56:32,176  LOGINPAGE fieldPasswordInsert  ******
+28 jan 10:56:32,488  LOGINPAGE buttonLogOnClick 
+28 jan 10:56:37,924  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 10:56:39,664  STOCKREFILL buttonNewStockRefillClick 
+28 jan 10:56:46,503  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 10:56:48,111  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 10:56:48,611  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 10:56:51,201  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 10:56:54,774  STOCKREFILL buttonCreateClick 
+28 jan 10:56:55,040  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 10:56:58,706  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 10:57:00,876  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+28 jan 10:57:01,017  EDITREFILLORDERPAGE fieldLanguageAssert 
+28 jan 10:57:01,126  EDITREFILLORDERPAGE fieldCurrencyAssert 
+28 jan 10:57:01,235  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+28 jan 10:57:32,950  EDITREFILLORDERPAGE buttonSaveClick 
+28 jan 10:57:34,558  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+28 jan 10:57:42,093  EDITREFILLORDERPAGE buttonInsertClick 
+28 jan 10:57:44,356  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+28 jan 11:18:36,051  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 11:18:36,052  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 11:18:36,052  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 11:18:57,594  COMMONTESTSTEPS login 
+28 jan 11:18:57,594  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 11:18:57,844  LOGINPAGE fieldPasswordInsert  ******
+28 jan 11:18:58,016  LOGINPAGE buttonLogOnClick 
+28 jan 11:19:01,981  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 11:19:04,564  STOCKREFILL buttonNewStockRefillClick 
+28 jan 11:19:11,994  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 11:19:37,106  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 11:19:37,450  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 11:19:46,281  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 11:19:50,432  STOCKREFILL buttonCreateClick 
+28 jan 11:19:50,713  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 11:19:53,958  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 11:19:56,315  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+28 jan 11:19:56,457  EDITREFILLORDERPAGE fieldLanguageAssert 
+28 jan 11:19:56,617  EDITREFILLORDERPAGE fieldCurrencyAssert 
+28 jan 11:19:56,773  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+28 jan 11:20:05,873  EDITREFILLORDERPAGE buttonSaveClick 
+28 jan 11:20:07,263  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+28 jan 11:20:16,830  EDITREFILLORDERPAGE buttonInsertClick 
+28 jan 11:20:17,210  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+28 jan 11:22:22,989  
+--------------ERROR MESSGE:--------------
+The text didnt match, No : no
+--------------STACK TRACE:--------------
+
+28 jan 11:22:23,004  junit.framework.AssertionFailedError: The text didnt match, No : no
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.assertTextOnTableByClassNameAndIndex(OperateOnWebDriverElement.java:835)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertTextOnTableProductList(EditRefillOrderPage.java:99)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+28 jan 11:24:25,296  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 11:24:25,296  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 11:24:25,311  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 11:24:43,199  COMMONTESTSTEPS login 
+28 jan 11:24:43,199  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 11:24:43,590  LOGINPAGE fieldPasswordInsert  ******
+28 jan 11:24:43,824  LOGINPAGE buttonLogOnClick 
+28 jan 11:24:50,570  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 11:24:52,466  STOCKREFILL buttonNewStockRefillClick 
+28 jan 11:25:00,774  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 11:25:03,366  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 11:25:03,725  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 11:25:07,386  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 11:25:12,083  STOCKREFILL buttonCreateClick 
+28 jan 11:25:12,359  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 11:25:15,547  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 11:25:17,592  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+28 jan 11:25:17,780  EDITREFILLORDERPAGE fieldLanguageAssert 
+28 jan 11:25:17,905  EDITREFILLORDERPAGE fieldCurrencyAssert 
+28 jan 11:25:18,014  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+28 jan 11:25:24,660  EDITREFILLORDERPAGE buttonSaveClick 
+28 jan 11:25:25,035  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+28 jan 11:25:34,011  EDITREFILLORDERPAGE buttonInsertClick 
+28 jan 11:25:34,293  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+28 jan 11:25:36,664  
+****************************************************************
+**************TEST CASE, startSportOrder, ENDS**************
+***********************************************************
+
+28 jan 11:25:36,664  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+28 jan 15:43:23,491  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 15:43:23,507  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 15:43:23,507  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 15:43:40,032  COMMONTESTSTEPS login 
+28 jan 15:43:40,048  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 15:43:40,251  LOGINPAGE fieldPasswordInsert  ******
+28 jan 15:43:40,407  LOGINPAGE buttonLogOnClick 
+28 jan 15:43:45,495  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 15:43:46,363  STOCKREFILL buttonNewStockRefillClick 
+28 jan 15:43:55,490  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 15:43:56,287  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 15:43:56,567  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 15:43:57,355  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 15:43:58,104  STOCKREFILL buttonCreateClick 
+28 jan 15:43:58,346  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 15:44:01,312  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 15:44:03,169  
+--------------ERROR MESSGE:--------------
+The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+--------------STACK TRACE:--------------
+
+28 jan 15:44:03,169  java.lang.AssertionError: The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at elementmanagement.sikuliMgn.SikuliKeyboardMgn.assertImageOnScreen(SikuliKeyboardMgn.java:50)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertImageOnScreenUsingSikuli(EditRefillOrderPage.java:66)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+28 jan 15:44:03,265  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+28 jan 15:46:47,099  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 15:46:47,099  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 15:46:47,099  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 15:47:03,769  COMMONTESTSTEPS login 
+28 jan 15:47:03,769  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 15:47:03,942  LOGINPAGE fieldPasswordInsert  ******
+28 jan 15:47:04,082  LOGINPAGE buttonLogOnClick 
+28 jan 15:47:07,879  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 15:47:08,804  STOCKREFILL buttonNewStockRefillClick 
+28 jan 15:47:16,873  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 15:47:17,732  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 15:47:18,012  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 15:47:18,856  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 15:47:19,589  STOCKREFILL buttonCreateClick 
+28 jan 15:47:19,824  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 15:47:23,115  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 15:47:25,050  
+--------------ERROR MESSGE:--------------
+The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+--------------STACK TRACE:--------------
+
+28 jan 15:47:25,050  java.lang.AssertionError: The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at elementmanagement.sikuliMgn.SikuliKeyboardMgn.assertImageOnScreen(SikuliKeyboardMgn.java:50)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertImageOnScreenUsingSikuli(EditRefillOrderPage.java:66)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+28 jan 15:47:25,162  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+28 jan 15:48:18,223  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 15:48:18,223  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 15:48:18,223  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 15:48:36,889  COMMONTESTSTEPS login 
+28 jan 15:48:36,889  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 15:48:37,141  LOGINPAGE fieldPasswordInsert  ******
+28 jan 15:48:37,360  LOGINPAGE buttonLogOnClick 
+28 jan 15:48:43,520  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 15:48:48,795  STOCKREFILL buttonNewStockRefillClick 
+28 jan 15:48:51,822  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 15:48:52,698  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 15:48:52,901  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 15:48:53,696  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 15:48:54,540  STOCKREFILL buttonCreateClick 
+28 jan 15:48:54,789  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 15:48:57,944  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 15:48:59,755  
+--------------ERROR MESSGE:--------------
+The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+--------------STACK TRACE:--------------
+
+28 jan 15:48:59,755  java.lang.AssertionError: The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at elementmanagement.sikuliMgn.SikuliKeyboardMgn.assertImageOnScreen(SikuliKeyboardMgn.java:50)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertImageOnScreenUsingSikuli(EditRefillOrderPage.java:66)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+28 jan 15:48:59,866  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+28 jan 15:56:10,326  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 15:56:10,326  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 15:56:10,326  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 15:56:27,655  COMMONTESTSTEPS login 
+28 jan 15:56:27,655  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 15:56:27,875  LOGINPAGE fieldPasswordInsert  ******
+28 jan 15:56:28,062  LOGINPAGE buttonLogOnClick 
+28 jan 15:56:32,298  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 15:56:33,194  STOCKREFILL buttonNewStockRefillClick 
+28 jan 15:57:34,018  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 16:00:12,782  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 16:00:12,782  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 16:00:12,782  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 16:00:32,293  COMMONTESTSTEPS login 
+28 jan 16:00:32,293  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 16:00:32,512  LOGINPAGE fieldPasswordInsert  ******
+28 jan 16:00:32,653  LOGINPAGE buttonLogOnClick 
+28 jan 16:00:37,615  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 16:00:38,478  STOCKREFILL buttonNewStockRefillClick 
+28 jan 16:00:48,785  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 16:00:56,266  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 16:00:56,532  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 16:01:00,248  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 16:01:05,011  STOCKREFILL buttonCreateClick 
+28 jan 16:01:05,280  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 16:01:08,134  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 16:01:10,304  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+28 jan 16:01:10,445  EDITREFILLORDERPAGE fieldLanguageAssert 
+28 jan 16:01:10,539  EDITREFILLORDERPAGE fieldCurrencyAssert 
+28 jan 16:01:10,648  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+28 jan 16:01:30,402  EDITREFILLORDERPAGE buttonSaveClick 
+28 jan 16:01:36,351  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+28 jan 16:01:50,395  EDITREFILLORDERPAGE buttonInsertClick 
+28 jan 16:01:50,734  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+28 jan 16:02:22,737  
+--------------ERROR MESSGE:--------------
+The text didnt match, type : TRUCK
+--------------STACK TRACE:--------------
+
+28 jan 16:02:22,753  junit.framework.AssertionFailedError: The text didnt match, type : TRUCK
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.assertTextOnTableByClassNameAndIndex(OperateOnWebDriverElement.java:835)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertTextOnTableProductList(EditRefillOrderPage.java:102)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+28 jan 16:06:02,305  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 16:06:02,305  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 16:06:02,321  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 16:06:21,697  COMMONTESTSTEPS login 
+28 jan 16:06:21,697  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 16:06:21,995  LOGINPAGE fieldPasswordInsert  ******
+28 jan 16:06:22,213  LOGINPAGE buttonLogOnClick 
+28 jan 16:06:27,124  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 16:06:28,331  STOCKREFILL buttonNewStockRefillClick 
+28 jan 16:06:47,679  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 16:06:50,438  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 16:06:51,063  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 16:06:54,744  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 16:06:59,425  STOCKREFILL buttonCreateClick 
+28 jan 16:06:59,722  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 16:07:02,842  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 16:07:05,012  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+28 jan 16:07:05,200  EDITREFILLORDERPAGE fieldLanguageAssert 
+28 jan 16:07:05,340  EDITREFILLORDERPAGE fieldCurrencyAssert 
+28 jan 16:07:05,481  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+28 jan 16:07:36,045  EDITREFILLORDERPAGE buttonSaveClick 
+28 jan 16:07:37,950  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+28 jan 16:07:50,510  EDITREFILLORDERPAGE buttonInsertClick 
+28 jan 16:07:58,343  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+28 jan 22:25:34,278  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 22:25:34,278  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 22:25:34,278  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 22:26:29,636  COMMONTESTSTEPS login 
+28 jan 22:26:29,636  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 22:26:30,261  LOGINPAGE fieldPasswordInsert  ******
+28 jan 22:26:30,542  LOGINPAGE buttonLogOnClick 
+28 jan 22:28:34,813  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 22:28:36,782  STOCKREFILL buttonNewStockRefillClick 
+28 jan 22:29:44,218  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 22:29:46,980  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 22:29:48,312  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 22:29:51,979  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 22:29:56,662  STOCKREFILL buttonCreateClick 
+28 jan 22:29:56,898  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 22:29:59,383  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 22:30:01,069  
+--------------ERROR MESSGE:--------------
+The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+--------------STACK TRACE:--------------
+
+28 jan 22:30:01,084  java.lang.AssertionError: The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at elementmanagement.sikuliMgn.SikuliKeyboardMgn.assertImageOnScreen(SikuliKeyboardMgn.java:50)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertImageOnScreenUsingSikuli(EditRefillOrderPage.java:67)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+28 jan 22:30:01,179  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+28 jan 22:31:43,035  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 22:31:43,035  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 22:31:43,051  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 22:32:43,404  COMMONTESTSTEPS login 
+28 jan 22:32:43,404  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 22:32:44,045  LOGINPAGE fieldPasswordInsert  ******
+28 jan 22:32:44,263  LOGINPAGE buttonLogOnClick 
+28 jan 22:33:51,992  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 22:33:54,115  STOCKREFILL buttonNewStockRefillClick 
+28 jan 22:36:17,496  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 22:36:20,090  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 22:36:21,073  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 22:36:24,711  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 22:36:29,680  STOCKREFILL buttonCreateClick 
+28 jan 22:36:29,962  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 22:36:32,458  EDITREFILLORDERPAGE assertImageOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png
+28 jan 22:36:34,690  
+--------------ERROR MESSGE:--------------
+The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+--------------STACK TRACE:--------------
+
+28 jan 22:36:34,690  java.lang.AssertionError: The image, C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\DROPDOWN_PURCHASING_ORGANIZATION_LT10.png did not exist on the screen
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at elementmanagement.sikuliMgn.SikuliKeyboardMgn.assertImageOnScreen(SikuliKeyboardMgn.java:50)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertImageOnScreenUsingSikuli(EditRefillOrderPage.java:67)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+28 jan 22:36:34,784  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+28 jan 22:38:00,673  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 22:38:00,688  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 22:38:00,688  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 22:39:23,711  COMMONTESTSTEPS login 
+28 jan 22:39:23,711  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 22:39:24,133  LOGINPAGE fieldPasswordInsert  ******
+28 jan 22:39:24,383  LOGINPAGE buttonLogOnClick 
+28 jan 22:39:54,238  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 22:39:56,113  STOCKREFILL buttonNewStockRefillClick 
+28 jan 22:40:13,534  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 22:40:17,494  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 22:40:18,501  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 22:40:22,168  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 22:40:26,912  STOCKREFILL buttonCreateClick 
+28 jan 22:40:27,202  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 22:40:29,526  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+28 jan 22:40:30,463  EDITREFILLORDERPAGE fieldLanguageAssert 
+28 jan 22:40:30,619  EDITREFILLORDERPAGE fieldCurrencyAssert 
+28 jan 22:40:30,745  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+28 jan 22:40:46,529  EDITREFILLORDERPAGE buttonSaveClick 
+28 jan 22:40:50,759  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+28 jan 22:41:48,139  EDITREFILLORDERPAGE buttonInsertClick 
+28 jan 22:42:14,744  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+28 jan 23:01:55,500  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+28 jan 23:02:48,585  
+--------------ERROR MESSGE:--------------
+Index: 0, Size: 0
+--------------STACK TRACE:--------------
+
+28 jan 23:02:48,600  java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+	at java.util.ArrayList.get(ArrayList.java:322)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.getTextOnTableByClassNameAndRowIndex(OperateOnWebDriverElement.java:830)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.assertTextOnTableByClassNameAndIndex(OperateOnWebDriverElement.java:837)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertTextOnTableProductList(EditRefillOrderPage.java:103)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+28 jan 23:13:05,330  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 23:13:05,330  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 23:13:05,331  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 23:13:32,786  COMMONTESTSTEPS login 
+28 jan 23:13:32,786  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 23:13:33,302  LOGINPAGE fieldPasswordInsert  ******
+28 jan 23:13:33,536  LOGINPAGE buttonLogOnClick 
+28 jan 23:13:51,723  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 23:13:53,893  STOCKREFILL buttonNewStockRefillClick 
+28 jan 23:14:11,193  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 23:14:13,756  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 23:14:15,286  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 23:14:18,926  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 23:14:23,614  STOCKREFILL buttonCreateClick 
+28 jan 23:14:23,912  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 23:14:26,721  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+28 jan 23:14:27,206  EDITREFILLORDERPAGE fieldLanguageAssert 
+28 jan 23:14:27,331  EDITREFILLORDERPAGE fieldCurrencyAssert 
+28 jan 23:14:27,440  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+28 jan 23:14:41,396  EDITREFILLORDERPAGE buttonSaveClick 
+28 jan 23:14:41,709  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+28 jan 23:14:51,682  EDITREFILLORDERPAGE buttonInsertClick 
+28 jan 23:14:51,964  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+28 jan 23:16:21,898  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.xpath: //*[@class=' ui-state-default dgrid-row dgrid-row-even dgrid-selected ui-state-active' ]
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@589da1dd' was found
+
+--------------STACK TRACE:--------------
+
+28 jan 23:16:21,899  java.lang.RuntimeException: No Element Was Found by: By.xpath: //*[@class=' ui-state-default dgrid-row dgrid-row-even dgrid-selected ui-state-active' ]
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@589da1dd' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:273)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementByXPath(FindWebDriverElement.java:116)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.getTextOnTableByClassNameAndRowIndex(OperateOnWebDriverElement.java:824)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.assertTextOnTableByClassNameAndIndex(OperateOnWebDriverElement.java:842)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertTextOnTableProductList(EditRefillOrderPage.java:103)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+28 jan 23:21:17,856  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 23:21:17,856  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 23:21:17,857  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 23:21:39,075  COMMONTESTSTEPS login 
+28 jan 23:21:39,091  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 23:21:39,606  LOGINPAGE fieldPasswordInsert  ******
+28 jan 23:21:39,856  LOGINPAGE buttonLogOnClick 
+28 jan 23:21:49,581  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 23:21:51,610  STOCKREFILL buttonNewStockRefillClick 
+28 jan 23:22:03,683  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 23:22:06,258  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 23:22:06,899  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 23:22:10,573  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 23:22:15,241  STOCKREFILL buttonCreateClick 
+28 jan 23:22:15,513  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 23:22:18,228  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+28 jan 23:22:19,118  EDITREFILLORDERPAGE fieldLanguageAssert 
+28 jan 23:22:19,243  EDITREFILLORDERPAGE fieldCurrencyAssert 
+28 jan 23:22:19,353  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+28 jan 23:24:15,034  EDITREFILLORDERPAGE buttonSaveClick 
+28 jan 23:24:15,347  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+28 jan 23:24:24,668  EDITREFILLORDERPAGE buttonInsertClick 
+28 jan 23:24:25,028  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+28 jan 23:33:21,355  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 23:33:21,355  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 23:33:21,356  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+28 jan 23:33:42,329  COMMONTESTSTEPS login 
+28 jan 23:33:42,329  LOGINPAGE fieldUserIDInsert  xdstest1
+28 jan 23:33:42,816  LOGINPAGE fieldPasswordInsert  ******
+28 jan 23:33:43,019  LOGINPAGE buttonLogOnClick 
+28 jan 23:33:51,908  SALESPORTMAINPAGE tabStockRefillClick 
+28 jan 23:33:53,797  STOCKREFILL buttonNewStockRefillClick 
+28 jan 23:34:01,835  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+28 jan 23:34:04,464  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+28 jan 23:34:05,058  STOCKREFILL fieldLanguageInsert  Lithuanian
+28 jan 23:34:08,678  STOCKREFILL fieldCurrencyInsert  EUR
+28 jan 23:34:13,405  STOCKREFILL buttonCreateClick 
+28 jan 23:34:13,687  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+28 jan 23:34:16,293  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+28 jan 23:34:16,434  EDITREFILLORDERPAGE fieldLanguageAssert 
+28 jan 23:34:16,543  EDITREFILLORDERPAGE fieldCurrencyAssert 
+28 jan 23:34:16,652  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+28 jan 23:34:28,006  EDITREFILLORDERPAGE buttonSaveClick 
+28 jan 23:34:28,402  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+28 jan 23:34:37,721  EDITREFILLORDERPAGE buttonInsertClick 
+28 jan 23:34:38,002  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+28 jan 23:35:44,911  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.xpath: //*[@class='ui-state-default dgrid-row dgrid-row-even dgrid-selected ui-state-active' ]
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@1e1ff563' was found
+
+--------------STACK TRACE:--------------
+
+28 jan 23:35:44,911  java.lang.RuntimeException: No Element Was Found by: By.xpath: //*[@class='ui-state-default dgrid-row dgrid-row-even dgrid-selected ui-state-active' ]
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@1e1ff563' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:273)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementByXPath(FindWebDriverElement.java:116)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.getTextOnTableByClassNameAndRowIndex(OperateOnWebDriverElement.java:824)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.assertTextOnTableByClassNameAndIndex(OperateOnWebDriverElement.java:842)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertTextOnTableProductList(EditRefillOrderPage.java:103)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+28 jan 23:59:39,061  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+28 jan 23:59:39,061  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+28 jan 23:59:39,062  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+29 jan 00:00:02,907  COMMONTESTSTEPS login 
+29 jan 00:00:02,907  LOGINPAGE fieldUserIDInsert  xdstest1
+29 jan 00:00:03,329  LOGINPAGE fieldPasswordInsert  ******
+29 jan 00:00:03,566  LOGINPAGE buttonLogOnClick 
+29 jan 00:00:13,397  SALESPORTMAINPAGE tabStockRefillClick 
+29 jan 00:00:15,395  STOCKREFILL buttonNewStockRefillClick 
+29 jan 00:00:24,431  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+29 jan 00:00:26,959  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+29 jan 00:00:27,584  STOCKREFILL fieldLanguageInsert  Lithuanian
+29 jan 00:00:31,172  STOCKREFILL fieldCurrencyInsert  EUR
+29 jan 00:00:35,870  STOCKREFILL buttonCreateClick 
+29 jan 00:00:36,218  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+29 jan 00:00:38,714  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+29 jan 00:00:38,856  EDITREFILLORDERPAGE fieldLanguageAssert 
+29 jan 00:00:38,965  EDITREFILLORDERPAGE fieldCurrencyAssert 
+29 jan 00:00:39,077  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+29 jan 00:00:51,548  EDITREFILLORDERPAGE buttonSaveClick 
+29 jan 00:00:51,796  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+29 jan 00:01:00,909  EDITREFILLORDERPAGE buttonInsertClick 
+29 jan 00:01:01,206  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+29 jan 00:04:22,281  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+29 jan 00:04:44,642  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+29 jan 00:05:07,431  EDITREFILLORDERPAGE dropdownToolSelect  Copy
+29 jan 00:07:05,930  EDITREFILLORDERPAGE dropdownToolSelect  Remove
+29 jan 00:09:22,503  
+--------------ERROR MESSGE:--------------
+No Element Was Found by: By.id: dijit_form_DropDownButton_0
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@43a30706' was found
+
+--------------STACK TRACE:--------------
+
+29 jan 00:09:22,504  java.lang.RuntimeException: No Element Was Found by: By.id: dijit_form_DropDownButton_0
+ EXCEPTION THROWN: java.lang.RuntimeException: No element '[Lorg.openqa.selenium.By;@43a30706' was found
+
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.wiatAndGetElement(FindWebDriverElement.java:273)
+	at elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement.waitForElementById(FindWebDriverElement.java:99)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.selectFromDropdownListByIdAndValue(OperateOnWebDriverElement.java:85)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.dropdownToolSelect(EditRefillOrderPage.java:109)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+29 jan 09:40:10,564  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+29 jan 09:40:10,580  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+29 jan 09:40:10,580  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+29 jan 09:40:31,597  COMMONTESTSTEPS login 
+29 jan 09:40:31,597  LOGINPAGE fieldUserIDInsert  xdstest1
+29 jan 09:40:31,879  LOGINPAGE fieldPasswordInsert  ******
+29 jan 09:40:32,113  LOGINPAGE buttonLogOnClick 
+29 jan 09:40:36,386  SALESPORTMAINPAGE tabStockRefillClick 
+29 jan 09:40:37,465  STOCKREFILL buttonNewStockRefillClick 
+29 jan 09:40:44,542  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+29 jan 09:40:47,233  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+29 jan 09:40:47,733  STOCKREFILL fieldLanguageInsert  Lithuanian
+29 jan 09:40:51,305  STOCKREFILL fieldCurrencyInsert  EUR
+29 jan 09:40:56,018  STOCKREFILL buttonCreateClick 
+29 jan 09:40:56,394  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+29 jan 09:40:59,623  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+29 jan 09:40:59,749  EDITREFILLORDERPAGE fieldLanguageAssert 
+29 jan 09:40:59,858  EDITREFILLORDERPAGE fieldCurrencyAssert 
+29 jan 09:40:59,983  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+29 jan 09:42:10,657  EDITREFILLORDERPAGE buttonSaveClick 
+29 jan 09:42:10,986  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+29 jan 09:42:21,059  EDITREFILLORDERPAGE buttonInsertClick 
+29 jan 09:42:21,450  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+29 jan 09:45:47,432  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+29 jan 09:46:46,804  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+29 jan 10:35:54,172  EDITREFILLORDERPAGE dropdownToolSelect  Copy
+29 jan 10:36:20,683  EDITREFILLORDERPAGE dropdownToolSelect  Remove
+29 jan 12:32:28,061  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+29 jan 12:32:28,093  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+29 jan 12:32:28,108  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+29 jan 12:32:57,051  COMMONTESTSTEPS login 
+29 jan 12:32:57,051  LOGINPAGE fieldUserIDInsert  xdstest1
+29 jan 12:32:57,286  LOGINPAGE fieldPasswordInsert  ******
+29 jan 12:32:57,489  LOGINPAGE buttonLogOnClick 
+29 jan 12:33:03,571  SALESPORTMAINPAGE tabStockRefillClick 
+29 jan 12:33:05,488  STOCKREFILL buttonNewStockRefillClick 
+29 jan 12:33:16,134  STOCKREFILL fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+29 jan 12:33:18,679  STOCKREFILL fieldDescriptionInsert  Lithuanian Desc
+29 jan 12:33:19,054  STOCKREFILL fieldLanguageInsert  Lithuanian
+29 jan 12:33:22,722  STOCKREFILL fieldCurrencyInsert  EUR
+29 jan 12:33:27,486  STOCKREFILL buttonCreateClick 
+29 jan 12:33:27,823  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\SAFSPORT\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+29 jan 12:33:31,132  EDITREFILLORDERPAGE fieldCreatedDateTodayAssert 
+29 jan 12:33:31,258  EDITREFILLORDERPAGE fieldLanguageAssert 
+29 jan 12:33:31,383  EDITREFILLORDERPAGE fieldCurrencyAssert 
+29 jan 12:33:31,492  EDITREFILLORDERPAGE fieldPurchasingOrganisationInsert  SRO BUCHAREST BRANCH
+29 jan 12:33:46,257  EDITREFILLORDERPAGE buttonSaveClick 
+29 jan 12:33:46,551  EDITREFILLORDERPAGE dropdownTypeSelect  Truck
+29 jan 12:33:55,698  EDITREFILLORDERPAGE buttonInsertClick 
+29 jan 12:33:56,043  EDITREFILLORDERPAGE assertTextOnTableProductList  1
+29 jan 12:34:16,757  
+--------------ERROR MESSGE:--------------
+Index: 1, Size: 1
+--------------STACK TRACE:--------------
+
+29 jan 12:34:16,772  java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+	at java.util.ArrayList.get(ArrayList.java:322)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.getTextOnTableByClassNameAndRowIndex(OperateOnWebDriverElement.java:835)
+	at elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement.assertTextOnTableByClassNameAndIndex(OperateOnWebDriverElement.java:842)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertTextOnTableProductList(EditRefillOrderPage.java:104)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+29 jan 12:34:17,031  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+

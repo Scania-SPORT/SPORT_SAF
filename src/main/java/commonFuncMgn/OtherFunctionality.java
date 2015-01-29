@@ -60,6 +60,11 @@ public abstract class OtherFunctionality extends ReadInputDataFromFile{
 		return dateToday;
 	}
 
+	public static String adjustedIndexMinusOne(String indexToAdjust){
+		int rowIndexAdjusted=Integer.parseInt(indexToAdjust)-1;
+		return String.valueOf(rowIndexAdjusted);
+	}
+	
 	/**Execute the java script, scriptToExecute, on the site driver, e.g. to simulate an action that cannot be achieved by a webdriver action.
 	 * Such actions could be as forcing the browser to show hidden elements, get browser information, etc.
 	 * The java script execution should be used with caution since it not an exact simulation of the user behavior. 
