@@ -152,4 +152,9 @@ public class XPathFunctionality {
         String xPath="//"+tag+"[@class='"+className+"' ]";
         return xPath;
 	}
+	
+	public static String xPathByTagAndRole(String tag, String role){
+        String xPath="//"+tag+"[@role='"+role+"' ]";
+        return xPath;
+	}
 }
