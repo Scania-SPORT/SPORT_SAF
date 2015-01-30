@@ -9,6 +9,7 @@ import java.net.URL;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -49,11 +50,11 @@ private WebDriver driver;
  */
 	public void createWebDriver() {	
 		
-		ProfilesIni profilesIni = new ProfilesIni();
-		//FirefoxProfile profile = profilesIni.getProfile("default");
 		//////////////////////////////////////////////////////
 		//////////////////FIREFOX DRIVER//////////////////////
 		if (ConfigureSaf.SAF_DRIVER.contentEquals(OtherParameters.FIREFOXDRIVER)) {
+			ProfilesIni profilesIni = new ProfilesIni();
+			FirefoxProfile profile = profilesIni.getProfile("default");
 			// driver= new FirefoxDriver(profile);
 			if (ConfigureSaf.SAF_GRID) {
 
@@ -63,7 +64,7 @@ private WebDriver driver;
 					e.printStackTrace();
 				}
 			} else
-				driver = new FirefoxDriver(/*profile*/);
+				driver = new FirefoxDriver(profile);
 		}
 		
 		// ////////////////////////////////////////////////////

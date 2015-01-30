@@ -2,15 +2,19 @@ package windowAndPageMgn.pageMgn;
 
 import java.io.File;
 import org.apache.log4j.xml.DOMConfigurator;
+import org.sikuli.api.DesktopScreenRegion;
+import org.sikuli.api.ScreenRegion;
 
+import windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage;
 import windowAndPageMgn.pageMgn.Pages.LogInPage;
 import windowAndPageMgn.pageMgn.Pages.QuotationsPage;
 import windowAndPageMgn.pageMgn.Pages.SalesPortMainPage;
-import windowAndPageMgn.pageMgn.Pages.StockRefill;
+import windowAndPageMgn.pageMgn.Pages.StockRefillPage;
 import configMgn.ConfigureSaf;
 import elementmanagement.seleniumWebDriverElementMgn.FindWebDriverElement;
 import elementmanagement.seleniumWebDriverElementMgn.JavaScriptCalls;
 import elementmanagement.seleniumWebDriverElementMgn.OperateOnWebDriverElement;
+import elementmanagement.sikuliMgn.SikuliKeyboardMgn;
 import appMgn.StartDesktopApp;
 import appMgn.StartWebDriver;
 
@@ -23,12 +27,14 @@ public class CommonWindowsAndPages {
 	public static OperateOnWebDriverElement operateOnWebDriverElement;
 	public static FindWebDriverElement findWebDriverElement;
 	public static JavaScriptCalls javaScriptCalls;
-
+	public static SikuliKeyboardMgn sikuliKeyboardMgn;
+	public static ScreenRegion screenRegion;
 	
 	public static LogInPage logInPage;
 	public static SalesPortMainPage salesPortMainPage;
 	public static QuotationsPage quotationsPage;
-	public static StockRefill stockRefill;
+	public static StockRefillPage stockRefill;
+	public static EditRefillOrderPage editRefillOrder;
 	// public static OperateOnWhiteElements operateOnWhiteElements;
 	// private static SikuliKeyboardMgn sikuliKeyboardMgn;
 	// private static FindWhiteElements findWhiteElements;
@@ -58,7 +64,14 @@ public class CommonWindowsAndPages {
 		operateOnWebDriverElement.setFindWebDriverElement(findWebDriverElement);
 		javaScriptCalls = new JavaScriptCalls();
 		operateOnWebDriverElement.setJavaScriptCalls(javaScriptCalls);
+		sikuliKeyboardMgn = new SikuliKeyboardMgn();
+		sikuliKeyboardMgn.setJavaScriptCalls(javaScriptCalls);
+		screenRegion= new DesktopScreenRegion();
+		sikuliKeyboardMgn.setScreenRegion(screenRegion);
+		
 		logInPage = new LogInPage();
+
+		
 		// findWhiteElements = new FindWhiteElements();
 		// whiteKeybaordManagement = new WhiteKeybaordMgn();
 		// sikuliKeyboardMgn = new SikuliKeyboardMgn();
@@ -68,7 +81,8 @@ public class CommonWindowsAndPages {
 		logInPage = new LogInPage();
 		salesPortMainPage = new SalesPortMainPage();
 		quotationsPage = new QuotationsPage();
-		stockRefill = new StockRefill();
+		stockRefill = new StockRefillPage();
+		editRefillOrder= new EditRefillOrderPage();
 
 	}
 }

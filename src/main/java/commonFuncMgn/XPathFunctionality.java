@@ -133,8 +133,23 @@ public class XPathFunctionality {
 		return xPath;
 	}
 	
-	public static String xPathByTagAndText(String tag, String text){
-		String xPath="//"+tag+"[@Text='"+text+"']";
+	public static String xPathByTagAndName(String tag, String name){
+		String xPath="//"+tag+"[@name='"+name+"']";
 		return xPath;
+	}
+	
+	public static String xPathByTagAndText(String tag, String text){
+		String xPath="//"+tag+"[contains(@span,'"+text+"')]";
+		return xPath;
+	}
+	
+	public static String xPathByTagAndIdAndClassName(String tag, String id, String className){
+        String xPath="//"+tag+"[@id='"+id+"' and @class='"+className+"' ]";
+        return xPath;
+	}
+
+	public static String xPathByTagClassName(String tag, String className){
+        String xPath="//"+tag+"[@class='"+className+"' ]";
+        return xPath;
 	}
 }

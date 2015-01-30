@@ -99,7 +99,10 @@ public class FindWebDriverElement{
          return wiatAndGetElement(pageNameToSwitchTo, frameNameToSwitchTo, By.id(iDForElementToFind));
      }
 
-
+     public WebElement waitForElementByClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String classNameForElementToFind)
+     {
+         return wiatAndGetElement(pageNameToSwitchTo, frameNameToSwitchTo, By.className(classNameForElementToFind));
+     }
      /**
       * WebElement, wait and return an element.
       * The web element is identified by xPath
@@ -152,6 +155,11 @@ public class FindWebDriverElement{
      {
          return wiatAndGetElement(pageNameToSwitchTo, frameNameToSwitchTo, By.name(nameForElementToFind), By.xpath("#"+indexForElementToFind+"##"));
      }
+     
+     public WebElement waitForElementByClassAndIndex(String pageNameToSwitchTo, String frameNameToSwitchTo, String nameForElementToFind, String indexForElementToFind)
+     {
+         return wiatAndGetElement(pageNameToSwitchTo, frameNameToSwitchTo, By.className(nameForElementToFind), By.xpath("#"+indexForElementToFind+"##"));
+     }
 
      /**
       * Get the web element according to a given page name, frame name and location(identification method for the element)
@@ -199,14 +207,14 @@ public class FindWebDriverElement{
              				// Throw an exception if more than 1 element is found
              				List<WebElement> webElementList = driver.findElements(by[0]);
              				sizeOfWebElementList = webElementList.size();
-             				if (sizeOfWebElementList > 1) {
-             					for (int i = 0; i < sizeOfWebElementList; i++) {
-             						SafLog.warning(sizeOfWebElementList +" elements were found " +by);
-             						SafLog.warning("Tag name element_" + i + ": "	+ webElementList.get(i).getTagName());
-             						SafLog.warning("Text element_" + i + ": " + webElementList.get(i).getText());
-             					}
-             					throw new RuntimeException();
-             				}
+//             				if (sizeOfWebElementList > 1) {
+//             					for (int i = 0; i < sizeOfWebElementList; i++) {
+//             						SafLog.warning(sizeOfWebElementList +" elements were found " +by);
+//             						SafLog.warning("Tag name element_" + i + ": "	+ webElementList.get(i).getTagName());
+//             						SafLog.warning("Text element_" + i + ": " + webElementList.get(i).getText());
+//             					}
+//             					throw new RuntimeException();
+//             				}
              				return webElement;
              			}
              		};
@@ -266,6 +274,120 @@ public class FindWebDriverElement{
          }
          return webElement;
      } 
+     
+//     /**
+//      * Get the web element according to a given page name, frame name and location(identification method for the element)
+//      * @param pageNameToSwitchTo
+//      * @param frameNameToSwitchTo
+//      * @param by
+//      * @return
+//      */
+//     private List<WebElement> wiatAndGetElements(String pageNameToSwitchTo, String frameNameToSwitchTo, final By... by)
+//     {
+//         Exception exception = null;
+//         SafLog.debug(pageNameToSwitchTo, frameNameToSwitchTo, by.toString());
+//         String errorMessage = "No Element Was Found by: " + by[0] + "\n EXCEPTION THROWN: ";
+//         WebElement[] webElements = null;
+//         if (waitForAjax)
+//         {
+//             //Check the status of the page by executing the javascipt, document.status, to see if the page is fully loaded
+//             //This check makes the system slower but minimize the risk of failure
+//             javaScriptCalls.WaitForAjaxCallToFinish();
+//         }
+//         //Max time to wait for an element
+//         long maxTimeToWait=System.currentTimeMillis()+ConfigureSaf.SAF_MAX_TIME_IN_MSEC_TO_WAIT_FOR_ELEMENT; 		
+//         while (webElements == null && maxTimeToWait > System.currentTimeMillis())
+//         {
+//             try
+//             {
+//                 //Modify the diver by switching page and frame if needed
+//                 driver = SwitchToFrameOrWindowByName(driver, pageNameToSwitchTo, frameNameToSwitchTo);
+//                 if (by.length == 1)
+//                 {   
+//                     /////////////////
+//                     SafLog.debug(by.toString());
+//             		//threadSleep(SELENIUM_GENERAL_THREAD_SLEEP_TIME_IN_MSEC);//General
+//             		// sleep time is used to slow down the system, for demo
+//             		// Create an expected condition that expect a specific element,
+//             		// expCondition are idempotent
+//             		ExpectedCondition<WebElement> expCondition = new ExpectedCondition<WebElement>() {
+//             			public WebElement apply(WebDriver driver) {
+//             				SafLog.debug("Apply: driver" + driver);
+//             				int sizeOfWebElementList = 0;
+//             				WebElement webElement = driver.findElement(by[0]);
+//             				// Note. findelement() does not react if more than one element
+//             				// is found. It returns the "first" found element
+//             				
+//             				// Throw an exception if more than 1 element is found
+//             				List<WebElement> webElementList = driver.findElements(by[0]);
+//             				sizeOfWebElementList = webElementList.size();
+//             				if (sizeOfWebElementList > 1) {
+//             					for (int i = 0; i < sizeOfWebElementList; i++) {
+//             						SafLog.warning(sizeOfWebElementList +" elements were found " +by);
+//             						SafLog.warning("Tag name element_" + i + ": "	+ webElementList.get(i).getTagName());
+//             						SafLog.warning("Text element_" + i + ": " + webElementList.get(i).getText());
+//             					}
+//             					throw new RuntimeException();
+//             				}
+//             				return webElement;
+//             			}
+//             		};
+//             		SafLog.debug("WebDriverWait: " + expCondition.toString());
+//             		// Make the driver wait GLOBAL_TIMEOUT_IN_SEC to search for an element
+//             		// or until(expCondition) is true.
+//             		// WebDriverWait: den emiterar en inbygd wait-funktion, returneras som
+//             		// kan användas i expCondition.
+//             		try {
+//             			WebElement webElement1 = new WebDriverWait(driver, 30).until(expCondition);
+//             			return webElement1;
+//             		} catch (Exception e) {
+//             			throw new RuntimeException("No element '" + by.toString() + "' was found\n" , e);
+//             		}
+//                     
+//                     /////////////////////
+//                 }
+//                 else
+//                 {
+//                     List<WebElement> webElementList = driver.findElements(by[0]);
+//                     String byLocator = by[1].toString().toLowerCase().replace(" ", "");
+//
+//                     if (byLocator.contains("by.tagname"))
+//                     {
+//                    	 for (WebElement webElementFromList : webElementList) {
+//						
+//                                 String webElementTagName = "by.tagname:" + webElementFromList.getTagName().toLowerCase().replace(" ", "");
+//                                 SafLog.debug( "webElementTagName: " + webElementTagName, "byLocator: " + byLocator);
+//                                 if (byLocator.contains(webElementTagName))
+//                                 {
+//                                     webElement= webElementFromList;
+//                                     break;
+//                                 }                          
+//                             }
+//                     }
+//                     else if (byLocator.contains("##"))
+//                     {
+//                         int startIndex = by[1].toString().indexOf("#")+1;
+//                         int endIndex=by[1].toString().indexOf("##")-startIndex;
+//                         String s = by[1].toString().substring(startIndex, endIndex);
+//                         int elementIndex=Integer.parseInt((by[1].toString().substring(startIndex,endIndex)));
+//                         webElement = webElementList.get(elementIndex);
+//                     }
+//
+//                 }
+//             }
+//             catch (Exception e)
+//             {
+//                 exception = e;
+//                 OtherFunctionality.threadSleepInMSec(500);
+//             }
+//         }
+//     
+//         if (webElement == null)
+//         {               
+//             throw new  RuntimeException(errorMessage + (exception==null? "":exception.toString()));
+//         }
+//         return webElement;
+//     } 
   
      /**
       * Modify the driver if needed, by switching page or frame
@@ -337,4 +459,6 @@ public class FindWebDriverElement{
          }
          return driver;
      }
+
+	
 }

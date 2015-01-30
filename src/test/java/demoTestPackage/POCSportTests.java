@@ -5,13 +5,18 @@ import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
-import commontestmanagement.CommonTestSteps;
-import configMgn.ConfigureSaf;
+
+import parametermanagement.OtherParameters;
+
 import testrulesmanagement.TestRuleTestCaseLevel;
 import testrulesmanagement.TestRuleTestClassLevel;
 
+import commontestmanagement.CommonTestSteps;
+import configMgn.ConfigureSaf;
+import elementmanagement.sikuliMgn.SikuliKeyboardMgn;
 
-public class POCSportTests extends CommonTestSteps{
+
+public class POCSportTests extends CommonTestSteps {
 
 	@ClassRule
 	public static TestRuleTestClassLevel safClassLevelTestRules=new TestRuleTestClassLevel();
@@ -44,8 +49,26 @@ public class POCSportTests extends CommonTestSteps{
 		stockRefill.fieldLanguageInsert("Lithuanian");
 		stockRefill.fieldCurrencyInsert("EUR");
 		stockRefill.buttonCreateClick();
+		//editRefillOrder.fieldNumberAssertNotEmpty();
+		
+		editRefillOrder.assertImageNotOnScreenUsingSikuli("INPUTFIELD_NUMBER_EMPTY.png");
+		//editRefillOrder.assertImageOnScreenUsingSikuli("DROPDOWN_PURCHASING_ORGANIZATION_LT10.png");
+		editRefillOrder.fieldCreatedDateTodayAssert();
+		editRefillOrder.fieldLanguageAssert("lt");
+		editRefillOrder.fieldCurrencyAssert("EUR");
+		editRefillOrder.fieldPurchasingOrganisationInsert("SRO BUCHAREST BRANCH");
+		
+		editRefillOrder.buttonSaveClick();
+		
+		////ADD A PRODUCT////////
+		editRefillOrder.dropdownTypeSelect("Truck");
+		editRefillOrder.buttonInsertClick();
+		editRefillOrder.assertTextOnTableProductList(OtherParameters.TRUCK,OtherParameters.TYPE,"1");
+		editRefillOrder.assertTextOnTableProductList(OtherParameters.NO,OtherParameters.ORDERED,"1");
+		editRefillOrder.assertTextOnTableProductList("1",OtherParameters.QUANTITY,"1");
+		editRefillOrder.dropdownToolSelect("Copy", "1");
+		editRefillOrder.dropdownToolSelect("Remove", "2");
 	}
 	
-
 
 }
