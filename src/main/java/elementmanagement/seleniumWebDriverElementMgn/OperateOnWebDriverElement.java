@@ -11,6 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import commonFuncMgn.OtherFunctionality;
 import commonFuncMgn.XPathFunctionality;
+import configMgn.ConfigureSaf;
 
 import logMgn.SafLog;
 
@@ -98,6 +99,9 @@ public class OperateOnWebDriverElement {
 			}
 		} 
      }
+     
+     
+     
      
      /// <summary>
      /// Insert into a text field. Without frame or window switch
@@ -833,11 +837,39 @@ public class OperateOnWebDriverElement {
          return elementText;
      }
      
+     public String getNumberOfRowsOnTableByClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String mainTableCalssName, String rowIndex)
+     {
+    	 SafLog.debug();
+         String elementText=null;
+         List<WebElement> mainTableWebElement=null;
+         List<WebElement> elementTrList=null;
+         long maxTimeToWait=System.currentTimeMillis()+ConfigureSaf.SAF_MAX_TIME_IN_MSEC_TO_WAIT_FOR_ELEMENT;
+         while (mainTableWebElement!=null && mainTableWebElement.size()==0 && maxTimeToWait > System.currentTimeMillis())
+         {
+             try
+             {
+         mainTableWebElement=findWebDriverElement.getDriver().findElements(By.xpath(XPathFunctionality.xPathByTagClassName("*", "dgrid-content ui-widget-content")));
+          elementTrList = mainTableWebElement.get(Integer.parseInt(rowIndex)).findElements(By.xpath(XPathFunctionality.xPathByTagAndRole("div", "row")));
+         
+             } catch (Exception e) {
+				OtherFunctionality.threadSleepInMSec(500);
+			}
+             elementText = String.valueOf(elementTrList.size()-35);
+         
+         }
+         return elementText;
+     }
      
      public void assertTextOnTableByClassNameAndIndex(String pageNameToSwitchTo, String frameNameToSwitchTo, String mainTableCalssName, String tableDataClassName, String rowIndex, String textToAssert) {
  		SafLog.debug();
           String textOnelement=getTextOnTableByClassNameAndRowIndex(pageNameToSwitchTo, frameNameToSwitchTo, mainTableCalssName, tableDataClassName, rowIndex).toLowerCase().replace(" ", "").trim();
           Assert.assertTrue("The text didnt match, " + textOnelement + " : " + textToAssert, textOnelement.contains(textToAssert.toLowerCase().replace(" ", "").trim()));
+ 	}
+     
+       public void assertNumberOfRowsOnTableByClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String mainTableCalssName, String numberOfRowsToAssert) {
+ 		SafLog.debug();
+          String numberOfRowsInTable=getNumberOfRowsOnTableByClassName(pageNameToSwitchTo, frameNameToSwitchTo, mainTableCalssName, "1").trim();
+          Assert.assertTrue("The text didnt match, " + numberOfRowsInTable + " : " + numberOfRowsToAssert, numberOfRowsInTable.contains(numberOfRowsToAssert.replace(" ", "").trim()));
  	}
      
   public void assertTextOnTableByTableIDAndRowClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String tableId, String tableDataClassName, String textToAssert, String... rowIndex) {

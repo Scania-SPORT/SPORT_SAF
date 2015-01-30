@@ -120,7 +120,7 @@ public class JavaScriptCalls {
         String documentReadyState = "";
         String documentReadyStateStripped = "";
 		long maxTimeToWait=System.currentTimeMillis()+ConfigureSaf.SAF_MAX_TIME_IN_MSEC_TO_WAIT_FOR_ELEMENT;
-        while (!documentReadyStateStripped.equals("complete") && maxTimeToWait > System.currentTimeMillis())
+        while (!documentReadyStateStripped.trim().toLowerCase().equals("complete") && maxTimeToWait > System.currentTimeMillis())
         {
             try
             {

@@ -1,5 +1,6 @@
 package windowAndPageMgn.pageMgn.Pages;
 
+import commonFuncMgn.OtherFunctionality;
 import commonFuncMgn.XPathFunctionality;
 
 import windowAndPageMgn.pageMgn.CommonWindowsAndPages;
@@ -12,6 +13,8 @@ public class SalesPortMainPage  extends CommonWindowsAndPages{
 	public void tabStockRefillClick() {
 		SafLog.testStep();
 		//operateOnWebDriverElement.clickAnElementByXPath(TAB_STOCK_REFILL_XPATH);
+		//OtherFunctionality.threadSleepInMSec(1000);
+		javaScriptCalls.WaitForAjaxCallToFinish();
 		startWebDriver.GoToSite("http://proj.salesportal.scania.com:10039/wps/myportal/Home/stockrefill/");
 	}
 	

@@ -16,7 +16,7 @@ import configMgn.ConfigureSaf;
 import elementmanagement.sikuliMgn.SikuliKeyboardMgn;
 
 
-public class POCSportTests extends CommonTestSteps {
+public class POCSportTests extends CommonTestSteps{
 
 	@ClassRule
 	public static TestRuleTestClassLevel safClassLevelTestRules=new TestRuleTestClassLevel();
@@ -56,7 +56,7 @@ public class POCSportTests extends CommonTestSteps {
 		editRefillOrder.fieldCreatedDateTodayAssert();
 		editRefillOrder.fieldLanguageAssert("lt");
 		editRefillOrder.fieldCurrencyAssert("EUR");
-		editRefillOrder.fieldPurchasingOrganisationInsert("SRO BUCHAREST BRANCH");
+		//editRefillOrder.fieldPurchasingOrganisationInsert("SRO BUCHAREST BRANCH");
 		
 		editRefillOrder.buttonSaveClick();
 		
@@ -68,6 +68,8 @@ public class POCSportTests extends CommonTestSteps {
 		editRefillOrder.assertTextOnTableProductList("1",OtherParameters.QUANTITY,"1");
 		editRefillOrder.dropdownToolSelect("Copy", "1");
 		editRefillOrder.dropdownToolSelect("Remove", "2");
+		editRefillOrder.buttonConfirmClick();
+		editRefillOrder.assertTableProductListNumberofRow("1");
 	}
 	
 

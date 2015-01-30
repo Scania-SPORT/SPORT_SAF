@@ -25,6 +25,7 @@ public class EditRefillOrderPage extends CommonWindowsAndPages{
 	String TABLE_PRODUCT_LIST_MAIN_CLASSNAME="dgrid-row-table";
 	
 	String DROPDOWN_ITEM_CLASS="dijitReset dijitMenuItem";
+	private String BUTTON_CONFIRM_ID="dijit_form_Button_29_label";
 	
 	public EditRefillOrderPage(){
 		tableColumnValueClassName.put(OtherParameters.ORDERED, "label label-info");
@@ -100,7 +101,9 @@ public class EditRefillOrderPage extends CommonWindowsAndPages{
 	}
 	
 	public void assertTextOnTableProductList(String textToAssert, String columnName, String rowIndex){
-		SafLog.testStep(textToAssert,columnName, rowIndex);		
+		SafLog.testStep("textToAssert: " + textToAssert + ", columnName: " +columnName +  ", rowNumber: " +rowIndex);	
+		OtherFunctionality.threadSleepInMSec(1000);
+		javaScriptCalls.WaitForAjaxCallToFinish();
 		operateOnWebDriverElement.assertTextOnTableByClassNameAndIndex(null, null,TABLE_PRODUCT_LIST_MAIN_CLASSNAME, tableColumnValueClassName.get(columnName), rowIndex, textToAssert);		
 	
 	}
@@ -112,6 +115,18 @@ public class EditRefillOrderPage extends CommonWindowsAndPages{
 			rowNumberTemp=OtherFunctionality.adjustedIndexMinusOne(rowNumber);
 		}
 		operateOnWebDriverElement.selectFromDropdownListByIdAndValue(null, null, DROPDOWN_SELECT_ID+rowNumberTemp, "dijitReset dijitMenuItemLabel", textToSelect);
+	}
+
+	public void buttonConfirmClick() {
+		SafLog.testStep();
+		operateOnWebDriverElement.clickAnElementById(BUTTON_CONFIRM_ID);		
+	}
+
+	public void assertTableProductListNumberofRow(String numberOfRows) {
+		SafLog.testStep("numberOfRows: " +numberOfRows);	
+		javaScriptCalls.WaitForAjaxCallToFinish();
+		operateOnWebDriverElement.assertNumberOfRowsOnTableByClassName(null, null,TABLE_PRODUCT_LIST_MAIN_CLASSNAME, numberOfRows);		
+	
 	}
 	
 }
