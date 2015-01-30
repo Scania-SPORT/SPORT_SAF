@@ -2,26 +2,47 @@ package com.scania.salesportal.stockrefill;
 
 import java.util.concurrent.TimeUnit;
 
+import org.junit.After;
+import org.junit.Before;
+import org.junit.ClassRule;
+import org.junit.Rule;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+
+import testrulesmanagement.TestRuleTestCaseLevel;
+import testrulesmanagement.TestRuleTestClassLevel;
+
+import appMgn.StartWebDriver;
 
 import com.scania.salesportal.stockrefill.StockRefillPage;
+import commontestmanagement.CommonTestSteps;
+import configMgn.ConfigureSaf;
 
-public class StockRefillTest {
+public class StockRefillTest extends CommonTestSteps {
 
+	@ClassRule
+	public static TestRuleTestClassLevel safClassLevelTestRules = new TestRuleTestClassLevel();
+		
+	@Rule
+	public TestRuleTestCaseLevel safMethodLevelTestRules = new TestRuleTestCaseLevel();
+	
 	private WebDriver driver;
 	
-	@BeforeTest
-	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		driver = new ChromeDriver();
-		//driver = new FirefoxDriver();
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+	@Before
+	public void preCondtion(){
+		if(!isPreviousTestCaseSucceeded()){
+			StartTheWebApplication(ConfigureSaf.SAF_SITE_URL);
+		}
+		login();
+		driver = startWebDriver.getDriver();
 	}
 	
+	@After
+	public void testCasePostCondtion(){
+	}
+
 	@Test
 	public void debugConfigure() {
 		StockRefillPage stockRefill = new StockRefillPage(driver);

@@ -68,9 +68,9 @@ public class StockRefillPage extends AbstractPage {
 		EcmFramePage ecm = configure();
 		ecm.lockModel();
 		sleep();
-		ecm.details();
-		//ecm.done();
-		//order();
+		//ecm.details();
+		ecm.done();
+		order();
 	}
 
 	public void setDeliveryAddress(String deliveryAddress) {

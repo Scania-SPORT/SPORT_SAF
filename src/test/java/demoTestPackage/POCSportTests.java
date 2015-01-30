@@ -16,7 +16,7 @@ import configMgn.ConfigureSaf;
 import elementmanagement.sikuliMgn.SikuliKeyboardMgn;
 
 
-public class POCSportTests extends CommonTestSteps{
+public class POCSportTests extends CommonTestSteps {
 
 	@ClassRule
 	public static TestRuleTestClassLevel safClassLevelTestRules=new TestRuleTestClassLevel();
