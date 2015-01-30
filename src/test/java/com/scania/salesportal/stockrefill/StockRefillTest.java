@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.ClassRule;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -43,14 +44,14 @@ public class StockRefillTest extends CommonTestSteps {
 	public void testCasePostCondtion(){
 	}
 
-	@Test
+	@Ignore
 	public void debugConfigure() {
 		StockRefillPage stockRefill = new StockRefillPage(driver);
 		stockRefill.signIn("xdstest1", "Sport123");
 		stockRefill.configureItems(6);
 	}
 	
-	@Test
+	@Ignore
 	public void testStockRefill() throws InterruptedException {
 		StockRefillPage stockRefill = new StockRefillPage(driver);
 		stockRefill.signIn("xdstest1", "Sport123");

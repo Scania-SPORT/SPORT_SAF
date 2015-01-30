@@ -1,7 +1,12 @@
 package windowAndPageMgn.pageMgn.Pages;
 
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+
 import commonFuncMgn.OtherFunctionality;
 import commonFuncMgn.XPathFunctionality;
+import configMgn.ConfigureSaf;
 
 import windowAndPageMgn.pageMgn.CommonWindowsAndPages;
 import logMgn.SafLog;
@@ -13,9 +18,16 @@ public class SalesPortMainPage  extends CommonWindowsAndPages{
 	public void tabStockRefillClick() {
 		SafLog.testStep();
 		//operateOnWebDriverElement.clickAnElementByXPath(TAB_STOCK_REFILL_XPATH);
-		//OtherFunctionality.threadSleepInMSec(1000);
+		OtherFunctionality.threadSleepInMSec(1000);
 		javaScriptCalls.WaitForAjaxCallToFinish();
-		startWebDriver.GoToSite("http://proj.salesportal.scania.com:10039/wps/myportal/Home/stockrefill/");
+		String driverUrl="";
+        long maxTimeToWait=System.currentTimeMillis()+ConfigureSaf.SAF_MAX_TIME_IN_MSEC_TO_WAIT_FOR_ELEMENT;
+        
+        while (driverUrl!="http://proj.salesportal.scania.com:10039/wps/myportal/Home/stockrefill/" && maxTimeToWait > System.currentTimeMillis()){
+        	startWebDriver.GoToSite("http://proj.salesportal.scania.com:10039/wps/myportal/Home/stockrefill/");
+        	driverUrl=startWebDriver.getDriver().getCurrentUrl();
+        	OtherFunctionality.threadSleepInMSec(500);
+        }
 	}
 	
 }

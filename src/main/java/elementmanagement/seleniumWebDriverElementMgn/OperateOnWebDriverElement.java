@@ -824,9 +824,15 @@ public class OperateOnWebDriverElement {
          SafLog.debug();
         
          //WebElement webelement = findWebDriverElement.waitForElementByClassName(pageNameToSwitchTo, frameNameToSwitchTo,tableDataClassName);
-         String elementText=null;
-         List<WebElement> mainTableWebElement=findWebDriverElement.getDriver().findElements(By.xpath(XPathFunctionality.xPathByTagClassName("*", "dgrid-content ui-widget-content")));
-         List<WebElement> elementTrList = mainTableWebElement.get(Integer.parseInt(rowIndex)).findElements(By.xpath(XPathFunctionality.xPathByTagClassName("td", tableDataClassName)));
+         String elementText="";
+         List<WebElement> mainTableWebElement=null;
+         List<WebElement> elementTrList=null;
+          mainTableWebElement=findWebDriverElement.getDriver().findElements(By.xpath(XPathFunctionality.xPathByTagClassName("*", "dgrid-content ui-widget-content")));
+         long maxTimeToWait=System.currentTimeMillis()+ConfigureSaf.SAF_MAX_TIME_IN_MSEC_TO_WAIT_FOR_ELEMENT;
+         while (mainTableWebElement.size()==0 && maxTimeToWait > System.currentTimeMillis()){
+          mainTableWebElement=findWebDriverElement.getDriver().findElements(By.xpath(XPathFunctionality.xPathByTagClassName("*", "dgrid-content ui-widget-content")));
+         }
+         elementTrList = mainTableWebElement.get(Integer.parseInt(rowIndex)).findElements(By.xpath(XPathFunctionality.xPathByTagClassName("td", tableDataClassName)));
          if (elementTrList.size()==0){
         	 elementTrList = mainTableWebElement.get(Integer.parseInt(rowIndex)).findElements(By.xpath(XPathFunctionality.xPathByTagClassName("span", tableDataClassName)));
          }
@@ -843,20 +849,22 @@ public class OperateOnWebDriverElement {
          String elementText=null;
          List<WebElement> mainTableWebElement=null;
          List<WebElement> elementTrList=null;
+         mainTableWebElement=findWebDriverElement.getDriver().findElements(By.xpath(XPathFunctionality.xPathByTagClassName("*", "dgrid-content ui-widget-content")));
          long maxTimeToWait=System.currentTimeMillis()+ConfigureSaf.SAF_MAX_TIME_IN_MSEC_TO_WAIT_FOR_ELEMENT;
-         while (mainTableWebElement!=null && mainTableWebElement.size()==0 && maxTimeToWait > System.currentTimeMillis())
+         while (mainTableWebElement.size()==0 && maxTimeToWait > System.currentTimeMillis())
          {
              try
              {
          mainTableWebElement=findWebDriverElement.getDriver().findElements(By.xpath(XPathFunctionality.xPathByTagClassName("*", "dgrid-content ui-widget-content")));
-          elementTrList = mainTableWebElement.get(Integer.parseInt(rowIndex)).findElements(By.xpath(XPathFunctionality.xPathByTagAndRole("div", "row")));
          
              } catch (Exception e) {
 				OtherFunctionality.threadSleepInMSec(500);
 			}
-             elementText = String.valueOf(elementTrList.size()-35);
+            
          
-         }
+         } 
+          elementTrList = mainTableWebElement.get(Integer.parseInt(rowIndex)).findElements(By.xpath(XPathFunctionality.xPathByTagAndRole("div", "row")));
+         elementText = String.valueOf(elementTrList.size()-35);
          return elementText;
      }
      
@@ -868,7 +876,7 @@ public class OperateOnWebDriverElement {
      
        public void assertNumberOfRowsOnTableByClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String mainTableCalssName, String numberOfRowsToAssert) {
  		SafLog.debug();
-          String numberOfRowsInTable=getNumberOfRowsOnTableByClassName(pageNameToSwitchTo, frameNameToSwitchTo, mainTableCalssName, "1").trim();
+          String numberOfRowsInTable=getNumberOfRowsOnTableByClassName(pageNameToSwitchTo, frameNameToSwitchTo, mainTableCalssName, "1");
           Assert.assertTrue("The text didnt match, " + numberOfRowsInTable + " : " + numberOfRowsToAssert, numberOfRowsInTable.contains(numberOfRowsToAssert.replace(" ", "").trim()));
  	}
      
@@ -894,6 +902,7 @@ public class OperateOnWebDriverElement {
 	public void assertFieldByTagAndNameContainsText(String elementName, String textToVerify) {
 		 SafLog.debug();
          WebElement webelement = findWebDriverElement.waitForElementByName(null, null, elementName);
+         
          String textOnelement=webelement.getAttribute("value");
 		Assert.assertTrue("Field is empty", textOnelement.trim().contains(textToVerify.trim()));
 	}
