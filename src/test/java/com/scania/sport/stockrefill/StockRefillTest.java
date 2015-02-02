@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import com.scania.WebDrivers;
 
+@Test(groups="StockRefill")
 public class StockRefillTest {
 
 	private StockRefillPage stockRefill;
