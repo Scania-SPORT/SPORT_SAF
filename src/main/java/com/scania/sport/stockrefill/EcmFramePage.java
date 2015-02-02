@@ -14,19 +14,23 @@ public class EcmFramePage extends AbstractPage {
 	}
 	
 	public void lockModel() {
+		log();
 		waitClickId("parameter-F59998Field-F59998A-radio");
 	}
 
 	public void details() {
+		log();
 		waitClickXpath("//*[@id=\"configure-steps\"]/div/div[1]/table/tbody/tr/td[2]/div");
 	}
 	
 	public void done() {
+		log();
 		driver.switchTo().defaultContent();
 		waitClickId("dijit_form_Button_25_label");
 	}
 
 	public void searchAndSelectFupDevice() {
+		log();
 		waitClickId("search_input");
 		WebElement element = waitElement(By.id("search_input"), DEFAULT_TIMEOUT);
 		element.sendKeys("2398");

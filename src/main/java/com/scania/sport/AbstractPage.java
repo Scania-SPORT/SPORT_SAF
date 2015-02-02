@@ -1,5 +1,10 @@
 package com.scania.sport;
 
+import java.io.File;
+import java.net.URL;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
@@ -7,15 +12,31 @@ import org.openqa.selenium.WebElement;
 
 public abstract class AbstractPage {
 
+	private static String signInUrlPrefix = "https://wamport.scania.com/pteai/logindmz?targeturl=";
+	static Logger logger = Logger.getRootLogger();
+
+	private final int CLIENT_CODE_STACK_INDEX;
+	
 	public static final long SLEEP = 500;
 	public static final long DEFAULT_TIMEOUT = 10000;
 	protected WebDriver driver;
 	protected String url;
-	private static String signInUrlPrefix = "https://wamport.scania.com/pteai/logindmz?targeturl=";
+
 	
 	public AbstractPage(WebDriver driver, String url) {
 		this.driver = driver;
 		this.url = url;
+		// Finds out the index of "this code" in the returned stack trace - funny but it differs in JDK 1.5 and 1.6
+	    int i = 0;
+	    for(StackTraceElement ste : Thread.currentThread().getStackTrace()) {
+	        i++;
+	        if(ste.getClassName().equals(getClass().getName()))
+	            break;
+	    }
+	    CLIENT_CODE_STACK_INDEX = i;
+
+	    URL log4jConfig = getClass().getClassLoader().getResource("log4jConfiguration.xml");
+		DOMConfigurator.configure(new File(log4jConfig.getFile()).getPath());
 	}
 
 	public void signIn(String username, String password) {
@@ -23,6 +44,24 @@ public abstract class AbstractPage {
 		driver.findElement(By.id("username")).sendKeys(username);
 		driver.findElement(By.id("authenticateDMZ_userLoginData_password")).sendKeys(password);
 		driver.findElement(By.id("authenticateDMZ_0")).click();
+	}
+
+	public void log(Object ... parameters) {
+		StringBuilder logBuilder = new StringBuilder(getClass().getSimpleName()+"."+getCallerMethodName());
+		if(parameters != null && parameters.length > 0) {
+			StringBuilder parameterBuilder = new StringBuilder(": ");
+			for(Object parameter : parameters) {
+				if(parameterBuilder.length() > 0)
+					parameterBuilder.append(", ");
+				parameterBuilder.append(parameter.toString());
+			}
+			logBuilder.append(parameterBuilder.toString());
+		}
+		logger.info(logBuilder.toString());
+	}
+
+	public void log() {
+		log(null);
 	}
 	
 	public void close() {
@@ -124,6 +163,14 @@ public abstract class AbstractPage {
 	
 	public void tick() {
 		sleep(1);
+	}
+
+	public String getCurrentMethodName() {
+	    return Thread.currentThread().getStackTrace()[CLIENT_CODE_STACK_INDEX].getMethodName();
+	}
+	
+	public String getCallerMethodName() {
+	    return Thread.currentThread().getStackTrace()[CLIENT_CODE_STACK_INDEX+1].getMethodName();
 	}
 	
 }
