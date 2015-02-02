@@ -8412,3 +8412,262 @@ null
 30 jan 16:49:19,841  EDITREFILLORDERPAGE assertTextOnTableProductList  textToAssert: 1, columnName: QUANTITY, rowNumber: 1
 30 jan 16:49:20,912  EDITREFILLORDERPAGE dropdownToolSelect  Copy
 30 jan 16:49:34,769  EDITREFILLORDERPAGE dropdownToolSelect  Remove
+02 feb 13:27:39,559  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+02 feb 13:27:39,559  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+02 feb 13:27:39,559  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+02 feb 13:27:53,764  COMMONTESTSTEPS login 
+02 feb 13:27:53,764  LOGINPAGE fieldUserIDInsert  xdstest1
+02 feb 13:27:54,097  LOGINPAGE fieldPasswordInsert  ******
+02 feb 13:27:54,253  LOGINPAGE buttonLogOnClick 
+02 feb 13:28:01,697  SALESPORTMAINPAGE tabStockRefillClick 
+02 feb 13:28:47,027  STOCKREFILLPAGE buttonNewStockRefillClick 
+02 feb 13:28:47,282  STOCKREFILLPAGE fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+02 feb 13:28:48,551  STOCKREFILLPAGE fieldDescriptionInsert  Lithuanian Desc
+02 feb 13:28:52,153  STOCKREFILLPAGE fieldLanguageInsert  Lithuanian
+02 feb 13:28:54,570  STOCKREFILLPAGE fieldCurrencyInsert  EUR
+02 feb 13:28:57,962  STOCKREFILLPAGE buttonCreateClick 
+02 feb 13:28:58,081  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\opt\projects\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+02 feb 13:28:58,796  
+--------------ERROR MESSGE:--------------
+com/googlecode/javacv/cpp/opencv_core$CvArr
+--------------STACK TRACE:--------------
+
+02 feb 13:28:58,796  java.lang.NoClassDefFoundError: com/googlecode/javacv/cpp/opencv_core$CvArr
+	at org.sikuli.core.search.algorithm.TemplateMatcher.findMatchesByGrayscaleAtOriginalResolution(TemplateMatcher.java:18)
+	at org.sikuli.api.ImageTarget.getUnorderedMatches(ImageTarget.java:128)
+	at org.sikuli.api.DefaultTarget.doFindAll(DefaultTarget.java:128)
+	at org.sikuli.api.DefaultScreenRegion._find(DefaultScreenRegion.java:92)
+	at org.sikuli.api.DefaultScreenRegion.access$100(DefaultScreenRegion.java:31)
+	at org.sikuli.api.DefaultScreenRegion$RepeatFind.run(DefaultScreenRegion.java:132)
+	at org.sikuli.api.DefaultScreenRegion.wait(DefaultScreenRegion.java:146)
+	at elementmanagement.sikuliMgn.SikuliKeyboardMgn.isImageOnScreen(SikuliKeyboardMgn.java:40)
+	at elementmanagement.sikuliMgn.SikuliKeyboardMgn.assertImageNotOnScreen(SikuliKeyboardMgn.java:55)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertImageNotOnScreenUsingSikuli(EditRefillOrderPage.java:74)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.infinitest.testrunner.JUnit4Runner.runJUnitTest(JUnit4Runner.java:91)
+	at org.infinitest.testrunner.JUnit4Runner.runTest(JUnit4Runner.java:57)
+	at org.infinitest.testrunner.TestRunnerProcess.runTest(TestRunnerProcess.java:70)
+	at org.infinitest.testrunner.TestRunnerProcess.writeTestResultToOutputStream(TestRunnerProcess.java:112)
+	at org.infinitest.testrunner.TestRunnerProcess.main(TestRunnerProcess.java:89)
+Caused by: java.lang.ClassNotFoundException: com.googlecode.javacv.cpp.opencv_core$CvArr
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 41 more
+
+02 feb 13:28:58,891  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+02 feb 13:38:11,672  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+02 feb 13:38:11,687  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+02 feb 13:38:11,687  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+02 feb 13:38:19,713  COMMONTESTSTEPS login 
+02 feb 13:38:19,713  LOGINPAGE fieldUserIDInsert  xdstest1
+02 feb 13:38:19,996  LOGINPAGE fieldPasswordInsert  ******
+02 feb 13:38:20,145  LOGINPAGE buttonLogOnClick 
+02 feb 13:38:25,820  SALESPORTMAINPAGE tabStockRefillClick 
+02 feb 13:39:06,310  STOCKREFILLPAGE buttonNewStockRefillClick 
+02 feb 13:39:06,510  STOCKREFILLPAGE fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+02 feb 13:39:07,810  STOCKREFILLPAGE fieldDescriptionInsert  Lithuanian Desc
+02 feb 13:39:08,178  STOCKREFILLPAGE fieldLanguageInsert  Lithuanian
+02 feb 13:39:11,112  STOCKREFILLPAGE fieldCurrencyInsert  EUR
+02 feb 13:39:14,522  STOCKREFILLPAGE buttonCreateClick 
+02 feb 13:39:14,687  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\opt\projects\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+02 feb 13:39:14,987  
+--------------ERROR MESSGE:--------------
+com/googlecode/javacv/cpp/opencv_core$CvArr
+--------------STACK TRACE:--------------
+
+02 feb 13:39:14,987  java.lang.NoClassDefFoundError: com/googlecode/javacv/cpp/opencv_core$CvArr
+	at org.sikuli.core.search.algorithm.TemplateMatcher.findMatchesByGrayscaleAtOriginalResolution(TemplateMatcher.java:18)
+	at org.sikuli.api.ImageTarget.getUnorderedMatches(ImageTarget.java:128)
+	at org.sikuli.api.DefaultTarget.doFindAll(DefaultTarget.java:128)
+	at org.sikuli.api.DefaultScreenRegion._find(DefaultScreenRegion.java:92)
+	at org.sikuli.api.DefaultScreenRegion.access$100(DefaultScreenRegion.java:31)
+	at org.sikuli.api.DefaultScreenRegion$RepeatFind.run(DefaultScreenRegion.java:132)
+	at org.sikuli.api.DefaultScreenRegion.wait(DefaultScreenRegion.java:146)
+	at elementmanagement.sikuliMgn.SikuliKeyboardMgn.isImageOnScreen(SikuliKeyboardMgn.java:40)
+	at elementmanagement.sikuliMgn.SikuliKeyboardMgn.assertImageNotOnScreen(SikuliKeyboardMgn.java:55)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertImageNotOnScreenUsingSikuli(EditRefillOrderPage.java:74)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.lang.ClassNotFoundException: com.googlecode.javacv.cpp.opencv_core$CvArr
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 40 more
+
+02 feb 13:39:15,020  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
+02 feb 13:43:55,289  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS STARTS#################
+##############################################################
+##############################################################
+
+02 feb 13:43:55,294  
+****************************************************************
+**************TEST CASE, startSportOrder, STARTS**************
+02 feb 13:43:55,297  COMMONTESTSTEPS StartTheWebApplication  http://proj.salesportal.scania.com:10039/wps/portal/
+02 feb 13:44:01,864  COMMONTESTSTEPS login 
+02 feb 13:44:01,865  LOGINPAGE fieldUserIDInsert  xdstest1
+02 feb 13:44:02,048  LOGINPAGE fieldPasswordInsert  ******
+02 feb 13:44:02,193  LOGINPAGE buttonLogOnClick 
+02 feb 13:44:10,074  SALESPORTMAINPAGE tabStockRefillClick 
+02 feb 13:44:42,136  STOCKREFILLPAGE buttonNewStockRefillClick 
+02 feb 13:44:43,556  STOCKREFILLPAGE fieldPurchasingOrganisationInsert  Vilnius, UAB Scania Lietuva (LT10)
+02 feb 13:44:44,801  STOCKREFILLPAGE fieldDescriptionInsert  Lithuanian Desc
+02 feb 13:44:44,951  STOCKREFILLPAGE fieldLanguageInsert  Lithuanian
+02 feb 13:44:46,715  STOCKREFILLPAGE fieldCurrencyInsert  EUR
+02 feb 13:44:48,440  STOCKREFILLPAGE buttonCreateClick 
+02 feb 13:44:48,547  EDITREFILLORDERPAGE assertImageNotOnScreenUsingSikuli  C:\opt\projects\salesportal\client\sport\sport-test\src\main\SafSport\src//main//java//windowAndPageMgn//pageMgn//Pages//Images//EditRefillOrderPage//\INPUTFIELD_NUMBER_EMPTY.png
+02 feb 13:44:48,860  
+--------------ERROR MESSGE:--------------
+com/googlecode/javacv/cpp/opencv_core$CvArr
+--------------STACK TRACE:--------------
+
+02 feb 13:44:48,861  java.lang.NoClassDefFoundError: com/googlecode/javacv/cpp/opencv_core$CvArr
+	at org.sikuli.core.search.algorithm.TemplateMatcher.findMatchesByGrayscaleAtOriginalResolution(TemplateMatcher.java:18)
+	at org.sikuli.api.ImageTarget.getUnorderedMatches(ImageTarget.java:128)
+	at org.sikuli.api.DefaultTarget.doFindAll(DefaultTarget.java:128)
+	at org.sikuli.api.DefaultScreenRegion._find(DefaultScreenRegion.java:92)
+	at org.sikuli.api.DefaultScreenRegion.access$100(DefaultScreenRegion.java:31)
+	at org.sikuli.api.DefaultScreenRegion$RepeatFind.run(DefaultScreenRegion.java:132)
+	at org.sikuli.api.DefaultScreenRegion.wait(DefaultScreenRegion.java:146)
+	at elementmanagement.sikuliMgn.SikuliKeyboardMgn.isImageOnScreen(SikuliKeyboardMgn.java:40)
+	at elementmanagement.sikuliMgn.SikuliKeyboardMgn.assertImageNotOnScreen(SikuliKeyboardMgn.java:55)
+	at windowAndPageMgn.pageMgn.Pages.EditRefillOrderPage.assertImageNotOnScreenUsingSikuli(EditRefillOrderPage.java:74)
+	at demoTestPackage.POCSportTests.startSportOrder(POCSportTests.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at testrulesmanagement.TestRuleTestCaseLevel$1.evaluate(TestRuleTestCaseLevel.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at testrulesmanagement.TestRuleTestClassLevel$1.evaluate(TestRuleTestClassLevel.java:44)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.lang.ClassNotFoundException: com.googlecode.javacv.cpp.opencv_core$CvArr
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 40 more
+
+02 feb 13:44:48,941  
+##############################################################
+##############################################################
+################TEST CLASS POCSPORTTESTS ENDS###############
+##############################################################
+##############################################################
+
