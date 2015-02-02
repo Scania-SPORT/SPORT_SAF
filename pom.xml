@@ -40,16 +40,10 @@
 			<artifactId>selenium-java</artifactId>
 			<version>2.44.0</version>
 		</dependency>
-		<!--dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-android-driver</artifactId>
-			<version>2.39.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-android-client</artifactId>
-			<version>2.0b1</version>
-		</dependency-->
+		<!--dependency> <groupId>org.seleniumhq.selenium</groupId> <artifactId>selenium-android-driver</artifactId> 
+			<version>2.39.0</version> </dependency> <dependency> <groupId>org.seleniumhq.selenium</groupId> 
+			<artifactId>selenium-android-client</artifactId> <version>2.0b1</version> 
+			</dependency -->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
@@ -92,39 +86,39 @@
 			<artifactId>selenium-api</artifactId>
 			<version>2.44.0</version>
 		</dependency>
-	<dependency>
-    			<groupId>xml-apis</groupId>
-    			<artifactId>xml-apis</artifactId>
-   				<version>1.4.01</version>
-			</dependency>
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.4.01</version>
+		</dependency>
 
-			<dependency>
-				<groupId>org.apache.poi</groupId>
-				<artifactId>poi-ooxml</artifactId>
-				<version>3.9</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>xml-apis</artifactId>
-						<groupId>xml-apis</groupId>
-					</exclusion>		
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>org.seleniumhq.selenium</groupId>
-				<artifactId>selenium-htmlunit-driver</artifactId>
-				<version>2.44.0</version>
-			</dependency>
-			<dependency>
-				<groupId>org.sikuli</groupId>
-				<artifactId>sikuli-api</artifactId>
-				<version>1.1.0</version>
-			</dependency>
-			<dependency>
-				<groupId>org.testng</groupId>
-				<artifactId>testng</artifactId>
-				<version>6.8.17</version>
-				<scope>test</scope>
-			</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.9</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>xml-apis</artifactId>
+					<groupId>xml-apis</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-htmlunit-driver</artifactId>
+			<version>2.44.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.sikuli</groupId>
+			<artifactId>sikuli-api</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.8.17</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -159,6 +153,18 @@
 					</includes>
 					<!-- parallel>classes</parallel> <threadCount>2</threadCount -->
 				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.surefire</groupId>
+						<artifactId>surefire-junit47</artifactId>
+						<version>2.18.1</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.maven.surefire</groupId>
+						<artifactId>surefire-testng</artifactId>
+						<version>2.18.1</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
