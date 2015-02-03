@@ -2,6 +2,7 @@ package com.scania.sport.stockrefill;
 
 import java.util.List;
 
+import org.junit.Ignore;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -11,7 +12,6 @@ import org.testng.annotations.Test;
 
 import com.scania.WebDrivers;
 
-@Test(groups="StockRefill")
 public class StockRefillTest {
 
 	private StockRefillPage stockRefill;
@@ -22,7 +22,7 @@ public class StockRefillTest {
 		stockRefill = new StockRefillPage(driver);
 	}
 	
-	@Test //http://jira/browse/SPORT-4685
+	@Ignore //http://jira/browse/SPORT-4685
 	public void test_SPORT4685_stockRefillQty6Split() throws InterruptedException {
 		stockRefill.signIn("xdstest1", "Sport123");
 		stockRefill.configureItems(6);
@@ -35,7 +35,7 @@ public class StockRefillTest {
 		Assert.assertEquals(sentItems.size(), 2);
 	}
 
-	@Test //http://jira/browse/SPORT-4686
+	@Ignore //http://jira/browse/SPORT-4686
 	public void test_SPORT4686_stockRefillQty1() throws InterruptedException {
 		stockRefill.signIn("xdstest1", "Sport123");
 		stockRefill.configureItems(1);
