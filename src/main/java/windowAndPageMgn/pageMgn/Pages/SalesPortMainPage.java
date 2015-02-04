@@ -26,7 +26,7 @@ public class SalesPortMainPage  extends CommonWindowsAndPages{
         while (driverUrl!="http://proj.salesportal.scania.com:10039/wps/myportal/Home/stockrefill/" && maxTimeToWait > System.currentTimeMillis()){
         	startWebDriver.GoToSite("http://proj.salesportal.scania.com:10039/wps/myportal/Home/stockrefill/");
         	driverUrl=startWebDriver.getDriver().getCurrentUrl();
-        	OtherFunctionality.threadSleepInMSec(500);
+        	OtherFunctionality.threadSleepInMSec(1000);
         }
 	}
 	

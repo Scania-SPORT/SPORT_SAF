@@ -5,17 +5,17 @@ import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
-import org.junit.experimental.categories.Category;
 
 import parametermanagement.OtherParameters;
+
 import testrulesmanagement.TestRuleTestCaseLevel;
 import testrulesmanagement.TestRuleTestClassLevel;
 
 import commontestmanagement.CommonTestSteps;
-
 import configMgn.ConfigureSaf;
+import elementmanagement.sikuliMgn.SikuliKeyboardMgn;
 
-@Category(SafPoc.class)
+
 public class POCSportTests extends CommonTestSteps{
 
 	@ClassRule
@@ -70,6 +70,8 @@ public class POCSportTests extends CommonTestSteps{
 		editRefillOrder.dropdownToolSelect("Remove", "2");
 		editRefillOrder.buttonConfirmClick();
 		editRefillOrder.assertTableProductListNumberofRow("1");
+		editRefillOrder.dropdownToolSelect("Remove", "4");
+		editRefillOrder.buttonConfirmClick();
 	}
 	
 
