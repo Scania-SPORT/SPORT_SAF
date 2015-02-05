@@ -260,6 +260,6 @@
 			</properties>
 		</profile>
 	</profiles>
-	<name>SPORT_SAF</name>
+	<name>SAF</name>
 	<artifactId>saf</artifactId>
 </project>
