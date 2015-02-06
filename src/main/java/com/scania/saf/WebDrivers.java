@@ -25,12 +25,14 @@ public class WebDrivers {
 	private static final String FILE_PREFIX = "file:/";
 	
 	public static WebDriver getFirefox() {
+		Log.info();
 		ProfilesIni profilesIni = new ProfilesIni();
 		FirefoxProfile profile = profilesIni.getProfile("default");
 		return new FirefoxDriver(profile);
 	}
 
 	public static WebDriver getChrome() {
+		Log.info();
 		String path = initDriver("chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", path);
 		ChromeOptions options = new ChromeOptions();
@@ -40,6 +42,7 @@ public class WebDrivers {
 	}
 
 	public static WebDriver getInternetExplorer() {
+		Log.info();
 		String path = initDriver("IEDriverServer.exe");
 		System.setProperty("webdriver.ie.driver", path);
 		DesiredCapabilities capabilities = DesiredCapabilities
@@ -98,7 +101,7 @@ public class WebDrivers {
 		}
 	}
 
-	public static void copyStream(InputStream input, OutputStream output)
+	private static void copyStream(InputStream input, OutputStream output)
 			throws IOException {
 		byte[] buffer = new byte[1024]; // Adjust if you want
 		int bytesRead;
@@ -110,7 +113,7 @@ public class WebDrivers {
 		return targetDirectory+driverName;
 	}
 
-	public static String findTargetDirectory() {
+	private static String findTargetDirectory() {
 		try {
 			return findClassPath(Class.forName(getCallerClassName()));
 		} catch(ClassNotFoundException e) {
@@ -118,15 +121,15 @@ public class WebDrivers {
 		}
 	}
 
-	public static String getCallerClassName() {
+	private static String getCallerClassName() {
 		return Stack.getStackTraceElement(4).getClassName();
 	}
 	
-	public static String findSourcePath() {
+	private static String findSourcePath() {
 		return findClassPath(WebDrivers.class);
 	}
 
-	public static String findClassPath(Class<?> type) {
+	private static String findClassPath(Class<?> type) {
 		String path = type.getProtectionDomain().getCodeSource().getLocation().toString();
 		if(path.startsWith(FILE_PREFIX))
 			path = path.substring(FILE_PREFIX.length());
