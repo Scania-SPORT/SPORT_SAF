@@ -25,14 +25,12 @@ public class WebDrivers {
 	private static final String FILE_PREFIX = "file:/";
 	
 	public static WebDriver getFirefox() {
-		Log.info();
 		ProfilesIni profilesIni = new ProfilesIni();
 		FirefoxProfile profile = profilesIni.getProfile("default");
 		return new FirefoxDriver(profile);
 	}
 
 	public static WebDriver getChrome() {
-		Log.info();
 		String path = initDriver("chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", path);
 		ChromeOptions options = new ChromeOptions();
@@ -42,7 +40,6 @@ public class WebDrivers {
 	}
 
 	public static WebDriver getInternetExplorer() {
-		Log.info();
 		String path = initDriver("IEDriverServer.exe");
 		System.setProperty("webdriver.ie.driver", path);
 		DesiredCapabilities capabilities = DesiredCapabilities
