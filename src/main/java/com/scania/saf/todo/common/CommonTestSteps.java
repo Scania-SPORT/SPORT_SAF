@@ -1,13 +1,12 @@
 package com.scania.saf.todo.common;
 
-import com.scania.saf.log.SafLog;
 /**
  * This class includes common test steps that could be used by other test scenarios under src/test/java.
  * Sucg common test steps are login, logout,etc.
  * @author George
  *
  */
-public class CommonTestSteps extends CommonWindowsAndPages {
+public class CommonTestSteps extends CommonUtilities {
 	
 private boolean isPreviousTestCaseSucceeded;
 	
@@ -17,39 +16,5 @@ private boolean isPreviousTestCaseSucceeded;
 
 	public void setPreviousTestCaseSucceeded(boolean isPreviousTestCaseSucceeded) {
 		this.isPreviousTestCaseSucceeded = isPreviousTestCaseSucceeded;
-	}
-	
-	
-	/**Login to 
-	 * 
-	 */
-	 
-	public void logout(){
-		SafLog.testStep();
-	}
-	
-	public void StartTheWebApplication(String webApplicationURL)
-    {
-        SafLog.testStep(webApplicationURL);
-        startWebDriver.createWebDriver();
-        startWebDriver.GoToSite(webApplicationURL);
-        findWebDriverElement.setDriver(startWebDriver.getDriver());
-        findWebDriverElement.setJavaScriptCalls(javaScriptCalls);
-        operateOnWebDriverElement.setFindWebDriverElement(findWebDriverElement);
-        operateOnWebDriverElement.setJavaScriptCalls(javaScriptCalls);
-        javaScriptCalls.setDriver(startWebDriver.getDriver());
-//        StartDesktopApp.SetApplicationName(CommonWindowsAndPages.webApplicationProcessName);
-//        operateOnWhiteElements.FindWhiteElements = findWhiteElements;
-//        FindWhiteElements.RunningApplication = startDesktopApplication.RunningApplication;
-//        whiteKeybaordManagement.FindWhiteElements = findWhiteElements;
-    }
-	
-	public static void quiteDriver() {
-		try {
-			startWebDriver.getDriver().quit();
-		} catch (Exception e) {
-			//startWebDriver.getDriver().quit();
-		}
-
 	}
 }

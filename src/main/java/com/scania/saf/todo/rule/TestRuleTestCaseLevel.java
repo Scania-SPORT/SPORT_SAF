@@ -7,7 +7,7 @@ import org.junit.runners.model.Statement;
 import com.scania.saf.common.ScreenShot;
 import com.scania.saf.log.SafLog;
 import com.scania.saf.todo.common.CommonTestSteps;
-import com.scania.saf.todo.common.CommonWindowsAndPages;
+import com.scania.saf.todo.common.CommonUtilities;
 
 
 /**
@@ -19,7 +19,7 @@ import com.scania.saf.todo.common.CommonWindowsAndPages;
  */
 public class TestRuleTestCaseLevel extends  CommonTestSteps implements TestRule {
 	
-	CommonWindowsAndPages commonWindowsAndPages;
+	CommonUtilities commonWindowsAndPages;
 	
 	
 	public TestRuleTestCaseLevel() {
@@ -35,13 +35,13 @@ public class TestRuleTestCaseLevel extends  CommonTestSteps implements TestRule 
 			@Override
 			public void evaluate() throws Throwable {
 					//siteDriverManager= new SiteDriverManager();
-					commonWindowsAndPages =new CommonWindowsAndPages();
-					CommonTestSteps commonTestSteps= new CommonTestSteps();
+					commonWindowsAndPages =new CommonUtilities();
+					CommonUtilities commonTestSteps= new CommonTestSteps();
 				try {
 					
 					SafLog.testCaseStart(description);
 					base.evaluate();
-					CommonTestSteps.quiteDriver();
+					CommonTestSteps.quitDriver();
 					SafLog.testCaseEnd(description);
 					return;
 				} catch (Throwable e) {
@@ -58,7 +58,7 @@ public class TestRuleTestCaseLevel extends  CommonTestSteps implements TestRule 
 					String folder=description.getClassName();
 					SafLog.testCaseErrorMessage(e);
 					ScreenShot.getScreenShot(folder.substring(folder.lastIndexOf(".")+1, folder.length()),description.getMethodName());
-					CommonTestSteps.quiteDriver();	
+					CommonTestSteps.quitDriver();	
 					SafLog.testCaseFailed(description);
 					throw new Exception("TEST CASE FAILED");
 				}

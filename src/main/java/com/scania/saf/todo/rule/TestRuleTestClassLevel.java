@@ -44,7 +44,7 @@ public class TestRuleTestClassLevel extends CommonTestSteps implements TestRule 
 					SafLog.testClassEnd(description);
 				} catch (Exception e) {
 					SafLog.info(e.toString());
-					CommonTestSteps.quiteDriver();
+					CommonTestSteps.quitDriver();
 				}
 			}
 		};
