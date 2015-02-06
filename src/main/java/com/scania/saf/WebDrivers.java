@@ -53,7 +53,7 @@ public class WebDrivers {
 		String sourcePath = findSourcePath();
 		String targetDirectory = findTargetDirectory();
 		File sourceFile = new File(sourcePath);
-		System.out.println("isDirectory: "+sourceFile.isDirectory());
+		System.out.println("Loading WebDriver from: "+sourceFile.getAbsolutePath());
 		if(sourceFile.isDirectory())
 			return fileName(sourcePath, driverName);
 		return conditionalCopyFromJar(driverName, sourceFile, targetDirectory);

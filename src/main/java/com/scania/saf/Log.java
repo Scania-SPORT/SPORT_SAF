@@ -15,7 +15,7 @@ public class Log {
 	}
 
 	public static void error(Object ... parameters) {
-		logger.error(parameters);
+		logger.error(buildLog(parameters));
 	}
 	
 	public static void fatal(Object ... parameters) {
