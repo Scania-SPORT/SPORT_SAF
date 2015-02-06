@@ -40,7 +40,7 @@ public class CommonUtilities {
 		ClassLoader classLoader = getClass().getClassLoader();
 		/** Get the language Excel file from class */
 		File log4jConfigFile = new File(classLoader.getResource(
-				"log4jConfiguration.xml").getFile());
+				"configuration/log4jConfiguration.xml").getFile());
 		String log4jConfigFilePath = log4jConfigFile.getPath();
 		DOMConfigurator.configure(log4jConfigFilePath);
 	}
