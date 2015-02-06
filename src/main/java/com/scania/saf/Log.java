@@ -1,17 +1,10 @@
 package com.scania.saf;
 
-import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 
 public class Log {
 
 	static Logger logger = Logger.getLogger(Log.class);
-
-	static {
-		PropertyConfigurator.configure(Log.class.getClassLoader().getResource("log4j.properties").getPath());
-		logger.setLevel(Level.DEBUG);
-	}
 
 	public static void debug(Object ... parameters) {
 		logger.debug(buildLog(parameters));
