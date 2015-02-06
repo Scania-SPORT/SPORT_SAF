@@ -51,16 +51,16 @@ public class WebDrivers {
 
 	private static String initDriver(String driverName) {
 		String sourcePath = findSourcePath();
+		System.out.println("Loading WebDrivers from: "+sourcePath);
 		String targetDirectory = findTargetDirectory();
 		File sourceFile = new File(sourcePath);
-		System.out.println("Loading WebDriver from: "+sourceFile.getAbsolutePath());
 		if(sourceFile.isDirectory())
 			return fileName(sourcePath, driverName);
 		return conditionalCopyFromJar(driverName, sourceFile, targetDirectory);
 	}
 
 	private static String conditionalCopyFromJar(String driverName, File sourceFile, String targetDirectory) {
-		System.out.println("targetDirectory: "+targetDirectory);
+		System.out.println("Storing WebDrivers in: "+targetDirectory);
 		File driverFile = new File(fileName(targetDirectory, driverName));
 		if(!driverFile.exists())
 			copyDriverFromJar(driverName, sourceFile, targetDirectory);
