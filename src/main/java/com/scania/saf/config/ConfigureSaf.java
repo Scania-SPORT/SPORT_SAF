@@ -3,7 +3,7 @@ package com.scania.saf.config;
 import java.io.InputStream;
 import java.util.Properties;
 
-import com.scania.saf.log.SafLog;
+import com.scania.saf.Log;
 
 
 
@@ -12,14 +12,14 @@ public class ConfigureSaf {
 	static Properties properties =new Properties();
 
 	public void loadPropery(){
-		SafLog.debug();
+		Log.debug();
 		InputStream propertyConfigurationStream = null;
     	String pathPropertyConfigurationFile="/configuration/ConfigureSaf.properties";
-    	SafLog.debug("pathPropertyConfigurationFile: " + pathPropertyConfigurationFile);
+    	Log.debug("pathPropertyConfigurationFile: " + pathPropertyConfigurationFile);
     	ClassLoader classLoader = getClass().getClassLoader();
      	if(classLoader.getClass().getResourceAsStream(pathPropertyConfigurationFile)!=null){
      		propertyConfigurationStream = classLoader.getClass().getResourceAsStream(pathPropertyConfigurationFile);
-        	SafLog.debug("Using configuration file: " + classLoader.getClass().getResource(pathPropertyConfigurationFile).toString());	    
+        	Log.debug("Using configuration file: " + classLoader.getClass().getResource(pathPropertyConfigurationFile).toString());	    
      	}
     	try {
     		/**Load the properties with the keys*/
@@ -31,9 +31,9 @@ public class ConfigureSaf {
 	
 	/**Return the property value according to the given key*/
 	public static String getConfigurationProperty(String propertyKey){
-		SafLog.debug("propertyKey: " + propertyKey);
+		Log.debug("propertyKey: " + propertyKey);
 		String  propertyValue=properties.getProperty(propertyKey).trim();
-		SafLog.debug("propertyValue: " + propertyValue);
+		Log.debug("propertyValue: " + propertyValue);
 		return propertyValue;
 	}
 	

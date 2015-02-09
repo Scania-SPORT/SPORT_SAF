@@ -9,7 +9,7 @@ package com.scania.saf.parameters;
  * 
  */
 
-public class UserdataParamters {
+public class UserdataParameters {
 //	public static ConfigureSaf configuresaf;
 //	public UserdataParamters (){
 //		/**Initiate log4j configuration and instantiate ConfigureSaf.*/ 

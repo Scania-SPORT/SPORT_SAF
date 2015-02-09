@@ -1,6 +1,5 @@
 package com.scania.saf.parameters;
 
-import com.scania.saf.log.SafLog;
 
 
 public class OtherParameters{

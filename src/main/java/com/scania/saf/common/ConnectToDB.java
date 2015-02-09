@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.scania.saf.log.SafLog;
+import com.scania.saf.Log;
 
  
 /**
@@ -70,7 +70,7 @@ public class ConnectToDB {
 			ResultSet res=statement.executeQuery(sqlQuery);
 			while (res.next()) {
 	            sqlQueryResult=res.getString(1);
-	            SafLog.debug(sqlQueryResult);
+	            Log.debug(sqlQueryResult);
 	         }
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

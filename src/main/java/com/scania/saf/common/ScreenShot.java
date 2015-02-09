@@ -12,7 +12,7 @@ import java.util.Date;
 
 import javax.imageio.ImageIO;
 
-import com.scania.saf.log.SafLog;
+import com.scania.saf.Log;
 
 
 
@@ -22,7 +22,7 @@ public class ScreenShot extends OtherFunctionality{
 	 * Return a new file name for snap shot
 	 */
 	static private String getSnapShotFileName(String testCaseName) {
-		SafLog.debug(testCaseName);
+		Log.debug(testCaseName);
 		String fileName;
 		String fileNameAbsolutePath;
 		DateFormat dateFormat = new SimpleDateFormat("dd_MMM_yyyy_HH_mm_ss");
@@ -36,7 +36,7 @@ public class ScreenShot extends OtherFunctionality{
 	 * Create and return full path to folder, with ending backslash.
 	 */
 	static public String getFullPath(String folder) {
-		SafLog.debug(folder);
+		Log.debug(folder);
 		String filePath;
 		try {
 			// Get the dir path
@@ -56,7 +56,7 @@ public class ScreenShot extends OtherFunctionality{
  * @param fileName
  */
 	static public void getScreenShot(String fileName) {
-		SafLog.debug(fileName);
+		Log.debug(fileName);
 		try {	
 			// Capture the screen shot of the area of the screen defined by the
 			// rectangle
@@ -78,10 +78,10 @@ public class ScreenShot extends OtherFunctionality{
 	 * @param folder
 	 */
 	static public void getScreenShot( String folder, String fileName){
-		SafLog.debug(folder + ", " + fileName);
+		Log.debug(folder + ", " + fileName);
 		String snapShotFullPath=getFullPath(folder)+getSnapShotFileName(fileName);
 		getScreenShot(snapShotFullPath);
-		SafLog.info("file:////"+snapShotFullPath+ snapShotFullPath );
+		Log.info("file:////"+snapShotFullPath+ snapShotFullPath );
 	}
 
 

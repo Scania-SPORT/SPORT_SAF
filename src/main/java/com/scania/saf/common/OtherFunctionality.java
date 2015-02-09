@@ -5,10 +5,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import org.openqa.selenium.JavascriptExecutor;
-
-import com.scania.saf.log.SafLog;
-import com.scania.saf.selenium.FindWebDriverElement;
+import com.scania.saf.Log;
 
 
 /**
@@ -26,18 +23,18 @@ public abstract class OtherFunctionality extends ReadInputDataFromFile{
 	 * @param mSecToSleep
 	 */
 	public static void threadSleepInMSec(int mSecToSleep) 	{
-		SafLog.debug();
+		Log.debug();
 		try {
 			Thread.sleep(mSecToSleep);			
 		} catch (Exception e) {
-			SafLog.debug("Thread sleep error " + e);
+			Log.debug("Thread sleep error " + e);
 		}
 	}
 	
 	
 	
 	static public String getFullPath(String folder) {
-		SafLog.debug(folder);
+		Log.debug(folder);
 		String filePath;
 		try {
 			// Get the dir path

@@ -2,20 +2,16 @@ package com.scania.saf.selenium;
 
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
-import org.apache.poi.ss.formula.eval.ConcatEval;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.scania.saf.Log;
 import com.scania.saf.common.OtherFunctionality;
 import com.scania.saf.config.ConfigureSaf;
-import com.scania.saf.log.SafLog;
 
 /**
  * Absract class that handles communication with the Selenium API.
@@ -170,7 +166,7 @@ public class FindWebDriverElement{
      private WebElement wiatAndGetElement(String pageNameToSwitchTo, String frameNameToSwitchTo, final By... by)
      {
          Exception exception = null;
-         SafLog.debug(pageNameToSwitchTo, frameNameToSwitchTo, by.toString());
+         Log.debug(pageNameToSwitchTo, frameNameToSwitchTo, by.toString());
          String errorMessage = "No Element Was Found by: " + by[0] + "\n EXCEPTION THROWN: ";
          WebElement webElement = null;
          if (waitForAjax)
@@ -190,14 +186,14 @@ public class FindWebDriverElement{
                  if (by.length == 1)
                  {   
                      /////////////////
-                     SafLog.debug(by.toString());
+                     Log.debug(by.toString());
              		//threadSleep(SELENIUM_GENERAL_THREAD_SLEEP_TIME_IN_MSEC);//General
              		// sleep time is used to slow down the system, for demo
              		// Create an expected condition that expect a specific element,
              		// expCondition are idempotent
              		ExpectedCondition<WebElement> expCondition = new ExpectedCondition<WebElement>() {
              			public WebElement apply(WebDriver driver) {
-             				SafLog.debug("Apply: driver" + driver);
+             				Log.debug("Apply: driver" + driver);
              				int sizeOfWebElementList = 0;
              				WebElement webElement = driver.findElement(by[0]);
              				// Note. findelement() does not react if more than one element
@@ -217,7 +213,7 @@ public class FindWebDriverElement{
              				return webElement;
              			}
              		};
-             		SafLog.debug("WebDriverWait: " + expCondition.toString());
+             		Log.debug("WebDriverWait: " + expCondition.toString());
              		// Make the driver wait GLOBAL_TIMEOUT_IN_SEC to search for an element
              		// or until(expCondition) is true.
              		// WebDriverWait: den emiterar en inbygd wait-funktion, returneras som
@@ -241,7 +237,7 @@ public class FindWebDriverElement{
                     	 for (WebElement webElementFromList : webElementList) {
 						
                                  String webElementTagName = "by.tagname:" + webElementFromList.getTagName().toLowerCase().replace(" ", "");
-                                 SafLog.debug( "webElementTagName: " + webElementTagName, "byLocator: " + byLocator);
+                                 Log.debug( "webElementTagName: " + webElementTagName, "byLocator: " + byLocator);
                                  if (byLocator.contains(webElementTagName))
                                  {
                                      webElement= webElementFromList;

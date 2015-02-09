@@ -11,11 +11,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12-beta-1</version>
-		</dependency>
+		<!-- <dependency> <groupId>junit</groupId> <artifactId>junit</artifactId> 
+			<version>4.12-beta-1</version> </dependency> -->
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-resources-plugin</artifactId>
@@ -115,12 +112,6 @@
 			<artifactId>sikuli-api</artifactId>
 			<version>1.1.0</version>
 		</dependency>
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.8.17</version>
-			<scope>test</scope>
-		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -155,15 +146,6 @@
 					</includes>
 					<!-- parallel>classes</parallel> <threadCount>2</threadCount -->
 				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>org.apache.maven.surefire</groupId>
-						<artifactId>surefire-junit47</artifactId>
-						<version>2.18.1</version>
-					</dependency>
-					<!-- <dependency> <groupId>org.apache.maven.surefire</groupId> <artifactId>surefire-testng</artifactId> 
-						<version>2.18.1</version> </dependency> -->
-				</dependencies>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -171,7 +153,7 @@
 				<version>2.18.1</version>
 				<configuration>
 					<!-- includes> <include>**/Login.java</include> </includes -->
-					<junitArtifactName>org.junit</junitArtifactName>
+					<!-- junitArtifactName>org.junit</junitArtifactName -->
 				</configuration>
 			</plugin>
 			<plugin>

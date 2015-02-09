@@ -6,9 +6,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.scania.saf.Log;
 import com.scania.saf.common.OtherFunctionality;
 import com.scania.saf.config.ConfigureSaf;
-import com.scania.saf.log.SafLog;
 
 public class JavaScriptCalls {
 	private WebDriver driver;
@@ -30,7 +30,7 @@ public class JavaScriptCalls {
      */
     public Object ExecuteJavaScript(String pageNameToSwitchTo, String frameNameToSwitchTo, String scriptToExecute,  WebElement... webElement)
     {
-        SafLog.debug("scriptToExecute: " + scriptToExecute);
+        Log.debug("scriptToExecute: " + scriptToExecute);
         Object obj = null;
 		long maxTimeToWait=System.currentTimeMillis()+ConfigureSaf.SAF_MAX_TIME_IN_MSEC_TO_WAIT_FOR_ELEMENT;
         while (obj == null && maxTimeToWait > System.currentTimeMillis())
@@ -54,7 +54,7 @@ public class JavaScriptCalls {
             }
             catch (Exception e)
             {
-            	SafLog.debug("object: " + obj);
+            	Log.debug("object: " + obj);
             }
         }
         return obj;
@@ -69,11 +69,11 @@ public class JavaScriptCalls {
     /// <returns></returns>
     public List<WebElement> ExecuteJavaScriptIWebElementList(String pageNameToSwitchTo, String frameNameToSwitchTo, String scriptToExecute)
     {
-        SafLog.debug("scriptToExecute: " + scriptToExecute);
+        Log.debug("scriptToExecute: " + scriptToExecute);
         WebDriver driver = FindWebDriverElement.SwitchToFrameOrWindowByName(this.driver, pageNameToSwitchTo, frameNameToSwitchTo);
         JavascriptExecutor javaScriptExecutor= (JavascriptExecutor) driver;
         List<WebElement> iWebElementList = (List<WebElement>)javaScriptExecutor.executeScript(scriptToExecute);
-        SafLog.debug("iWebElementList: " + iWebElementList);
+        Log.debug("iWebElementList: " + iWebElementList);
         return iWebElementList;
     }
 
@@ -86,7 +86,7 @@ public class JavaScriptCalls {
     /// <returns></returns>
     public Object executeJavaScriptWithWaitForAjaxCallToFinish(String pageNameToSwitchTo, String frameNameToSwitchTo, String scriptToExecute)
     {
-        SafLog.debug("scriptToExecute: " + scriptToExecute);
+        Log.debug("scriptToExecute: " + scriptToExecute);
         WaitForAjaxCallToFinish();
         Object obj = ExecuteJavaScript(pageNameToSwitchTo, frameNameToSwitchTo, scriptToExecute);
         WaitForAjaxCallToFinish();
@@ -98,14 +98,14 @@ public class JavaScriptCalls {
     /// </summary>
     public void WaitForAjaxCallToFinish()
     {
-        SafLog.debug();
+        Log.debug();
         try
         {
             AjaxCallToFinish();
         }
         catch(Exception e)
         {
-            SafLog.info( "CALLING THE JAVA SCRIPT THE FIST TIME FAILED. TRYING THE ONE MORE TIME; e: " + e.toString());
+            Log.info( "CALLING THE JAVA SCRIPT THE FIST TIME FAILED. TRYING THE ONE MORE TIME; e: " + e.toString());
             AjaxCallToFinish();
         }
     }
@@ -122,7 +122,7 @@ public class JavaScriptCalls {
         {
             try
             {
-                SafLog.debug();
+                Log.debug();
                 String scriptToExecute = "return document.readyState";
                 JavascriptExecutor javaScriptExecutor= (JavascriptExecutor) driver;
                 documentReadyState = (String)javaScriptExecutor.executeScript(scriptToExecute);
@@ -130,7 +130,7 @@ public class JavaScriptCalls {
             }
             catch(Exception e)
             {
-                SafLog.info( "JAVASCRIPT NOT READY YET");
+                Log.info( "JAVASCRIPT NOT READY YET");
                 OtherFunctionality.threadSleepInMSec(500);
             }
         }

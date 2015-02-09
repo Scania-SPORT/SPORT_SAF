@@ -2,38 +2,24 @@ package com.scania.saf.app;
 
 
 import java.awt.Toolkit;
-import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.internal.ProfilesIni;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-
-
-
-
-
-
+import com.scania.saf.Log;
 import com.scania.saf.common.OtherFunctionality;
-import com.scania.saf.common.ScreenShot;
 import com.scania.saf.config.ConfigureSaf;
-import com.scania.saf.log.SafLog;
 import com.scania.saf.parameters.OtherParameters;
 
 /**
@@ -150,7 +136,7 @@ private WebDriver driver;
 	 */
 	public void GoToSite(String uRLForSiteToOpen)
     {
-        SafLog.debug(uRLForSiteToOpen);
+        Log.debug(uRLForSiteToOpen);
         driver.get(uRLForSiteToOpen);
     }
 }

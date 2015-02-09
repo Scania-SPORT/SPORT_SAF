@@ -26,7 +26,7 @@ public class Log {
 		for(Object parameter : parameters) {
 			if(parameterBuilder.length() > 0)
 				parameterBuilder.append(", ");
-			parameterBuilder.append(parameter.toString());
+			parameterBuilder.append((parameter == null ? "null" : parameter.toString()));
 		}
 		logBuilder.append(parameterBuilder.toString());
 		logBuilder.append(")");

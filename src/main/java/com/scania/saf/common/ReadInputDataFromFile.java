@@ -11,16 +11,10 @@ import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
-import org.openqa.selenium.WebDriver;
-
-
-
-
-
 
 import com.csvreader.CsvReader;
+import com.scania.saf.Log;
 import com.scania.saf.config.ConfigureSaf;
-import com.scania.saf.log.SafLog;
 import com.scania.saf.parameters.OtherParameters;
 
 /**
@@ -51,7 +45,7 @@ public class ReadInputDataFromFile extends OtherParameters{
 	 * @return
 	 */
 	public String getInputData(String... string) {
-		SafLog.debug(string);
+		Log.debug(string);
 		String inputData = "";
 		//TODO remove try state with something less time consuming
 		try {
@@ -64,7 +58,7 @@ public class ReadInputDataFromFile extends OtherParameters{
 				inputData = string[0];
 			}
 		}catch (Exception e) {
-			SafLog.debug(inputData);
+			Log.debug(inputData);
 		}
 		return inputData;
 	}
@@ -84,7 +78,7 @@ public class ReadInputDataFromFile extends OtherParameters{
 	 * @return
 	 */
 	public String readInputDataFromExcelSheet(String indexKey, String sheetName) {
-		SafLog.debug("input value to get and Excel sheet: " + indexKey);
+		Log.debug("input value to get and Excel sheet: " + indexKey);
 		String errorMessage = "The value was not found in the Excel sheet. Looking for row number '" + indexKey + "' and column '" + ConfigureSaf.SAF_LANGUAGE + "'.";
 		String errorMessageColumn = "\n-----------------------------------------------------------\n" +
 				"The language column was not found in the Excel sheet. Looking for row number '" + indexKey + "' and column '" + ConfigureSaf.SAF_LANGUAGE + "'.";
@@ -112,12 +106,12 @@ public class ReadInputDataFromFile extends OtherParameters{
 				HSSFRow myRow = (HSSFRow) rowIter.next();
 				Iterator cellIter = myRow.cellIterator();
 				hSSCell = (HSSFCell) cellIter.next();
-				SafLog.debug(hSSCell.toString());
+				Log.debug(hSSCell.toString());
 				if (hSSCell.toString().contentEquals("Index Key")) {
 					/**fetch the column number for the language*/
 					while (cellIter.hasNext()) {
 						hSSCell = (HSSFCell) cellIter.next();
-						SafLog.debug(hSSCell.toString());
+						Log.debug(hSSCell.toString());
 						if (hSSCell.toString().contentEquals(ConfigureSaf.SAF_LANGUAGE)) {
 							columnNumber = hSSCell.getColumnIndex();
 							break;
@@ -133,7 +127,7 @@ public class ReadInputDataFromFile extends OtherParameters{
 						hSSCell = (HSSFCell) cellIter.next();
 					}
 					cellInputData = hSSCell.getStringCellValue();
-					SafLog.debug(cellInputData);
+					Log.debug(cellInputData);
 					break;
 				}
 			}
@@ -155,7 +149,7 @@ public class ReadInputDataFromFile extends OtherParameters{
 	 * @return
 	 */
 	public String readInputDataFromCSVFile(String userDataId, String columnName) {
-		SafLog.debug("input value to get from CSV file : " + userDataId + " ; " + columnName);
+		Log.debug("input value to get from CSV file : " + userDataId + " ; " + columnName);
 		String errorMessage = "The value was not found in the CSV file, " + classPathCSVFile + ". Looking for row number '" + userDataId + "' and column '" + columnName + "'.";
 		String inputValueFromCSV="";
 		try {

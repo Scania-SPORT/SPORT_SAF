@@ -9,10 +9,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+import com.scania.saf.Log;
 import com.scania.saf.common.OtherFunctionality;
 import com.scania.saf.common.XPathFunctionality;
 import com.scania.saf.config.ConfigureSaf;
-import com.scania.saf.log.SafLog;
 
 public class OperateOnWebDriverElement {
 	
@@ -65,7 +65,7 @@ public class OperateOnWebDriverElement {
      /// The text field is identified by the element name
      public void InsertInToFieldById(String pageNameToSwitchTo, String frameNameToSwitchTo, String elementId, String textToInsert)
      {
-         SafLog.debug();
+         Log.debug();
          WebElement webelement = findWebDriverElement.waitForElementById(pageNameToSwitchTo, frameNameToSwitchTo, elementId);
          webelement.clear();
          webelement.sendKeys(textToInsert);
@@ -76,7 +76,7 @@ public class OperateOnWebDriverElement {
      /// The text field is identified by the element name
      public void InsertInToFieldByIdUsingJavaScript(String pageNameToSwitchTo, String frameNameToSwitchTo, String elementId, String textToInsert)
      {
-         SafLog.debug();
+         Log.debug();
          javaScriptCalls.ExecuteJavaScript(pageNameToSwitchTo, frameNameToSwitchTo, "document.getElementById('"+elementId+"').value='"+textToInsert+"'");
      }
 
@@ -130,7 +130,7 @@ public class OperateOnWebDriverElement {
      /// The text field is identified by the element name
      public void InsertInToFieldByName(String pageNameToSwitchTo, String frameNameToSwitchTo, String elementName, String textToInsert)
      {
-         SafLog.debug();
+         Log.debug();
          WebElement webelement = findWebDriverElement.waitForElementByName(pageNameToSwitchTo, frameNameToSwitchTo, elementName);
          webelement.clear();
          webelement.sendKeys(textToInsert);
@@ -169,7 +169,7 @@ public class OperateOnWebDriverElement {
      /// <param name="textToInsert"></param>
      public void InsertInToFieldByXPath(String pageNameToSwitchTo, String frameNameToSwitchTo, String elementName, String textToInsert)
      {
-         SafLog.debug();
+         Log.debug();
          WebElement webelement = findWebDriverElement.waitForElementByXPath(pageNameToSwitchTo, frameNameToSwitchTo, elementName);
          webelement.clear();
          webelement.sendKeys(textToInsert);
@@ -207,7 +207,7 @@ public class OperateOnWebDriverElement {
      /// <param name="idForElementToClick"></param>
      public void clickAnElementById(String pageNameToSwitchTo, String frameNameToSwitchTo, String idForElementToClick)
      {
-         SafLog.debug();
+         Log.debug();
          WebElement webelement = findWebDriverElement.waitForElementById(pageNameToSwitchTo, frameNameToSwitchTo, idForElementToClick);
          try
          {
@@ -215,7 +215,7 @@ public class OperateOnWebDriverElement {
          }
          catch (Exception e)
          {
-             SafLog.info("FAILED TO CLICK THE FIRST TIME. MAKE A SECOND TRY");
+             Log.info("FAILED TO CLICK THE FIRST TIME. MAKE A SECOND TRY");
              webelement = findWebDriverElement.waitForElementById(pageNameToSwitchTo, frameNameToSwitchTo, idForElementToClick);
              webelement.click();
          }
@@ -251,7 +251,7 @@ public class OperateOnWebDriverElement {
      /// <param name="xPathForElementToClick"></param>
      public void clickAnElementByXPath(String pageNameToSwitchTo, String frameNameToSwitchTo, String xPathForElementToClick)
      {
-         SafLog.debug();
+         Log.debug();
          WebElement webelement = findWebDriverElement.waitForElementByXPath(pageNameToSwitchTo, frameNameToSwitchTo, xPathForElementToClick);
          try
          {
@@ -259,7 +259,7 @@ public class OperateOnWebDriverElement {
          }
          catch (Exception e)
          {
-             SafLog.info("FAILED TO CLICK THE FIRST TIME. MAKE A SECOND TRY" + e.toString());
+             Log.info("FAILED TO CLICK THE FIRST TIME. MAKE A SECOND TRY" + e.toString());
              webelement = findWebDriverElement.waitForElementByXPath(pageNameToSwitchTo, frameNameToSwitchTo, xPathForElementToClick);
              webelement.click();
          }
@@ -295,7 +295,7 @@ public class OperateOnWebDriverElement {
      /// <param name="nameForElementToClick"></param>
      public void ClickAnElementByName(String pageNameToSwitchTo, String frameNameToSwitchTo, String nameForElementToClick)
      {
-         SafLog.debug();
+         Log.debug();
          WebElement webelement = findWebDriverElement.waitForElementByName(pageNameToSwitchTo, frameNameToSwitchTo, nameForElementToClick);
          webelement.click();
      }
@@ -336,7 +336,7 @@ public class OperateOnWebDriverElement {
      /// <param name="tagNameForElementToClick"></param>
      public void ClickAnElementByNameAndTagName(String pageNameToSwitchTo, String frameNameToSwitchTo, String nameForElementToClick, String tagNameForElementToClick)
      {
-         SafLog.debug();
+         Log.debug();
          WebElement webelement = findWebDriverElement.waitForElementByNameAndTagName(pageNameToSwitchTo, frameNameToSwitchTo, nameForElementToClick, tagNameForElementToClick);
          webelement.click();
      }
@@ -375,7 +375,7 @@ public class OperateOnWebDriverElement {
      public void clickAnElementByIdUsingJavaScript(String pageNameToSwitchTo, String frameNameToSwitchTo, String idForElementToClick)
      {
          String scriptToExecute = "document.getElementById('" + idForElementToClick + "').click()";
-         SafLog.debug("clickAWebElementByIdUsingJavaScript, scriptToExecute: " + scriptToExecute);
+         Log.debug("clickAWebElementByIdUsingJavaScript, scriptToExecute: " + scriptToExecute);
          javaScriptCalls.executeJavaScriptWithWaitForAjaxCallToFinish(pageNameToSwitchTo, frameNameToSwitchTo, scriptToExecute);
      }
 
@@ -413,7 +413,7 @@ public class OperateOnWebDriverElement {
      public void clickAnElementByNameUsingJavaScript(String pageNameToSwitchTo, String frameNameToSwitchTo, String nameForElementToClick)
      {
          String scriptToExecute = "document.getElementsByName('" + nameForElementToClick + "')[0].click()";
-         SafLog.debug( "clickAWebElementNameIdUsingJavaScript, scriptToExecute: " + scriptToExecute);
+         Log.debug( "clickAWebElementNameIdUsingJavaScript, scriptToExecute: " + scriptToExecute);
          javaScriptCalls.executeJavaScriptWithWaitForAjaxCallToFinish(pageNameToSwitchTo, frameNameToSwitchTo, scriptToExecute);
      }
 
@@ -457,7 +457,7 @@ public class OperateOnWebDriverElement {
      public void ClickAnElementByNameAndIndexUsingJavaScript(String pageNameToSwitchTo, String frameNameToSwitchTo, String nameForElementToClick, String indexForElementToClick)
      {
          String scriptToExecute = "document.getElementsByName('" + nameForElementToClick + "')[" + Integer.parseInt(indexForElementToClick) + "].click()";
-         SafLog.debug( "clickAWebElementNameIdUsingJavaScript, scriptToExecute: " + scriptToExecute);
+         Log.debug( "clickAWebElementNameIdUsingJavaScript, scriptToExecute: " + scriptToExecute);
          javaScriptCalls.executeJavaScriptWithWaitForAjaxCallToFinish(pageNameToSwitchTo, frameNameToSwitchTo, scriptToExecute);
      }
 
@@ -470,7 +470,7 @@ public class OperateOnWebDriverElement {
      /// <param name="elementId"></param>
      public void SelectCheckBoxElementById(String pageNameToSwitchTo, String frameNameToSwitchTo, String elementId)
      {
-         SafLog.debug();
+         Log.debug();
          WebElement webelement = findWebDriverElement.waitForElementById(pageNameToSwitchTo, frameNameToSwitchTo, elementId);
          if (!webelement.isSelected())
          {
@@ -512,7 +512,7 @@ public class OperateOnWebDriverElement {
      /// <param name="textValue">The value in the dropdown list to be selected</param>
      public void SelectTypeValueComboBoxByNameAndIndexAndValue(String pageNameToSwitchTo, String frameNameToSwitchTo, String nameForComboBoxToFind, String indexForElementToFind, String textValue)
      {
-         SafLog.debug();
+         Log.debug();
          WebElement webelement = findWebDriverElement.waitForElementByNameAndIndex(pageNameToSwitchTo, frameNameToSwitchTo, nameForComboBoxToFind, indexForElementToFind);
          //webelement.Click();
          List<WebElement> elementTrList = webelement.findElements(By.tagName("tr"));
@@ -563,7 +563,7 @@ public class OperateOnWebDriverElement {
      /// <param name="textValue">The value in the dropdown list to be selected</param>
      public void SelectTypeValueComboBoxByNameAndValue(String pageNameToSwitchTo, String frameNameToSwitchTo, String nameForComboBoxToFind, String textValue)
      {
-         SafLog.debug();
+         Log.debug();
          WebElement webelement = findWebDriverElement.waitForElementByName(pageNameToSwitchTo, frameNameToSwitchTo, nameForComboBoxToFind);
          //webelement.Click();
          List<WebElement> elementTrList = webelement.findElements(By.tagName("tr"));
@@ -641,7 +641,7 @@ public class OperateOnWebDriverElement {
      {
          int numberOfTextCriteria = textToIdentifyAndSelect.length;
          int numberOfhits=0;
-         SafLog.debug();
+         Log.debug();
          WebElement webelement = findWebDriverElement.waitForElementById(pageNameToSwitchTo, frameNameToSwitchTo, idForTable);
          List<WebElement> elementTrList = webelement.findElements(By.tagName("tr"));
 
@@ -689,7 +689,7 @@ public class OperateOnWebDriverElement {
      {
          int numberOfTextCriteria = textToIdentifyAndSelect.length;
          int numberOfhits = 0;
-         SafLog.debug();
+         Log.debug();
          WebElement webelement = findWebDriverElement.waitForElementById(pageNameToSwitchTo, frameNameToSwitchTo, idForTable);
          List<WebElement> elementTrList = webelement.findElements(By.tagName("tr"));
          boolean isElementFound = false;
@@ -735,7 +735,7 @@ public class OperateOnWebDriverElement {
       */
      public String getTextOnElementByID(String pageNameToSwitchTo, String frameNameToSwitchTo, String elementId)
      {
-         SafLog.debug();
+         Log.debug();
          WebElement webelement = findWebDriverElement.waitForElementById(pageNameToSwitchTo, frameNameToSwitchTo,elementId);
          String textOnelement=webelement.getText();
          return textOnelement;
@@ -743,7 +743,7 @@ public class OperateOnWebDriverElement {
 
      public String getTextOnTableByTableIDAndRowClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String tableId, String tableDataClassName, String... rowIndex)
      {
-         SafLog.debug();
+         Log.debug();
         
          WebElement webelement = findWebDriverElement.waitForElementById(pageNameToSwitchTo, frameNameToSwitchTo,tableId);
          
@@ -796,7 +796,7 @@ public class OperateOnWebDriverElement {
      
      public String getTextOnTableByTableClassNameAndRowClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String tableClassName, String tableDataClassName, String... rowIndex)
      {
-         SafLog.debug();
+         Log.debug();
         
          WebElement webelement = findWebDriverElement.waitForElementByClassName(pageNameToSwitchTo, frameNameToSwitchTo,tableClassName);
          
@@ -820,7 +820,7 @@ public class OperateOnWebDriverElement {
      
      public String getTextOnTableByClassNameAndRowIndex(String pageNameToSwitchTo, String frameNameToSwitchTo, String mainTableCalssName, String tableDataClassName, String rowIndex)
      {
-         SafLog.debug();
+         Log.debug();
         
          //WebElement webelement = findWebDriverElement.waitForElementByClassName(pageNameToSwitchTo, frameNameToSwitchTo,tableDataClassName);
          String elementText="";
@@ -844,7 +844,7 @@ public class OperateOnWebDriverElement {
      
      public String getNumberOfRowsOnTableByClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String mainTableCalssName, String rowIndex)
      {
-    	 SafLog.debug();
+    	 Log.debug();
          String elementText=null;
          List<WebElement> mainTableWebElement=null;
          List<WebElement> elementTrList=null;
@@ -868,38 +868,38 @@ public class OperateOnWebDriverElement {
      }
      
      public void assertTextOnTableByClassNameAndIndex(String pageNameToSwitchTo, String frameNameToSwitchTo, String mainTableCalssName, String tableDataClassName, String rowIndex, String textToAssert) {
- 		SafLog.debug();
+ 		Log.debug();
           String textOnelement=getTextOnTableByClassNameAndRowIndex(pageNameToSwitchTo, frameNameToSwitchTo, mainTableCalssName, tableDataClassName, rowIndex).toLowerCase().replace(" ", "").trim();
           Assert.assertTrue("The text didnt match, " + textOnelement + " : " + textToAssert, textOnelement.contains(textToAssert.toLowerCase().replace(" ", "").trim()));
  	}
      
        public void assertNumberOfRowsOnTableByClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String mainTableCalssName, String numberOfRowsToAssert) {
- 		SafLog.debug();
+ 		Log.debug();
           String numberOfRowsInTable=getNumberOfRowsOnTableByClassName(pageNameToSwitchTo, frameNameToSwitchTo, mainTableCalssName, "1");
           Assert.assertTrue("The text didnt match, " + numberOfRowsInTable + " : " + numberOfRowsToAssert, numberOfRowsInTable.contains(numberOfRowsToAssert.replace(" ", "").trim()));
  	}
      
   public void assertTextOnTableByTableIDAndRowClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String tableId, String tableDataClassName, String textToAssert, String... rowIndex) {
-		SafLog.debug();
+		Log.debug();
          String textOnelement=getTextOnTableByTableIDAndRowClassName(pageNameToSwitchTo, frameNameToSwitchTo, tableId, tableDataClassName, rowIndex);
          Assert.assertTrue("Field is empty", textOnelement.trim().contains(textToAssert.trim()));
 	}
 	
   public void assertTextOnTableByTableClassNameAndRowClassName(String pageNameToSwitchTo, String frameNameToSwitchTo, String tableClassName, String tableDataClassName, String textToAssert, String... rowIndex) {
-		SafLog.debug();
+		Log.debug();
        String textOnelement=getTextOnTableByTableClassNameAndRowClassName(pageNameToSwitchTo, frameNameToSwitchTo, tableClassName, tableDataClassName, rowIndex);
        Assert.assertTrue("Field is empty", textOnelement.trim().contains(textToAssert.trim()));
 	}
      
 	public void assertFieldByIDNotEmpty(String elementId) {
-		 SafLog.debug();
+		 Log.debug();
          WebElement webelement = findWebDriverElement.waitForElementById(null, null, elementId);
          String textOnelement=webelement.getText();
 		Assert.assertTrue("Field is empty", !textOnelement.isEmpty());
 	}
 
 	public void assertFieldByTagAndNameContainsText(String elementName, String textToVerify) {
-		 SafLog.debug();
+		 Log.debug();
          WebElement webelement = findWebDriverElement.waitForElementByName(null, null, elementName);
          
          String textOnelement=webelement.getAttribute("value");
@@ -907,20 +907,20 @@ public class OperateOnWebDriverElement {
 	}
 
 	public void assertFieldByClass(String fIELD_CREATED_DATE_ID, String date) {
-		SafLog.debug();
+		Log.debug();
         WebElement webelement = findWebDriverElement.waitForElementByClassAndIndex(null, null, "dijitReset dijitInputField dijitInputContainer", "1");
         String textOnelement=webelement.getText();
 	}
 	
 	public void assertFieldByIdContainsText(String iDForElementToFind, String textToAssert) {
-		SafLog.debug();
+		Log.debug();
         WebElement webelement = findWebDriverElement.waitForElementById(null, null, iDForElementToFind);
         String textOnelement=webelement.getAttribute("value").trim().toLowerCase().replace(" ", "");
 		Assert.assertTrue("The text on the screen, " + textOnelement + " did not match the text to assert, " + textToAssert, textOnelement.trim().toLowerCase().replace(" ", "").contains(textOnelement));
 	}
 	
 	public void assertFieldByNameContainsText(String nameForElementToFind, String textToAssert) {
-		SafLog.debug();
+		Log.debug();
         WebElement webelement = findWebDriverElement.waitForElementByName(null, null, nameForElementToFind);
         String textOnelement=webelement.getAttribute("value").trim().toLowerCase().replace(" ", "");
 		Assert.assertTrue("The text on the screen, " + textOnelement + " did not match the text to assert, " + textToAssert, textOnelement.trim().toLowerCase().replace(" ", "").contains(textOnelement));

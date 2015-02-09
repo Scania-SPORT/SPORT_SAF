@@ -1,13 +1,13 @@
 package com.scania.saf.common;
 
-import com.scania.saf.log.SafLog;
+import com.scania.saf.Log;
 
 public class XPathFunctionality {
 	
 	//should be excluded and replaced by XPathPath1
 	static private String XpathBlockDynamicID(String id){
 		String xPathValue="substring(@id, 64, string-length(\'" + id + "\')) = \'" + id + "\'";
-		SafLog.debug("XpathBlockDynamicID: " + xPathValue);
+		Log.debug("XpathBlockDynamicID: " + xPathValue);
 		return xPathValue;
 	}
 
@@ -18,55 +18,55 @@ public class XPathFunctionality {
 	 */
 	static public String XPathPath1(String id ){
 		String xPathPath1="//*[substring(@id, string-length(@id) - string-length(\'" + id + "\') +1) = \'" + id + "\']| //*[@id=\"" + id + "\"]";	
-		SafLog.debug("XPathPath1: " + xPathPath1);
+		Log.debug("XPathPath1: " + xPathPath1);
 		return xPathPath1;
 		}
 	
 	static public String XPathDynamicId(String id ){
 		String xPathDynamicId="//*[" + XpathBlockDynamicID(id) + "]"; 
-		SafLog.debug("XPathDynamicId: " + xPathDynamicId);
+		Log.debug("XPathDynamicId: " + xPathDynamicId);
 		return 	xPathDynamicId;
 	}
 
 	//Depreciated
 	static public String XPathPath3(String id, String value ){
 		String xPathPath3="//*[substring(@id, string-length(@id) - string-length(\'" + id + "\') +1) = \'" +   id + "\' and contains(@value,\"" + value + "\")]| //*[@id=\"" + id + "\" and contains(@value,\"" + value + "\")]";	
-		SafLog.debug("XPathPath3: " + xPathPath3);
+		Log.debug("XPathPath3: " + xPathPath3);
 		return xPathPath3;
 	}
 		
     // Find pattern as <input type="radio" value="2_se.linkon.stina.select.domain.model.impl.standard.LssJourneyAdviceHolderStandard@63fe750e" id="8924_1309256129282_qwerty_outbound_itineraries" name="8924_1309256129282_qwerty_outbound_itineraries" tabindex="-1">
 	static public String XPathRadioButton(String id, String value ){
 		String xPathRadioButton="//*[substring(@id, 1, string-length(\'" + id + "\') ) = \'" +  id + "\' and substring(@value,1,1) = \"" + value + "\"]";  //"//*[contains("+id+")\" and substring(@value,1,1) = \"" + value + "\"]";
-		SafLog.debug("XPathSelectOption: " + xPathRadioButton);
+		Log.debug("XPathSelectOption: " + xPathRadioButton);
 		return xPathRadioButton;
 		}
 	
     // Find pattern as //a[@title="SHIFT <> Å"]	
 	static public String XPathEquals(String element, String attribute, String value ){
 		String xPathEquals= "//" + element + "[@" + attribute +  "=\"" + value + "\"]";
-		SafLog.debug("xPathEquals: " + xPathEquals);
+		Log.debug("xPathEquals: " + xPathEquals);
 		return xPathEquals;
 		}
 	
     // Find pattern as //a[@class="fancyButton windowListButton windowListCurrentOrder "]	
 	static public String XPathContains(String element, String attribute, String value ){
 		String xPathEquals= "//" + element + "[contains(@" + attribute + " ,\"" + value + "\")]";
-		SafLog.debug("xPathEquals: " + xPathEquals);
+		Log.debug("xPathEquals: " + xPathEquals);
 		return xPathEquals;
 		}
 
 	// Find pattern as "//id('LssItinerarySearchView_2.advancedSearchOptionsContainer')//a[2][@ class='mainLink']";
 		static public String XPathSelectIdPlusEquals(String id, String element, String attribute, String value ){
 			String xPathSelectIdPlusEquals="//*[" + XpathBlockDynamicID(id) + "]" + XPathEquals(element, attribute, value);
-			SafLog.debug("XPathSelectOption: " + xPathSelectIdPlusEquals);
+			Log.debug("XPathSelectOption: " + xPathSelectIdPlusEquals);
 			return  xPathSelectIdPlusEquals;
 		}	
 		
 	// Find pattern as //*[@id="6913_1309163737927_qwerty__itineraryPartPriceGroup"]/option[@value="0_SJ11R"]	
 	static public String XPathSelectOption(String id, String value ){
 		String xPathSelectOption="//*[" + XpathBlockDynamicID(id) + "]/option[@value=\"" + value + "\"]";
-		SafLog.debug("XPathSelectOption: " + xPathSelectOption);
+		Log.debug("XPathSelectOption: " + xPathSelectOption);
 		return  xPathSelectOption;
 	}	
 	
@@ -74,7 +74,7 @@ public class XPathFunctionality {
 	// Using XPath like: *[@id="6913_1309163737927_qwerty__itineraryPartPriceGroup"]/option[substring(@value,1,1) = '2']	
 	static public String XPathSelectOptionFirstChar(String id, String value ){
 		String xPathSelectOptionFirstChar="//*[" + XpathBlockDynamicID(id) + "]/option[substring(@value,1,1) = \"" + value + "\"]";
-		SafLog.debug("XPathSelectOptionFirstChar: " + xPathSelectOptionFirstChar);
+		Log.debug("XPathSelectOptionFirstChar: " + xPathSelectOptionFirstChar);
 		return xPathSelectOptionFirstChar;
 	}
 	
@@ -83,7 +83,7 @@ public class XPathFunctionality {
 	// where value = "2_se.sj.stina.domain.model.impl.standard.SjOptionSpecificationStandard@56acdb13"
 	static public String XPathSelectOptionContains(String id, String value ){
 		String xPathSelectOptionContains="//*[" + XpathBlockDynamicID(id) + "]/option[contains(@value,\"" + value + "\")]"; 
-		SafLog.debug("XPathSelectOptionContains: " + xPathSelectOptionContains);
+		Log.debug("XPathSelectOptionContains: " + xPathSelectOptionContains);
 		return xPathSelectOptionContains;
 	}
 	//Find pattern as: <img src="https://docs.linkon.se/q/linkonline/images/icon_booking_error.png">
