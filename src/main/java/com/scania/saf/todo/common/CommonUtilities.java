@@ -1,8 +1,5 @@
 package com.scania.saf.todo.common;
 
-import java.io.File;
-
-import org.apache.log4j.xml.DOMConfigurator;
 import org.sikuli.api.DesktopScreenRegion;
 import org.sikuli.api.ScreenRegion;
 
@@ -34,16 +31,17 @@ public class CommonUtilities {
 			//startWebDriver.getDriver().quit();
 		}
 	}
-
+/*
 	public void loadConfigProperties() {
-		/** Initiate log4j configuration and instantiate ConfigureSaf. */
+		//Initiate log4j configuration and instantiate ConfigureSaf.
 		ClassLoader classLoader = getClass().getClassLoader();
-		/** Get the language Excel file from class */
+		//Get the language Excel file from class
 		File log4jConfigFile = new File(classLoader.getResource(
 				"configuration/log4jConfiguration.xml").getFile());
 		String log4jConfigFilePath = log4jConfigFile.getPath();
 		DOMConfigurator.configure(log4jConfigFilePath);
 	}
+*/
 
 	/**
 	 * Create an instance of the site driver by calling createDriver and

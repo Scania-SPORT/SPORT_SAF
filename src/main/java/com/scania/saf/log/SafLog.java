@@ -3,16 +3,17 @@ package com.scania.saf.log;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import org.apache.log4j.Logger;
 import org.junit.runner.Description;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.scania.saf.common.ReadInputDataFromFile;
 import com.scania.saf.parameters.UserdataParamters;
 
 
-public class SafLog extends UserdataParamters{
+public class SafLog extends UserdataParamters {
 	
-	static Logger logger=Logger.getRootLogger();
+	static Logger logger = LoggerFactory.getLogger(SafLog.class);
 	
 	StackTraceElement stackTraceElements[]=(new Throwable()).getStackTrace();
 
@@ -48,8 +49,8 @@ public class SafLog extends UserdataParamters{
 	private static String arrayToStringMessage(String...string){
 		int stringSize= string.length;
 		String messageToLog="";
-		StackTraceElement stackTraceElements[]=(new Throwable()).getStackTrace();
-		 String testClassName= stackTraceElements[2].getClassName();
+		//StackTraceElement stackTraceElements[]=(new Throwable()).getStackTrace();
+		//String testClassName= stackTraceElements[2].getClassName();
 		for (int i=0; i<stringSize; i++){
 			messageToLog= " " + string[i];
 		}

@@ -1,17 +1,5 @@
 package com.scania.saf.parameters;
 
-import java.io.File;
-
-
-
-
-
-
-import org.apache.log4j.xml.DOMConfigurator;
-
-import com.scania.saf.common.ReadInputDataFromFile;
-import com.scania.saf.config.ConfigureSaf;
-import com.scania.saf.log.SafLog;
 
 /**
  * Defines constants for the user data parameters in the user data file. These parameters are used as constants throughout the platform. 

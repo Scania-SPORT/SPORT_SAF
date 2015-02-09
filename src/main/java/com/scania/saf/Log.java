@@ -1,10 +1,11 @@
 package com.scania.saf;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Log {
 
-	static Logger logger = Logger.getLogger(Log.class);
+	static Logger logger = LoggerFactory.getLogger(Log.class);
 
 	public static void debug(Object ... parameters) {
 		logger.debug(buildLog(parameters));
@@ -18,10 +19,6 @@ public class Log {
 		logger.error(buildLog(parameters));
 	}
 	
-	public static void fatal(Object ... parameters) {
-		logger.fatal(buildLog(parameters));
-	}
-
 	private static String buildLog(Object... parameters) {
 		StackTraceElement element = Stack.getStackTraceElement(2);
 		StringBuilder logBuilder = new StringBuilder(simpleClassName(element)+"."+element.getMethodName()+"(");
@@ -41,8 +38,4 @@ public class Log {
 		return className.substring(className.lastIndexOf(".") + 1);
 	}
 	
-	public static void main(String[] args) {
-		Log.fatal();
-	}
-
 }
