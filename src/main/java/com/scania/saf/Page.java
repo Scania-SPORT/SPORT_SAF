@@ -17,6 +17,17 @@ public class Page {
 		this.driver = driver;
 	}
 
+	public void setElementValue(By by, String value) {
+		WebElement element = driver.findElement(by);
+		element.clear();
+		element.sendKeys(value);
+	}
+	
+	public void clickElement(By by) {
+		WebElement element = driver.findElement(by);
+		element.click();
+	}
+	
 	public WebElement waitElement(By findBy, long timeout) {
 		WebElement element = null;
 		Exception lastException = null;
@@ -103,7 +114,7 @@ public class Page {
 	public WebElement scrollClick(By scrollableBy, By clickableBy) {
 		WebElement scrollable = waitElement(scrollableBy);
 		int scrollableHeight = scrollable.getSize().getHeight();
-		WebElement clickable;
+		WebElement clickable = null;
 		while(true) {
 			try {
 				clickable = driver.findElement(clickableBy);
@@ -113,7 +124,8 @@ public class Page {
 				((JavascriptExecutor)driver).executeScript("arguments[0].scrollTop += arguments[1];", scrollable, scrollableHeight);
 			}
 		}
-		clickable.click();
+		if(clickable != null)
+			clickable.click();
 		return clickable;
 	}
 
