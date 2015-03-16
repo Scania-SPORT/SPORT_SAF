@@ -48,19 +48,20 @@ public class Page {
 		return waitElement(by, DEFAULT_TIMEOUT);
 	}
 
-	public void waitClick(By findBy, long timeout) {
-		WebElement element = waitElement(findBy, timeout);
+	public WebElement waitClick(By by, long timeout) {
 		for(int i=0; i<timeout/SLEEP; i++)
 			try {
+				WebElement element = driver.findElement(by);
 				element.click();
-				return;
+				return element;
 			} catch(WebDriverException e) {
 				sleep();
 			}
+		return null;
 	}
 
-	public void waitClick(By findBy) {
-		waitClick(findBy, DEFAULT_TIMEOUT);
+	public WebElement waitClick(By findBy) {
+		return waitClick(findBy, DEFAULT_TIMEOUT);
 	}
 	
 	public void waitClear(WebElement element) {

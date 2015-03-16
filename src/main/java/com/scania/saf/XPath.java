@@ -9,7 +9,7 @@ public class XPath {
 	}
 
 	public static String contentContainsString(String string) {
-		return ".//*[contains(text(), '"+string+"')]";
+		return "//*[contains(text(), '"+string+"')]";
 	}
 
 }
