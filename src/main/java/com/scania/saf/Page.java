@@ -17,18 +17,40 @@ public class Page {
 		this.driver = driver;
 	}
 
-	public void setElementValue(By by, String value) {
-		WebElement element = driver.findElement(by);
+	public WebElement setElementValue(By by, String value) {
+		Log.debug(by);
+		WebElement element = waitClick(by);
 		element.clear();
 		element.sendKeys(value);
+		return element;
 	}
 	
-	public void clickElement(By by) {
+	public WebElement clickElement(By by) {
+		Log.debug(by);
 		WebElement element = driver.findElement(by);
 		element.click();
+		return element;
+	}
+
+	public void waitAsync() {
+        String readyState = readyState();
+        while(!"complete".equals(readyState)) {
+        	sleep();
+        	readyState = readyState();
+        }
+	}
+
+	private String readyState() {
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+		return (String)executor.executeScript("return document.readyState");
 	}
 	
+	public WebElement waitElement(By by) {
+		return waitElement(by, DEFAULT_TIMEOUT);
+	}
+
 	public WebElement waitElement(By findBy, long timeout) {
+		Log.debug(findBy);
 		WebElement element = null;
 		Exception lastException = null;
 		for(int i=0; i<timeout/SLEEP; i++) {
@@ -44,19 +66,21 @@ public class Page {
 		return element;
 	}
 
-	public WebElement waitElement(By by) {
-		return waitElement(by, DEFAULT_TIMEOUT);
-	}
-
 	public WebElement waitClick(By by, long timeout) {
+		Log.debug(by);
+		WebElement element = null;
+		Exception lastException = null;
 		for(int i=0; i<timeout/SLEEP; i++)
 			try {
-				WebElement element = driver.findElement(by);
+				element = driver.findElement(by);
 				element.click();
 				return element;
 			} catch(WebDriverException e) {
+				lastException = e;
 				sleep();
 			}
+		if(element == null && lastException != null)
+			lastException.printStackTrace();
 		return null;
 	}
 
@@ -75,32 +99,32 @@ public class Page {
 			}
 	}
 
-	public void waitAttributeEquals(WebElement element, String attribute, String value, long timeout) {
-		for(int i=0; i<timeout/SLEEP; i++) {
+	public void waitAttributeEquals(WebElement element, String attribute, String value) {
+		for(int i=0; i<DEFAULT_TIMEOUT/SLEEP; i++) {
 			if(element.getAttribute(attribute).equals(value))
 				return;
 			sleep();
 		}
 	}
 
-	public void waitAttributeNotEquals(WebElement element, String attribute, String value, long timeout) {
-		for(int i=0; i<timeout/SLEEP; i++) {
+	public void waitAttributeNotEquals(WebElement element, String attribute, String value) {
+		for(int i=0; i<DEFAULT_TIMEOUT/SLEEP; i++) {
 			if(!element.getAttribute(attribute).contains(value))
 				return;
 			sleep();
 		}
 	}
 
-	public void waitAttributeContains(WebElement element, String attribute, String value, long timeout) {
-		for(int i=0; i<timeout/SLEEP; i++) {
+	public void waitAttributeContains(WebElement element, String attribute, String value) {
+		for(int i=0; i<DEFAULT_TIMEOUT/SLEEP; i++) {
 			if(element.getAttribute(attribute).contains(value))
 				return;
 			sleep();
 		}
 	}
 
-	public void waitAttributeNotContains(WebElement element, String attribute, String value, long timeout) {
-		for(int i=0; i<timeout/SLEEP; i++) {
+	public void waitAttributeNotContains(WebElement element, String attribute, String value) {
+		for(int i=0; i<DEFAULT_TIMEOUT/SLEEP; i++) {
 			if(!element.getAttribute(attribute).contains(value))
 				return;
 			sleep();
@@ -113,9 +137,11 @@ public class Page {
 	}
 
 	public WebElement scrollClick(By scrollableBy, By clickableBy) {
+		Log.debug(scrollableBy, clickableBy);
 		WebElement scrollable = waitElement(scrollableBy);
 		int scrollableHeight = scrollable.getSize().getHeight();
 		WebElement clickable = null;
+		//boolean scrolled = false;
 		while(true) {
 			try {
 				clickable = driver.findElement(clickableBy);
@@ -123,10 +149,11 @@ public class Page {
 				break;
 			} catch(Exception e) {
 				((JavascriptExecutor)driver).executeScript("arguments[0].scrollTop += arguments[1];", scrollable, scrollableHeight);
+				//scrolled = true;
 			}
 		}
-		if(clickable != null)
-			clickable.click();
+		//if(scrolled && clickable != null) // click might miss while scrolling
+		//	clickable.click();
 		return clickable;
 	}
 
