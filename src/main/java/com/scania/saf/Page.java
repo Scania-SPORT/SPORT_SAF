@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 public class Page {
 
 	public static final long SLEEP = 500;
-	public static final long DEFAULT_TIMEOUT = 10000;
+	public static final long DEFAULT_TIMEOUT = 30000;
 	protected WebDriver driver;
 	protected String path;
 	
