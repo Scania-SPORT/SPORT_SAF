@@ -54,21 +54,6 @@ public class Page {
 		return driver.findElement(by).getText();
 	}
 
-	public WebElement setElementValue(By by, String value) {
-		Log.debug(by);
-		WebElement element = waitClick(by);
-		element.clear();
-		element.sendKeys(value);
-		return element;
-	}
-	
-	public WebElement clickElement(By by) {
-		Log.debug(by);
-		WebElement element = driver.findElement(by);
-		element.click();
-		return element;
-	}
-
 	public void waitAsync() {
         String readyState = readyState();
         while(!"complete".equals(readyState)) {
@@ -81,11 +66,55 @@ public class Page {
         JavascriptExecutor executor = (JavascriptExecutor)driver;
 		return (String)executor.executeScript("return document.readyState");
 	}
-	
+
+	public WebElement scrollClick(By scrollableBy, By clickableBy) {
+		Log.debug(scrollableBy, clickableBy);
+		WebElement scrollable = waitElement(scrollableBy);
+		int scrollableHeight = scrollable.getSize().getHeight();
+		WebElement clickable = null;
+		//boolean scrolled = false;
+		while(true) {
+			try {
+				clickable = driver.findElement(clickableBy);
+				clickable.click();
+				break;
+			} catch(Exception e) {
+				((JavascriptExecutor)driver).executeScript("arguments[0].scrollTop += arguments[1];", scrollable, scrollableHeight);
+				//scrolled = true;
+			}
+		}
+		//if(scrolled && clickable != null) // click might miss while scrolling
+		//	clickable.click();
+		return clickable;
+	}
+
+	public void sleep(long timeout) {
+		try {
+			Thread.sleep(timeout);
+		} catch (InterruptedException e) {
+			//
+		}
+	}
+
+	public void sleep() {
+		sleep(SLEEP);
+	}
+
+	public void tick() {
+		sleep(1);
+	}
+
+	public void close() {
+		Log.info(getClass().getSimpleName());
+		driver.close();
+	}
+
+	@Deprecated
 	public WebElement waitElement(By by) {
 		return waitElement(by, DEFAULT_TIMEOUT);
 	}
 
+	@Deprecated
 	public WebElement waitElement(By findBy, long timeout) {
 		Log.debug(findBy);
 		WebElement element = null;
@@ -103,6 +132,7 @@ public class Page {
 		return element;
 	}
 
+	@Deprecated
 	public WebElement waitClick(By by, long timeout) {
 		Log.debug(by);
 		WebElement element = null;
@@ -121,10 +151,12 @@ public class Page {
 		return null;
 	}
 
+	@Deprecated
 	public WebElement waitClick(By findBy) {
 		return waitClick(findBy, DEFAULT_TIMEOUT);
 	}
-	
+
+	@Deprecated
 	public void waitClear(WebElement element) {
 		for(int i=0; i<DEFAULT_TIMEOUT/SLEEP; i++)
 			try {
@@ -168,51 +200,10 @@ public class Page {
 		}
 	}
 
+	@Deprecated
 	public void waitClickContentContains(String string) {
 		WebElement element = waitElement(By.xpath(".//*[contains(text(), '"+string+"')]"));
 		element.click();
-	}
-
-	public WebElement scrollClick(By scrollableBy, By clickableBy) {
-		Log.debug(scrollableBy, clickableBy);
-		WebElement scrollable = waitElement(scrollableBy);
-		int scrollableHeight = scrollable.getSize().getHeight();
-		WebElement clickable = null;
-		//boolean scrolled = false;
-		while(true) {
-			try {
-				clickable = driver.findElement(clickableBy);
-				clickable.click();
-				break;
-			} catch(Exception e) {
-				((JavascriptExecutor)driver).executeScript("arguments[0].scrollTop += arguments[1];", scrollable, scrollableHeight);
-				//scrolled = true;
-			}
-		}
-		//if(scrolled && clickable != null) // click might miss while scrolling
-		//	clickable.click();
-		return clickable;
-	}
-
-	public void sleep(long timeout) {
-		try {
-			Thread.sleep(timeout);
-		} catch (InterruptedException e) {
-			//
-		}
-	}
-
-	public void sleep() {
-		sleep(SLEEP);
-	}
-
-	public void tick() {
-		sleep(1);
-	}
-
-	public void close() {
-		Log.info(getClass().getSimpleName());
-		driver.close();
 	}
 
 }
