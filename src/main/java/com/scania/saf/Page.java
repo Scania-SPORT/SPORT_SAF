@@ -5,6 +5,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Page {
 
@@ -12,9 +15,43 @@ public class Page {
 	public static final long DEFAULT_TIMEOUT = 30000;
 	protected WebDriver driver;
 	protected String path;
+	private WebDriverWait wait;
 	
 	public Page(WebDriver driver) {
 		this.driver = driver;
+		wait = new WebDriverWait(driver, 10000);
+	}
+
+	public void waitUntil(ExpectedCondition<?> condition) {
+		Log.debug(condition);
+		wait.until(condition);
+	}
+
+	public WebElement click(By by) {
+		Log.debug(by);
+		waitUntil(ExpectedConditions.elementToBeClickable(by));
+		WebElement element = driver.findElement(by);
+		element.click();
+		return element;
+	}
+
+	public WebElement setValue(By by, String value) {
+		Log.debug(value);
+		WebElement element = click(by);
+		element.clear();
+		element.sendKeys(value);
+		return element;
+	}
+
+	public void switchFrame(By by) {
+		Log.debug(by);
+		waitUntil(ExpectedConditions.frameToBeAvailableAndSwitchToIt(by));
+	}
+
+	public String getText(By by) {
+		Log.debug(by);
+		waitUntil(ExpectedConditions.visibilityOfElementLocated(by));
+		return driver.findElement(by).getText();
 	}
 
 	public WebElement setElementValue(By by, String value) {
